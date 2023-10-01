@@ -69,6 +69,7 @@ h1, h2, h3, h4 {
     background-size: cover;
     width: 100%;
     height: 926px;
+    position: relative;
 }
 
 .menu-container {
@@ -133,6 +134,44 @@ h1, h2, h3, h4 {
 
 .header-title span:last-child {
     margin-left: 603px;
+}
+
+.header-address {
+    display: flex;
+    align-items: center;
+    color: white;
+    position: absolute;
+}
+
+.header-address p {
+    font-family: Roboto Mono, monospace;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    position: relative;
+    left: 238px;
+    top: 25px;
+}
+
+.header-address img {
+    position: absolute;
+    left: 327px;
+    top: -58px;
+}
+
+.btn-round {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 235px;
+}
+
+.btn-round img{
+    padding-top: 7px;
 }
 
 /*content*/
