@@ -75,19 +75,64 @@ h1, h2, h3, h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 15px 0 29px 0;
 }
 
 .header-list {
     display: flex;
+    align-items: baseline;
 }
 
 .header-list li {
     list-style-type: none;
+    margin-right: 50px;
 }
 
 .header-list a {
     text-decoration: none;
     color: #F4F4F4;
+}
+
+.header-list li:last-child {
+    background: #242425;
+    border-radius: 60px;
+    display: flex;
+    width: 225px;
+    height: 65px;
+    padding: 10px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-list li a:last-child {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header-list li a:last-child img{
+    margin-left: 10px;
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header-title span {
+    color: #F4F4F4;
+    font-family: Raleway, sans-serif;
+    font-size: 206px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.header-title span:last-child {
+    margin-left: 603px;
 }
 
 /*content*/
