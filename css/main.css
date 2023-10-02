@@ -274,8 +274,23 @@ h1, h2, h3, h4 {
     position: absolute;
 }
 
+.about-title-1 {
+    margin-left: -196px;
+    margin-top: 30px;
+}
+
+.about-title-2 {
+    margin-left: -196px;
+}
+
+.about-title-3 {
+    display: flex;
+    justify-content: end;
+}
+
 .about-block-third p {
-    width: 526px;
+    max-width: 392px;
+    margin-top: 111px;
     font-family: Roboto Mono, monospace;
     font-size: 18px;
     font-style: normal;
