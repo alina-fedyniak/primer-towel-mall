@@ -36,6 +36,7 @@ h1, h2, h3, h4 {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
+    background: #F4F4F4
 }
 
 .container {
@@ -187,11 +188,14 @@ h1, h2, h3, h4 {
 /*scroll-container*/
 .scroll-container {
     margin-top: 369px;
+    display: flex;
+    margin-bottom: 252px;
 }
 
 .content-scroll {
     position: relative;
     display: flex;
+    margin-right: 200px;
 }
 
 .scroll-block-logo {
@@ -204,6 +208,7 @@ h1, h2, h3, h4 {
     flex-shrink: 0;
     position: absolute;
     top: 173px;
+    left: -30px;
     background: white;
 }
 
@@ -217,6 +222,11 @@ h1, h2, h3, h4 {
     color: #242425;
     margin-top: 69px;
     margin-left: -130px;
+}
+
+.btn-wrap {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .btn-wrap a {
