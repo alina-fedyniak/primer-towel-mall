@@ -190,9 +190,16 @@ h1, h2, h3, h4 {
     margin-top: 369px;
     display: flex;
     margin-bottom: 252px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100%;
+    padding-inline: 50vh;
+    padding-right: 200px;
 }
 
 .content-scroll {
+    width: 100%;
     position: relative;
     display: flex;
     margin-right: 200px;
@@ -254,6 +261,99 @@ h1, h2, h3, h4 {
     font-weight: 400;
     line-height: normal;
     color: #242425;
+}
+
+/*about mall*/
+.about-wrap {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.about-img {
+    position: absolute;
+}
+
+.about-block-third p {
+    width: 526px;
+    font-family: Roboto Mono, monospace;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: #686868;
+}
+
+.about-title {
+    font-family: Raleway, sans-serif;
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #242425;
+}
+
+.about-block-second img {
+    margin: 269px 0 0 146px;
+}
+
+.about-block-second {
+    margin-right: 51px;
+}
+
+/*shops*/
+.shops-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 353px;
+    border-bottom: 1px solid #C5C5C5;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+}
+
+.shops-nav div {
+    font-family: Raleway, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+.shops-nav-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shops-block {
+    display: flex;
+}
+
+.shops-wraps {
+    margin-bottom: 180px;
+}
+
+/*followUs*/
+.followUs-wrap {
+    height: 627px;
+    background: #242425;
+}
+
+.followUs-title {
+    font-family: Raleway, sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #F4F4F4;
+}
+
+.followUs-img-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*footer*/
