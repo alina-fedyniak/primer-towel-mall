@@ -446,8 +446,111 @@ h1, h2, h3, h4 {
     display: flex;
 }
 
+/*addToTeams*/
+.addToTeams-title {
+    font-family: Raleway, sans-serif;
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #242425;
+    max-width: 1074px;
+}
+
+.followUs-block-wrap {
+    display: flex;
+}
+
+.addToTeams-line {
+    position: absolute;
+}
+
+.followUs-block {
+    display: flex;
+    margin: 266px 0 200px 0;
+    position: relative;
+}
+
+.addToTeams-checkbox {
+    max-width: 477px;
+}
+
+/*bigText*/
+.bigText img {
+    position: absolute;
+}
+
+.bigText-wrap {
+    font-family: Raleway, sans-serif;
+    font-size: 206px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #242425;
+    margin-bottom: 86px;
+    position: relative;
+}
+
 /*footer*/
 .footer {
     flex-shrink: 0;
+    min-height: 486px;
+    background: #242425;
+    color: #F4F4F4;
 }
+
+.footer-logo {
+    margin-bottom: 50px;
+}
+
+.footer-btn {
+    background: #F4F4F4;
+    border-radius: 60px;
+    display: flex;
+    width: 225px;
+    height: 65px;
+    padding: 10px 30px;
+    justify-content: center;
+}
+
+.footer-btn a {
+    display: flex;
+    align-items: center;
+}
+
+.footer-btn span {
+    margin-right: 10px;
+    color: #242425;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 0 90px 0;
+}
+
+.footer-wrap a:first-child {
+    text-decoration: none;
+}
+
+.footer-wrap a {
+    text-decoration: none;
+    color: #F4F4F4;
+}
+
+.contact-item {
+    margin: 10px 0 20px 0;
+}
+
+.shop-link {
+    margin-bottom: 30px;
+}
+
+.page-link {
+    margin-bottom: 30px;
+}
+
+
 
