@@ -7,16 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="./css/swiper-bundle.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fonts/Raleway/Raleway-VariableFont_wght.ttf">
     <link rel="stylesheet" href="fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
     <body>
         <div class="wrapper" id="wrapper">
+            <div class="burger-menu">
+                <div class="menu-content">
+                    <ul class="header-list">
+                        <li><a href="#" class="header-link">ГОЛОВНА</a></li>
+                        <li><a href="#" class="header-link">ЗАКЛАДИ</a></li>
+                        <li><a href="#" class="header-link">МАПА</a></li>
+                        <li><a href="#" class="header-link">ДЛЯ БІЗНЕСУ</a></li>
+                        <li><a href="#" class="header-link">НОВИНИ</a></li>
+                        <li><a href="#" class="header-link">КОНТАКТИ</a></li>
+                        <li>
+                            <a class="nav__button" href="#">
+                                КОНСУЛЬТАЦІЯ
+                                <img src="./images/svg/arrow_left_light.svg" />
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="boorger_btm">
+
+                    </div>
+                    <div class="booter_soc">
+                        <a href="#" target="_blank">
+                            <img src="./images/svg/facebook.svg" alt="faceb">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="./images/svg/twitter.svg" alt="twitter">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="./images/svg/telegram.svg" alt="tel">
+                        </a>
+                    </div>
+                </div>
+            </div>
             <header class="header">
                 <div>
                     <div class="img-back">
@@ -41,24 +74,12 @@
                             </a>
                             <nav class="header-menu">
                                 <ul class="header-list">
-                                    <li>
-                                        <a href="#" class="header-link">ГОЛОВНА</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="header-link">ЗАКЛАДИ</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="header-link">МАПА</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="header-link">ДЛЯ БІЗНЕСУ</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="header-link">НОВИНИ</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="header-link">КОНТАКТИ</a>
-                                    </li>
+                                    <li><a href="#" class="header-link">ГОЛОВНА</a></li>
+                                    <li><a href="#" class="header-link">ЗАКЛАДИ</a></li>
+                                    <li><a href="#" class="header-link">МАПА</a></li>
+                                    <li><a href="#" class="header-link">ДЛЯ БІЗНЕСУ</a></li>
+                                    <li><a href="#" class="header-link">НОВИНИ</a></li>
+                                    <li><a href="#" class="header-link">КОНТАКТИ</a></li>
                                     <li>
                                         <a class="nav__button" href="#">
                                             КОНСУЛЬТАЦІЯ
@@ -67,11 +88,16 @@
                                     </li>
                                 </ul>
                             </nav>
+                            <div class="burger-icon">
+                                <div class="bar bar1"></div>
+                                <div class="bar bar2"></div>
+                                <div class="bar bar3"></div>
+                            </div>
                         </div>
                         <div class="container header-title">
-                            <span>Premier</span>
-                            <span>tower</span>
-                            <span>MALL</span>
+                            <p>Premier tower
+                                <span>MALL</span>
+                            </p>
                         </div>
                         <div class="container header-address">
                             <p>м.Вінниця, просп.Космонавтів</p>
@@ -87,85 +113,17 @@
             </header>
             <!--------main---------->
             <main class="content">
-                <img class="content-img" src="./images/svg/vector-line.svg" />
                 <!--------scroll-container---------->
-                <div class="scroll-container">
-                    <div class="content-scroll">
-                        <img src="images/img/about-team-slide-1.png"/>
-                        <div class="scroll-block-logo">
-                            <img src="./images/svg/silpo-logo.svg"/>
-                        </div>
-                        <div class="block-title">
-                            <div class="scroll-block-title">сільпо</div>
-                            <div class="btn-wrap">
-                                <a href="#">
-                                    <div class="img-details">
-                                        <img src="./images/svg/arrow_left_light-top.svg"/>
-                                    </div>
-                                    <span>Детальніше</span>
-                                </a>
+                <section class="scroll-wrapper">
+                    <img class="content-img" src="./images/svg/vector-line.svg" />
+                    <div class="scroll-container">
+                        <div class="content-scroll">
+                            <img src="images/img/about-team-slide-1.png"/>
+                            <div class="scroll-block-logo">
+                                <img src="./images/svg/silpo-logo.svg"/>
                             </div>
-                        </div>
-                    </div>
-                    <div class="content-scroll">
-                        <img src="./images/img/about-team-slide-2.png"/>
-                        <div class="scroll-block-logo">
-                            <img src="./images/svg/rozetka-logo.svg"/>
-                        </div>
-                        <div class="block-title">
-                            <div class="scroll-block-title">rozetka</div>
-                            <div class="btn-wrap">
-                                <a href="#">
-                                    <div class="img-details">
-                                        <img src="./images/svg/arrow_left_light-top.svg"/>
-                                    </div>
-                                    <span>Детальніше</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-scroll">
-                        <img src="./images/img/about-team-slide-3.png"/>
-                        <div class="scroll-block-logo">
-                            <img src="./images/svg/so-beauty.svg"/>
-                        </div>
-                        <div class="block-title">
-                            <div class="scroll-block-title">So beauty</div>
-                            <div class="btn-wrap">
-                                <a href="#">
-                                    <div class="img-details">
-                                        <img src="./images/svg/arrow_left_light-top.svg"/>
-                                    </div>
-                                    <span>Детальніше</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-scroll">
-                        <img src="./images/img/about-team-slide-4.png"/>
-                        <div class="scroll-block-logo">
-                            <img src="./images/svg/fast-sport.svg"/>
-                        </div>
-                        <div class="block-title">
-                            <div class="scroll-block-title">Fast sport</div>
-                            <div class="btn-wrap">
-                                <a href="#">
-                                    <div class="img-details">
-                                        <img src="./images/svg/arrow_left_light-top.svg"/>
-                                    </div>
-                                    <span>Детальніше</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-scroll">
-                        <img src="./images/img/about-team-slide-5.png"/>
-                        <div class="scroll-block-logo">
-                            <img src="./images/svg/low-cost.svg"/>
-                        </div>
-                        <div>
                             <div class="block-title">
-                                <div class="scroll-block-title">LOW COST</div>
+                                <div class="scroll-block-title">сільпо</div>
                                 <div class="btn-wrap">
                                     <a href="#">
                                         <div class="img-details">
@@ -176,8 +134,78 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="content-scroll">
+                            <img src="./images/img/about-team-slide-2.png"/>
+                            <div class="scroll-block-logo">
+                                <img src="./images/svg/rozetka-logo.svg"/>
+                            </div>
+                            <div class="block-title">
+                                <div class="scroll-block-title">rozetka</div>
+                                <div class="btn-wrap">
+                                    <a href="#">
+                                        <div class="img-details">
+                                            <img src="./images/svg/arrow_left_light-top.svg"/>
+                                        </div>
+                                        <span>Детальніше</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-scroll">
+                            <img src="./images/img/about-team-slide-3.png"/>
+                            <div class="scroll-block-logo">
+                                <img src="./images/svg/so-beauty.svg"/>
+                            </div>
+                            <div class="block-title">
+                                <div class="scroll-block-title">So beauty</div>
+                                <div class="btn-wrap">
+                                    <a href="#">
+                                        <div class="img-details">
+                                            <img src="./images/svg/arrow_left_light-top.svg"/>
+                                        </div>
+                                        <span>Детальніше</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-scroll">
+                            <img src="./images/img/about-team-slide-4.png"/>
+                            <div class="scroll-block-logo">
+                                <img src="./images/svg/fast-sport.svg"/>
+                            </div>
+                            <div class="block-title">
+                                <div class="scroll-block-title">Fast sport</div>
+                                <div class="btn-wrap">
+                                    <a href="#">
+                                        <div class="img-details">
+                                            <img src="./images/svg/arrow_left_light-top.svg"/>
+                                        </div>
+                                        <span>Детальніше</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-scroll">
+                            <img src="./images/img/about-team-slide-5.png"/>
+                            <div class="scroll-block-logo">
+                                <img src="./images/svg/low-cost.svg"/>
+                            </div>
+                            <div>
+                                <div class="block-title">
+                                    <div class="scroll-block-title">LOW COST</div>
+                                    <div class="btn-wrap">
+                                        <a href="#">
+                                            <div class="img-details">
+                                                <img src="./images/svg/arrow_left_light-top.svg"/>
+                                            </div>
+                                            <span>Детальніше</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </section>
                 <!--------about---------->
                 <section class="about-container">
                     <img class="about-img" src="./images/svg/vector-line-2.svg" />
@@ -305,11 +333,11 @@
                                         <div class="addToTeams-title">Приєднуйтесь до нашої команди</div>
                                         <form action="">
                                             <input id="emailAddress" type="email" placeholder="Email" />
-                                            <div>
-                                                <input type="submit" value="Save" placeholder="ВІДПРАВИТИ">
-                                                <img src="./images/svg/arrow_left_light-top.svg"/>
+                                            <div class="submit">
+                                                <input type="submit" value="ВІДПРАВИТИ" placeholder="ВІДПРАВИТИ">
+                                                    <img src="./images/svg/arrow_left_light-top.svg"/>
+                                                </input>
                                             </div>
-                                            </input>
                                         </form>
                                         <div class="addToTeams-checkbox">
                                             <input type="checkbox" id="horns" name="horns" />
@@ -390,6 +418,14 @@
                                 <span>powered by</span>
                                 <img src="./images/svg/footer-img.svg" />
                             </div>
+                        </div>
+                        <div class="foot-back">
+                            <a href="#wrapper">
+                                <div class="btn-top">
+                                    <img src="./images/svg/arrow_top_light.svg" alt="logo-foot">
+                                </div>
+                                Вгору
+                            </a>
                         </div>
                     </div>
                 </div>

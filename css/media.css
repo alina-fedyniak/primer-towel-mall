@@ -1,18 +1,27 @@
-
-/* ===================1740-1140================= */
-
-@media screen and (max-width:1740px){
-
-}
-
-/* ============1200-720=================== */
-
-@media screen and (max-width:1200px){
+@media screen and (max-width:1739px){
+    .container {
+        padding: 0 30px;
+    }
 
 }
 
-/* ============500-340=================== */
+@media screen and (max-width:1199px){
+    .header-menu .header-list li:not(:last-child) {
+        display: none;
+    }
+    .burger-menu{
+        display: block;
+    }
+    .burger-icon{
+        display: block;
+    }
 
-@media screen and (max-width:500px){
+}
+
+@media screen and (max-width:992px){
+
+}
+
+@media screen and (max-width:767px){
 
 }
