@@ -1,7 +1,7 @@
 // -------burger------
 document.addEventListener("DOMContentLoaded", function() {
-    var burgerIcon = document.querySelector(".burger-icon");
-    var burgerMenu = document.querySelector(".burger-menu");
+    const burgerIcon = document.querySelector(".burger-icon");
+    const burgerMenu = document.querySelector(".burger-menu");
 
     burgerIcon.addEventListener("click", function() {
         burgerIcon.classList.toggle("active"); // Анимация иконки бургера
@@ -15,42 +15,50 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// -------pop_up------
 document.addEventListener("DOMContentLoaded", function() {
-    var button = document.querySelector(".foot-back");
-    var scrollHeight = 740;
-    var isFixed = false;
+    const openButtons = Array.from(document.querySelectorAll(".open_pop"));
+    const closeButton = document.getElementById("pop_close");
+    const popUp = document.querySelector(".pop_up");
 
-    function handleScroll() {
-        var windowWidth = window.innerWidth;
+    // Добавление класса "active" при нажатии на кнопку "Открыть попап"
+    openButtons.forEach(function (openButton) {
+        openButton.addEventListener("click", function () {
+            popUp.classList.add("active");
+        });
+    });
 
-        if (windowWidth >= 740) {
-            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    // Удаление класса "active" при нажатии на кнопку "Закрыть попап"
+    closeButton.addEventListener("click", function() {
+        popUp.classList.remove("active");
+    });
 
-            if (scrollTop >= scrollHeight && !isFixed) {
-                button.style.top = scrollHeight + "px";
-                isFixed = true;
-            } else if (scrollTop < scrollHeight && isFixed) {
-                button.style.top = "";
-                isFixed = false;
-            }
+    // Закрытие вне
+    document.addEventListener("click", function (event) {
+        if (!popUp.contains(event.target) && openButtons.every((item) =>
+            !item.contains(event.target))) {
+            popUp.classList.remove("active");
         }
+    });
+
+});
+
+// -------btn-to-top------
+$(function() {
+    $.fn.scrollToTop = function() {
+        $(this).hide().removeAttr("href");
+        if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
+        const scrollDiv = $(this);
+        $(window).scroll(function() {
+            if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
+            else $(scrollDiv).fadeIn("slow")
+        });
+        $(this).click(function() {
+            $("html, body").animate({scrollTop: 0}, "slow")
+        })
     }
+});
 
-    var mediaQuery = window.matchMedia("(max-width: 740px)");
-
-    function handleMediaQueryChange(event) {
-        if (event.matches) {
-
-            window.removeEventListener("scroll", handleScroll);
-            button.style.top = "";
-            isFixed = false;
-        } else {
-
-            window.addEventListener("scroll", handleScroll);
-        }
-    }
-
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-    handleMediaQueryChange(mediaQuery);
+$(function() {
+    $("#go-top").scrollToTop();
 });

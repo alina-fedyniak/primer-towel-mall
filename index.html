@@ -67,31 +67,55 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="pop_up">
+                            <div class="pop_up_main">
+                                <div class="pop_close" id="pop_close">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <p>КОНСУЛЬТАЦІЯ</p>
+                                <form>
+                                    <input type="text" id="name" name="fname" placeholder="Ім’я">
+                                    <input type="text" id="phone" name="phone" placeholder="Телефон">
+                                    <div class="submit">
+                                        <input type="submit" value="ВІДПРАВИТИ" placeholder="ВІДПРАВИТИ">
+                                        <img src="./images/svg/arrow_left_light-top.svg"/>
+                                        </input>
+                                    </div>
+                                    <div class="addToTeams-checkbox">
+                                        <input type="checkbox" id="horns" name="horns" />
+                                        <label for="horns">Я даю згоду на обробку персональних  даних відповідно до Політики конфіденційності</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                         <!--------menu-container---------->
-                        <div class="container menu-container">
-                            <a href="#" class="header-logo">
-                                <img src="images/svg/logo.svg" alt="logo">
-                            </a>
-                            <nav class="header-menu">
-                                <ul class="header-list">
-                                    <li><a href="#" class="header-link">ГОЛОВНА</a></li>
-                                    <li><a href="#" class="header-link">ЗАКЛАДИ</a></li>
-                                    <li><a href="#" class="header-link">МАПА</a></li>
-                                    <li><a href="#" class="header-link">ДЛЯ БІЗНЕСУ</a></li>
-                                    <li><a href="#" class="header-link">НОВИНИ</a></li>
-                                    <li><a href="#" class="header-link">КОНТАКТИ</a></li>
-                                    <li>
-                                        <a class="nav__button" href="#">
-                                            КОНСУЛЬТАЦІЯ
-                                            <img src="./images/svg/arrow_left_light.svg" />
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <div class="burger-icon">
-                                <div class="bar bar1"></div>
-                                <div class="bar bar2"></div>
-                                <div class="bar bar3"></div>
+                        <div class="container">
+                            <div class="menu-container">
+                                <a href="#" class="header-logo">
+                                    <img src="images/svg/logo.svg" alt="logo">
+                                </a>
+                                <nav class="header-menu">
+                                    <ul class="header-list">
+                                        <li><a href="#" class="header-link">ГОЛОВНА</a></li>
+                                        <li><a href="#" class="header-link">ЗАКЛАДИ</a></li>
+                                        <li><a href="#" class="header-link">МАПА</a></li>
+                                        <li><a href="#" class="header-link">ДЛЯ БІЗНЕСУ</a></li>
+                                        <li><a href="#" class="header-link">НОВИНИ</a></li>
+                                        <li><a href="#" class="header-link">КОНТАКТИ</a></li>
+                                        <li class="open_pop">
+                                            <a class="nav__button " href="#" data-popup="popup1">
+                                                КОНСУЛЬТАЦІЯ
+                                                <img src="./images/svg/arrow_left_light.svg" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="burger-icon">
+                                    <div class="bar bar1"></div>
+                                    <div class="bar bar2"></div>
+                                    <div class="bar bar3"></div>
+                                </div>
                             </div>
                         </div>
                         <div class="container header-title">
@@ -338,11 +362,11 @@
                                                     <img src="./images/svg/arrow_left_light-top.svg"/>
                                                 </input>
                                             </div>
+                                            <div class="addToTeams-checkbox">
+                                                <input type="checkbox" id="horn" name="horns" />
+                                                <label for="horns">Я даю згоду на обробку персональних  даних відповідно до Політики конфіденційності</label>
+                                            </div>
                                         </form>
-                                        <div class="addToTeams-checkbox">
-                                            <input type="checkbox" id="horns" name="horns" />
-                                            <label for="horns">Я даю згоду на обробку персональних  даних відповідно до Політики конфіденційності</label>
-                                        </div>
                                     </div>
                                     <div>
                                         <img src="./images/img/add-to-us-big.png"/>
@@ -372,65 +396,76 @@
                                     <img src="images/svg/logo.svg" alt="logo">
                                 </a>
                             </div>
-                           <div class="footer-btn">
-                               <a href="#">
+                           <div class="footer-btn open_pop" data-popup="popup2">
+                               <a class="" href="#">
                                    <span>КОНСУЛЬТАЦІЯ</span>
                                    <img src="./images/svg/arrow_left_grey-top.svg" />
                                </a>
                            </div>
                         </div>
                         <div>
-                            <div class="contact-block">
-                                <div class="contact-title">Телефон</div>
-                                <div class="contact-item">
-                                    <a href="#">+38 067 130 8176</a>
+                            <div class="footer-info">
+                                <div class="contact-block-wrap">
+                                    <div class="contact-block">
+                                        <div class="contact-title">Телефон</div>
+                                        <div class="contact-item">
+                                            <a href="#">+38 067 130 8176</a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-block">
+                                        <div class="contact-title">E-mail</div>
+                                        <div class="contact-item">
+                                            <a href="#">premier@gmail.com</a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-block">
+                                        <div class="contact-title">Адреса</div>
+                                        <div class="contact-item">м. Вінниця,  просп. Космонавтів, 49</div>
+                                    </div>
+                                </div>
+                                <div class="shop-block-wrap">
+                                    <div class="shop-link"><a href="#">ПРОДУКТИ</a></div>
+                                    <div class="shop-link"><a href="#">ОДЯГ</a></div>
+                                    <div class="shop-link"><a href="#">КОСМЕТИКА</a></div>
+                                    <div class="shop-link"><a href="#">ТЕХНІКА</a></div>
+                                    <div class="shop-link"><a href="#">ЮВЕЛІРНІ ПРИКРАСИ</a></div>
+                                </div>
+                                <div class="page-block-wrap">
+                                    <div class="page-link"><a href="#">ЗАКЛАДИ</a></div>
+                                    <div class="page-link"><a href="#">МАПА</a></div>
+                                    <div class="page-link"><a href="#">ДЛЯ БІЗНЕСУ</a></div>
+                                    <div class="page-link"><a href="#">НОВИНИ</a></div>
+                                </div>
+                                <div class="foot-back" id="go-top">
+                                    <a href="#wrapper" id="scrollToTopButton">
+                                        <div class="btn-top">
+                                            <div class="btn-top-img">
+                                                <img src="./images/svg/arrow_top_light.svg" alt="logo-foot">
+                                            </div>
+                                            <span>Вгору</span>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="contact-block">
-                                <div class="contact-title">E-mail</div>
-                                <div class="contact-item">
-                                    <a href="#">premier@gmail.com</a>
-                                </div>
-                            </div>
-                            <div class="contact-block">
-                                <div class="contact-title">Адреса</div>
-                                <div class="contact-item">м. Вінниця,  просп. Космонавтів, 49</div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="shop-link"><a href="#">ПРОДУКТИ</a></div>
-                            <div class="shop-link"><a href="#">ОДЯГ</a></div>
-                            <div class="shop-link"><a href="#">КОСМЕТИКА</a></div>
-                            <div class="shop-link"><a href="#">ТЕХНІКА</a></div>
-                            <div class="shop-link"><a href="#">ЮВЕЛІРНІ ПРИКРАСИ</a></div>
-                        </div>
-                        <div>
-                            <div class="page-link"><a href="#">ЗАКЛАДИ</a></div>
-                            <div class="page-link"> <a href="#">МАПА</a></div>
-                            <div class="page-link"><a href="#">ДЛЯ БІЗНЕСУ</a></div>
-                            <div class="page-link"><a href="#">НОВИНИ</a></div>
-                        </div>
-                        <div>
                             <div>
-                                <div>Premier tower mall - Всі права захищені</div>
-                            </div>
-                            <div>
-                                <span>powered by</span>
-                                <img src="./images/svg/footer-img.svg" />
-                            </div>
-                        </div>
-                        <div class="foot-back">
-                            <a href="#wrapper">
-                                <div class="btn-top">
-                                    <img src="./images/svg/arrow_top_light.svg" alt="logo-foot">
+                                <div class="footer-info-text">
+                                    <div>
+                                        <div>Premier tower mall - Всі права захищені</div>
+                                    </div>
+                                    <div class="powered">
+                                        <a href="https://convart.digital/?utm_source=clients&utm_medium=websites&utm_campaign=logo&utm_content=ua&utm_term=econstructor">
+                                            <span>powered by</span>
+                                            <img src="./images/svg/footer-img.svg" />
+                                        </a>
+                                    </div>
                                 </div>
-                                Вгору
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </footer>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script src="./js/main.js"></script>
     </body>
 </html>
