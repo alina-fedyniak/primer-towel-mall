@@ -1,6 +1,28 @@
 @media screen and (max-width:1739px){
     .container {
-        padding: 0 30px;
+        /*padding: 0 30px;*/
+        max-width: 1140px;
+    }
+    .header-list li:not(:last-child) {
+        margin-right: 40px;
+    }
+    .header-title p {
+        font-size: 140px;
+        text-align: justify;
+    }
+    .header-address img {
+        left: 364px;
+        top: 116px;
+        max-width: 397px;
+    }
+    .header-address p {
+        left: 245px;
+        top: 199px;
+    }
+    .btn-round {
+        width: 60px;
+        height: 60px;
+        bottom: 42px;
     }
 
 }
