@@ -192,6 +192,7 @@ h1, h2, h3, h4 {
     display: flex;
     justify-content: space-between;
     padding: 9px 0;
+    align-items: center;
 }
 
 .icon-phone {
@@ -212,6 +213,15 @@ h1, h2, h3, h4 {
     position: relative;
 }
 
+.img-back-mobile {
+    background: url("../images/img/main-img-mobile.jpg") center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-height: 926px;
+    height: 100vh;
+    position: relative;
+}
+
 .menu-container {
     display: flex;
     align-items: center;
@@ -222,8 +232,13 @@ h1, h2, h3, h4 {
 
 /**/
 /* ============burger-menu======== */
-.burger-menu{
+.burger-menu {
     display: none;
+}
+
+.burger-img-line {
+    position: absolute;
+    top: 427px;
 }
 
 
@@ -242,18 +257,18 @@ h1, h2, h3, h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     position: relative;
     width: 100%;
     height: 100%;
     background-color: #242425;
     overflow-y: scroll;
     z-index: 800;
+    padding-top: 125px;
 }
 .menu-content ul {
     display: flex;
     flex-direction: column;
-    gap: 45px;
+    /*gap: 15px;*/
 }
 .menu-content li{
     font-size: 25px;
@@ -261,38 +276,52 @@ h1, h2, h3, h4 {
     line-height: 150%;
     text-decoration: none;
     transition: all 0.3s;
+    border-bottom: 1px solid #C5C5C5;
+    width: 720px;
+    text-align: start;
 }
 
-.menu-content li:hover{
-    text-decoration: underline;
+.menu-content li a {
+    font-family: Raleway, sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #F4F4F4;
 }
+
 .boot_svg{
     width: 129px;
     height: 135px;
     transition: all .5s ease;
 }
+
 .boorger_btm p{
     font-size: 14px;
     font-weight: 500;
     line-height: 150%;
     text-transform: uppercase;
 }
-.boorger_btm{
-    margin-top: 72px;
+.burger-menu .footer-btn{
+    margin-top: 140px;
 }
+
 .boorger_btm p:hover + .boot_svg{
     transform: scale(.9);
     transition: all .5s ease;
 }
+
 .boot_svg:hover{
     transform: scale(.9);
     transition: all .5s ease;
 }
+
 .boorger_btm button{
     display: flex;
     align-items: center;
 }
-
 
 .burger-icon {
     display: none;
@@ -310,6 +339,14 @@ h1, h2, h3, h4 {
 }
 
 /* Animation of the burger icon*/
+.burger-icon.active {
+    border: 1px solid white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 7px;
+}
+
 .burger-icon.active .bar1 {
     transform: rotate(-45deg) translate(-5px, 5px);
 }
@@ -327,8 +364,9 @@ h1, h2, h3, h4 {
 
 .booter_soc{
     display: flex;
-    gap: 30px;
+    gap: 15px;
     margin-top: 73px;
+    margin-bottom: 25px;
 }
 .booter_soc img{
     width: 40px;
@@ -364,6 +402,7 @@ h1, h2, h3, h4 {
 span.header-link-text {
     display: flex;
     align-items: center;
+    line-height: 1.2;
 }
 
 .header-list {
@@ -409,7 +448,7 @@ span.header-link-text {
     margin-left: 10px;
 }
 
-.header-title p {
+.header-title span {
     color: #F4F4F4;
     font-family: Raleway, sans-serif;
     font-size: 206px;
@@ -417,11 +456,16 @@ span.header-link-text {
     font-weight: 400;
     line-height: 100%;
     text-transform: uppercase;
-    text-align: center;
+    /*text-align: center;*/
 }
 
-.header-title span:last-child {
-    margin-left: 577px;
+.header-title div:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-title div:last-child span{
+    margin-left: 845px;
 }
 
 .header-address {
@@ -626,16 +670,42 @@ section.scroll-wrapper {
     bottom: 468px;
 }
 
+.all-shops-btn-wrap {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 240px;
+}
+
+.all-shops-btn {
+    background: #242425;
+    border-radius: 60px;
+    display: flex;
+    width: 225px;
+    height: 65px;
+    padding: 10px 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-shops-btn span {
+    margin-right: 10px;
+    color: #FFF;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
 /*scroll-container*/
 .scroll-container {
-    margin-top: 369px;
+    margin-top: 310px;
     display: flex;
     margin-bottom: 252px;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     width: 100%;
-    padding-inline: 50vh;
+    padding-inline: 697px;
     padding-right: 200px;
 }
 
@@ -1019,6 +1089,8 @@ input[type="submit"] {
     height: 65px;
     padding: 10px 30px;
     justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
 
 .footer-btn a {
@@ -1029,6 +1101,9 @@ input[type="submit"] {
 .footer-btn span {
     margin-right: 10px;
     color: #242425;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
 }
 
 .footer-wrap {

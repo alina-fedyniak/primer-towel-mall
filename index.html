@@ -20,22 +20,41 @@
         <div class="wrapper" id="wrapper">
             <div class="burger-menu">
                 <div class="menu-content">
-                    <ul class="header-list">
-                        <li><a href="#" class="header-link">ГОЛОВНА</a></li>
-                        <li><a href="#" class="header-link">ЗАКЛАДИ</a></li>
-                        <li><a href="#" class="header-link">МАПА</a></li>
-                        <li><a href="#" class="header-link">ДЛЯ БІЗНЕСУ</a></li>
-                        <li><a href="#" class="header-link">НОВИНИ</a></li>
-                        <li><a href="#" class="header-link">КОНТАКТИ</a></li>
-                        <li>
-                            <a class="nav__button" href="#">
-                                КОНСУЛЬТАЦІЯ
-                                <img src="./images/svg/arrow_left_light.svg" />
-                            </a>
-                        </li>
+                    <ul class="">
+                        <li><a href="#">ГОЛОВНА</a></li>
+                        <li><a href="#">ЗАКЛАДИ</a></li>
+                        <li><a href="#">МАПА</a></li>
+                        <li><a href="#">ДЛЯ БІЗНЕСУ</a></li>
+                        <li><a href="#">НОВИНИ</a></li>
+                        <li><a href="#">КОНТАКТИ</a></li>
                     </ul>
                     <div class="boorger_btm">
-
+                    </div>
+                    <img class="burger-img-line" src="./images/svg/vector-line-burger.svg"/>
+                    <img class="burger-img-line-mob" src="./images/svg/vector-line-burger-mob.svg"/>
+                    <div class="topInfo">
+                        <div class="topInfo-shop">Сільпо:
+                            <span class="topInfo-time">10:00 — 20:00</span>
+                        </div>
+                        <div class="topInfo-work">ПН-НД:
+                            <span class="topInfo-time">10.00 - 21.00</span>
+                        </div>
+                        <div class="icon-phone">
+                            <img src="./images/svg/phone-number.svg" />
+                            <span class="phone">+38 067 130 8176</span>
+                        </div>
+                    </div>
+                    <div class="footer-btn open_pop" data-popup="popup2">
+                        <a class="header-link" href="#">
+                                   <span class="header-link-text">
+                                        КОНСУЛЬТАЦІЯ
+                                        <img src="./images/svg/arrow_left_grey-top.svg"/>
+                                   </span>
+                            <span class="header-link-text-hover">
+                                       КОНСУЛЬТАЦІЯ
+                                       <img src="./images/svg/arrow_left_grey-top.svg"/>
+                                   </span>
+                        </a>
                     </div>
                     <div class="booter_soc">
                         <a href="#" target="_blank">
@@ -52,7 +71,7 @@
             </div>
             <header class="header">
                 <div>
-                    <div class="img-back">
+                    <div class="img-back img-back-mobile">
                         <div class="topInfo-wrap">
                             <div class="container topInfo">
                                 <div class="topInfo-shop">Сільпо:
@@ -152,9 +171,13 @@
                             </div>
                         </div>
                         <div class="container header-title">
-                            <p>Premier tower
+                            <div>
+                                <span>Premier</span>
+                                <span>tower</span>
+                            </div>
+                            <div>
                                 <span>MALL</span>
-                            </p>
+                            </div>
                         </div>
                         <div class="container header-address">
                             <p>м.Вінниця, просп.Космонавтів</p>
@@ -173,83 +196,29 @@
                 <!--------scroll-container---------->
                 <section class="scroll-wrapper">
                     <img class="content-img" src="./images/svg/vector-line.svg" />
-                    <div class="scroll-container">
-                        <div class="content-scroll">
-                            <img src="images/img/about-team-slide-1.png"/>
-                            <div class="scroll-block-logo">
-                                <img src="./images/svg/silpo-logo.svg"/>
-                            </div>
-                            <div class="block-title">
-                                <div class="scroll-block-title">сільпо</div>
-                                <div class="btn-wrap">
-                                    <a href="#">
-                                        <div class="img-details">
-                                            <img src="./images/svg/arrow_left_light-top.svg"/>
-                                        </div>
-                                        <span>Детальніше</span>
-                                    </a>
-                                </div>
+                    <div>
+                        <div class="container all-shops-btn-wrap">
+                            <div class="all-shops-btn">
+                                <a class="header-link" href="#">
+                            <span class="header-link-text">
+                                УСІ МАГАЗИНИ
+                                <img src="./images/svg/arrow_left_light.svg" />
+                            </span>
+                                    <span class="header-link-text">
+                                УСІ МАГАЗИНИ
+                                <img src="./images/svg/arrow_left_light.svg" />
+                            </span>
+                                </a>
                             </div>
                         </div>
-                        <div class="content-scroll">
-                            <img src="./images/img/about-team-slide-2.png"/>
-                            <div class="scroll-block-logo">
-                                <img src="./images/svg/rozetka-logo.svg"/>
-                            </div>
-                            <div class="block-title">
-                                <div class="scroll-block-title">rozetka</div>
-                                <div class="btn-wrap">
-                                    <a href="#">
-                                        <div class="img-details">
-                                            <img src="./images/svg/arrow_left_light-top.svg"/>
-                                        </div>
-                                        <span>Детальніше</span>
-                                    </a>
+                        <div class="scroll-container">
+                            <div class="content-scroll">
+                                <img src="images/img/about-team-slide-1.png"/>
+                                <div class="scroll-block-logo">
+                                    <img src="./images/svg/silpo-logo.svg"/>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="content-scroll">
-                            <img src="./images/img/about-team-slide-3.png"/>
-                            <div class="scroll-block-logo">
-                                <img src="./images/svg/so-beauty.svg"/>
-                            </div>
-                            <div class="block-title">
-                                <div class="scroll-block-title">So beauty</div>
-                                <div class="btn-wrap">
-                                    <a href="#">
-                                        <div class="img-details">
-                                            <img src="./images/svg/arrow_left_light-top.svg"/>
-                                        </div>
-                                        <span>Детальніше</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content-scroll">
-                            <img src="./images/img/about-team-slide-4.png"/>
-                            <div class="scroll-block-logo">
-                                <img src="./images/svg/fast-sport.svg"/>
-                            </div>
-                            <div class="block-title">
-                                <div class="scroll-block-title">Fast sport</div>
-                                <div class="btn-wrap">
-                                    <a href="#">
-                                        <div class="img-details">
-                                            <img src="./images/svg/arrow_left_light-top.svg"/>
-                                        </div>
-                                        <span>Детальніше</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content-scroll">
-                            <img src="./images/img/about-team-slide-5.png"/>
-                            <div class="scroll-block-logo">
-                                <img src="./images/svg/low-cost.svg"/>
-                            </div>
-                            <div>
                                 <div class="block-title">
-                                    <div class="scroll-block-title">LOW COST</div>
+                                    <div class="scroll-block-title">сільпо</div>
                                     <div class="btn-wrap">
                                         <a href="#">
                                             <div class="img-details">
@@ -257,6 +226,76 @@
                                             </div>
                                             <span>Детальніше</span>
                                         </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-scroll">
+                                <img src="./images/img/about-team-slide-2.png"/>
+                                <div class="scroll-block-logo">
+                                    <img src="./images/svg/rozetka-logo.svg"/>
+                                </div>
+                                <div class="block-title">
+                                    <div class="scroll-block-title">rozetka</div>
+                                    <div class="btn-wrap">
+                                        <a href="#">
+                                            <div class="img-details">
+                                                <img src="./images/svg/arrow_left_light-top.svg"/>
+                                            </div>
+                                            <span>Детальніше</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-scroll">
+                                <img src="./images/img/about-team-slide-3.png"/>
+                                <div class="scroll-block-logo">
+                                    <img src="./images/svg/so-beauty.svg"/>
+                                </div>
+                                <div class="block-title">
+                                    <div class="scroll-block-title">So beauty</div>
+                                    <div class="btn-wrap">
+                                        <a href="#">
+                                            <div class="img-details">
+                                                <img src="./images/svg/arrow_left_light-top.svg"/>
+                                            </div>
+                                            <span>Детальніше</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-scroll">
+                                <img src="./images/img/about-team-slide-4.png"/>
+                                <div class="scroll-block-logo">
+                                    <img src="./images/svg/fast-sport.svg"/>
+                                </div>
+                                <div class="block-title">
+                                    <div class="scroll-block-title">Fast sport</div>
+                                    <div class="btn-wrap">
+                                        <a href="#">
+                                            <div class="img-details">
+                                                <img src="./images/svg/arrow_left_light-top.svg"/>
+                                            </div>
+                                            <span>Детальніше</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-scroll">
+                                <img src="./images/img/about-team-slide-5.png"/>
+                                <div class="scroll-block-logo">
+                                    <img src="./images/svg/low-cost.svg"/>
+                                </div>
+                                <div>
+                                    <div class="block-title">
+                                        <div class="scroll-block-title">LOW COST</div>
+                                        <div class="btn-wrap">
+                                            <a href="#">
+                                                <div class="img-details">
+                                                    <img src="./images/svg/arrow_left_light-top.svg"/>
+                                                </div>
+                                                <span>Детальніше</span>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -430,9 +469,15 @@
                                 </a>
                             </div>
                            <div class="footer-btn open_pop" data-popup="popup2">
-                               <a class="" href="#">
-                                   <span>КОНСУЛЬТАЦІЯ</span>
-                                   <img src="./images/svg/arrow_left_grey-top.svg" />
+                               <a class="header-link" href="#">
+                                   <span class="header-link-text">
+                                        КОНСУЛЬТАЦІЯ
+                                        <img src="./images/svg/arrow_left_grey-top.svg"/>
+                                   </span>
+                                   <span class="header-link-text-hover">
+                                       КОНСУЛЬТАЦІЯ
+                                       <img src="./images/svg/arrow_left_grey-top.svg"/>
+                                   </span>
                                </a>
                            </div>
                         </div>

@@ -6,9 +6,12 @@
     .header-list li:not(:last-child) {
         margin-right: 40px;
     }
-    .header-title p {
+    .header-title span {
         font-size: 140px;
         text-align: justify;
+    }
+    .header-title div:last-child span {
+        margin-left: 575px;
     }
     .header-address img {
         left: 364px;
@@ -18,6 +21,7 @@
     .header-address p {
         left: 245px;
         top: 199px;
+        font-size: 16px;
     }
     .btn-round {
         width: 60px;
@@ -40,10 +44,88 @@
     .addToTeams-checkbox {
         max-width: 410px;
     }
+    .scroll-container {
+        padding-inline: 653px;
+        padding-right: 150px;
+    }
+    .header-list li:last-child {
+        width: 200px;
+        height: 60px;
+    }
+    .header-list li a:last-child img {
+         margin-left: 0;
+    }
+    .all-shops-btn {
+        width: 200px;
+        height: 60px;
+    }
+    .all-shops-btn span {
+         margin-right: 0;
+    }
+    .scroll-container {
+        margin-top: 279px;
+        margin-bottom: 252px;
+        padding-inline: 652px;
+    }
+    .all-shops-btn-wrap {
+        top: 220px;
+    }
+    .content-scroll {
+        margin-right: 230px;
+    }
+    .content-scroll>img {
+        width: 266px;
+        height: 275px;
+    }
+    .scroll-block-logo {
+        width: 183px;
+        height: 183px;
+        top: 130px;
+        left: -30px;
+    }
+    .scroll-block-logo img {
+        width: 123px;
+        height: 48px;
+    }
+    .scroll-block-title {
+        font-size: 70px;
+        margin-top: 25px;
+        margin-left: -78px;
+    }
+    .btn-wrap a {
+         margin-left: 0;
+    }
+    .about-block-first>img {
+        width: 353px;
+    }
+    .about-title {
+        font-size: 70px;
+    }
+    .about-title-1 {
+        margin-left: -147px;
+    }
+    .about-title-2 {
+        margin-left: -147px;
+    }
+    .about-title-3 {
+        margin-left: 101px;
+    }
+    .about-block-second>img {
+        width: 283px;
+        margin: 324px 0 0 79px;
+    }
+    .about-block-third p {
+        max-width: 353px;
+        font-size: 16px;
+    }
 
 }
 
 @media screen and (max-width:1199px){
+    .container {
+        padding: 0 25px;
+        max-width: 980px;
+    }
     .header-menu .header-list li:not(:last-child) {
         display: none;
     }
@@ -53,13 +135,205 @@
     .burger-icon{
         display: block;
     }
+    .header-list li:last-child {
+        width: 180px;
+        height: 45px;
+        padding: 10px 20px;
+        position: absolute;
+        right: 191px;
+        top: 82px;
+    }
+    .header-list li a:last-child img {
+         margin-left: 0;
+    }
+    .header-title span {
+        font-size: 120px;
+    }
+    .header-title div:last-child span {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .header-title div:first-child {
+        flex-direction: column;
+    }
+    .header-title div:first-child span:last-child{
+        display: flex;
+        justify-content: end;
+    }
+    .header-address img {
+        left: 420px;
+        top: 56px;
+        max-width: 275px;
+    }
+    .header-address p {
+        left: 228px;
+        top: 106px;
+    }
+    .btn-round {
+        width: 45px;
+        height: 45px;
+        bottom: 40px;
+    }
+    .footer-btn span {
+         margin-right: 0;
+    }
+    .footer-btn {
+        width: 180px;
+        height: 45px;
+        padding: 10px 20px;
+    }
+    .menu-content .topInfo {
+        display: none;
+    }
+    .burger-img-line-mob {
+        display: none;
+    }
+    .pop_up {
+        width: 574px;
+        height: 523px;
+    }
+    .pop_up_main p {
+        font-size: 60px;
+    }
+    .pop_up_main input:not(.addToTeams-checkbox input) {
+        width: 350px;
+        height: 45px;
+    }
+    .pop_up_main input:not(.addToTeams-checkbox input) {
+        width: 526px;
+        height: 65px;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+    }
+    .submit img {
+        top: 11px;
+        right: 20px;
+    }
+    .addToTeams-checkbox {
+        max-width: 339px;
+        font-size: 12px;
+    }
 
 }
 
 @media screen and (max-width:992px){
+    .header-list li:last-child {
+        right: 96px;
+    }
 
 }
 
 @media screen and (max-width:767px){
+    .img-back {
+        display: none;
+    }
+    .img-back-mobile {
+        display: block;
+    }
+    .container {
+        padding: 0 20px;
+    }
+    .header-title span {
+        font-size: 80px;
+    }
+    .topInfo {
+        display: none;
+    }
+    .header-list li:last-child {
+        display: none;
+    }
+    .header-list li:last-child {
+        display: none;
+    }
+    .menu-content li:last-child {
+        display: block;
+    }
+    .header-address p {
+        left: 0;
+        top: 75px;
+        max-width: 155px;
+        font-size: 14px;
+    }
+    .header-address img {
+        left: 161px;
+        top: 50px;
+        max-width: 205px;
+    }
+    .btn-round {
+        bottom: 90px;
+    }
+    .menu-content li a {
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 120%;
+    }
+    .menu-content li {
+        width: 340px;
+    }
+    .menu-content ul {
+        gap: 15px;
+        margin-bottom: 40px;
+    }
+    .menu-content {
+        padding-top: 90px;
+    }
+    .burger-img-line {
+        display: none;
+    }
+    .burger-img-line-mob {
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .menu-content .topInfo {
+        display: block;
+        margin-bottom: 40px;
+        font-size: 12px;
+    }
+    .burger-menu .footer-btn{
+        margin-top: 40px;
+    }
+    .booter_soc {
+        margin-top: 40px;
+    }
+    .booter_soc img {
+        width: 30px;
+        height: 30px;
+        padding: 6px 6px;
+    }
+    .footer-btn {
+        width: 169px;
+        height: 40px;
+        padding: 10px 15px;
+    }
+    .pop_up {
+        width: 320px;
+        height: 424px;
+    }
+    .pop_up_main p {
+        font-size: 35px;
+        margin-bottom: 45px;
+    }
+    .pop_up_main {
+        padding: 59px 28px 86px;
+    }
+    .pop_close img {
+        width: 40px;
+        height: 40px;
+    }
+    .pop_up_main input:not(.addToTeams-checkbox input) {
+        width: 267px;
+        height: 40px;
+        padding: 13px 15px;
+    }
+    .submit img {
+        top: 9px;
+        right: 15px;
+    }
+    .pop_close {
+        top: 13px;
+    }
 
 }
