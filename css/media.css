@@ -118,6 +118,9 @@
         max-width: 353px;
         font-size: 16px;
     }
+    .about-block-second {
+        margin-right: 41px;
+    }
 
 }
 
@@ -213,6 +216,27 @@
     .addToTeams-checkbox {
         max-width: 339px;
         font-size: 12px;
+    }
+    .all-shops-btn {
+        width: 180px;
+        height: 45px;
+        padding: 10px 20px;
+    }
+    .scroll-container {
+        margin-top: 254px;
+        margin-bottom: 170px;
+        padding-inline: 438px;
+    }
+    .scroll-block-title {
+        font-size: 60px;
+        margin-left: -65px;
+    }
+    .img-details {
+        width: 40px;
+        height: 40px;
+    }
+    .content-scroll {
+        margin-right: 257px;
     }
 
 }
@@ -334,6 +358,39 @@
     }
     .pop_close {
         top: 13px;
+    }
+    .all-shops-btn {
+        width: 156px;
+        height: 40px;
+        padding: 10px 15px;
+    }
+    .all-shops-btn span {
+        font-size: 14px;
+    }
+    .content-scroll {
+        margin-right: 79px;
+    }
+    .scroll-container {
+        margin-top: 221px;
+        margin-bottom: 146px;
+        padding-inline: 100px;
+    }
+    .content-scroll {
+        margin-right: 79px;
+        flex-direction: column-reverse;
+    }
+    .btn-wrap {
+        justify-content: flex-start;
+        position: absolute;
+        bottom: -100px;
+        right: 169px;
+    }
+    .scroll-block-title {
+        font-size: 60px;
+        margin-left: -57px;
+    }
+    .scroll-block-logo {
+        top: 220px;
     }
 
 }
