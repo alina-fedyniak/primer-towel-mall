@@ -97,6 +97,7 @@
     }
     .about-block-first>img {
         width: 353px;
+        max-height: 471px;
     }
     .about-title {
         font-size: 70px;
@@ -117,6 +118,7 @@
     .about-block-third p {
         max-width: 353px;
         font-size: 16px;
+        margin-top: 120px;
     }
     .about-block-second {
         margin-right: 41px;
@@ -238,6 +240,27 @@
     .content-scroll {
         margin-right: 257px;
     }
+    .about-wrap {
+        flex-direction: column;
+    }
+    .about-title {
+        font-size: 60px;
+    }
+    .about-title-2 {
+        margin-left: -87px;
+    }
+    .about-title-1 {
+        margin-left: -105px;
+    }
+    .about-block-second>img {
+        width: 283px;
+        margin: 129px 0 0 51px;
+    }
+    .about-block-third p {
+        max-width: 100%;
+        margin-top: 40px;
+    }
+
 
 }
 
@@ -392,5 +415,32 @@
     .scroll-block-logo {
         top: 220px;
     }
-
+    .about-block-second>img {
+        display: none;
+    }
+    .about-img-mobile {
+        display: block;
+        margin-top: 20px;
+        max-width: 160px;
+        margin-left: auto;
+    }
+    .about-wrap div:first-child {
+        flex-direction: column-reverse;
+    }
+    .about-block-first>img {
+        width: 100%;
+        max-height: none;
+    }
+    .about-title {
+        font-size: 35px;
+    }
+    .about-block-second {
+        max-width: 216px;
+        margin-left: 110px;
+        position: absolute;
+        top: -89px;
+    }
+    .about-title-2 {
+        margin-left: -105px;
+    }
 }

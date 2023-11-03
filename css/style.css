@@ -799,11 +799,14 @@ section.scroll-wrapper {
     color: #242425;
 }
 
-/*about mall*/
 .about-wrap {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
+}
+
+.about-wrap div:first-child{
+    display: flex;
 }
 
 .about-img {
@@ -826,7 +829,7 @@ section.scroll-wrapper {
 
 .about-block-third p {
     max-width: 526px;
-    margin-top: 111px;
+    margin-top: 150px;
     font-family: Roboto Mono, monospace;
     font-size: 18px;
     font-style: normal;
@@ -845,12 +848,21 @@ section.scroll-wrapper {
     color: #242425;
 }
 
+.about-img-mobile {
+    display: none;
+}
+
 .about-block-second img {
     margin: 269px 0 0 146px;
 }
 
+.about-block-first img {
+    max-height: 703px;
+}
+
 .about-block-second {
-    margin-right: 51px;
+    /*margin-right: 51px;*/
+    position: relative;
 }
 
 /*shops*/
