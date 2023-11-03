@@ -871,8 +871,37 @@ section.scroll-wrapper {
     justify-content: space-between;
     min-width: 527px;
     border-bottom: 1px solid #C5C5C5;
-    margin-bottom: 40px;
     padding-bottom: 10px;
+}
+
+.shop-item-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.shop-item-btn .btn-wrap a {
+    margin-left: 0;
+}
+
+.shop-item-link span {
+    color: #F4F4F4;
+    font-family: Raleway, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 37.5px */
+    text-transform: uppercase;
+}
+
+.shop-item-link a {
+    display: flex;
+    align-items: center;
+}
+
+.shop-item-link-img img {
+    margin-top: 0;
+    width: 32px;
 }
 
 .shops-nav div {
@@ -889,14 +918,25 @@ section.scroll-wrapper {
     justify-content: space-between;
 }
 
-.shop-item img {
+.shop-item {
+    position: relative;
+}
+
+.shop-item-link {
+    cursor: pointer;
+    position: absolute;
+    bottom: 30px;
+    z-index: 1;
+    left: 30px;
+}
+
+.shop-item>img {
     margin-right: 50px;
     margin-top: 50px;
 }
 
 .shop-item-last img{
-    margin-right: 0;
-    margin-top: 50px;
+    margin-right: 0 !important;
 }
 
 .shops-block {

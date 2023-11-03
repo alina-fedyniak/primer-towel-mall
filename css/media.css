@@ -123,6 +123,21 @@
     .about-block-second {
         margin-right: 41px;
     }
+    .shops-nav {
+        min-width: 353px;
+    }
+    .shop-item>img {
+        margin-right: 40px;
+        margin-top: 40px;
+        max-width: 354px;
+    }
+    .shop-item-link span {
+        max-width: 240px;
+    }
+    .shop-item-link {
+        bottom: 20px;
+        left: 20px;
+    }
 
 }
 
