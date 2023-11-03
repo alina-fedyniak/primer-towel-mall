@@ -138,6 +138,49 @@
         bottom: 20px;
         left: 20px;
     }
+    .followUs-title {
+        font-size: 70px;
+        padding: 60px 0 40px 0;
+    }
+    .followUs-img-block div img {
+        max-width: 280px;
+    }
+    .followUs-img-block {
+        margin-bottom: 43px;
+    }
+    .social-block {
+        padding-bottom: 73px;
+    }
+    .addToTeams-title {
+        font-size: 70px;
+        width: 703px;
+    }
+    .add-to-us-big img {
+        left: 44px;
+        max-width: 354px;
+    }
+    .add-to-us-small img {
+        margin-left: 97px;
+        max-width: 283px;
+    }
+    .followUs-block {
+        margin: 220px 0 180px 0;
+    }
+    .followUs-block-wrap>div form {
+        top: 239px;
+        left: 0;
+    }
+    input#emailAddress {
+        width: 353px;
+        height: 60px;
+    }
+    .followUs-block-wrap input[type="submit"] {
+        width: 353px;
+        height: 60px;
+    }
+    .followUs-block-wrap div form .addToTeams-checkbox {
+        width: 353px;
+    }
 
 }
 
@@ -325,6 +368,43 @@
     }
     .shop-item-btn .btn-wrap a {
         margin-top: 40px;
+    }
+    .followUs-title {
+        font-size: 60px;
+        padding: 40px 0 40px 0;
+    }
+    .followUs-img-line {
+        top: -55px;
+    }
+    .followUs-img-block {
+        z-index: 11;
+        position: relative;
+    }
+    .followUs-img-block div:last-child {
+        display: none;
+    }
+    .btn-premier_tower span {
+        font-size: 20px;
+    }
+    .followUs-img-block {
+        margin-bottom: 24px;
+    }
+    .img-social {
+        width: 40px;
+        height: 40px;
+        margin-left: 15px;
+    }
+    .social-block {
+        padding-bottom: 40px;
+    }
+    .followUs-img-block div img {
+        max-width: 100%;
+    }
+    .followUs-img-block div img:first-child {
+        padding-right: 10px;
+    }
+    .followUs-img-block div img:nth-child(3) {
+        padding-left: 10px;
     }
 
 
@@ -535,5 +615,31 @@
     }
     .shop-item-link {
         bottom: 50px;
+    }
+    .followUs-title {
+        font-size: 35px;
+        padding: 30px 0 19px 0;
+    }
+    .followUs-img-block div img {
+        max-width: 100%;
+    }
+    .followUs-img-block div img:first-child {
+        padding-right: 10px;
+    }
+    .followUs-img-block div img:nth-child(3) {
+        padding-left: 10px;
+    }
+    .social-block {
+        justify-content: start;
+        flex-direction: column;
+    }
+    .btn-premier_tower a {
+        margin-bottom: 15px;
+    }
+    .img-social {
+        width: 30px;
+        height: 30px;
+        margin-left: 0;
+        margin-right: 15px;
     }
 }
