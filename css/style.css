@@ -938,12 +938,15 @@ section.scroll-wrapper {
 .shop-item-last img{
     margin-right: 0 !important;
 }
+.shop-item-btn-mobile {
+    display: none;
+}
 
 .shops-block {
     display: flex;
 }
 
-.shops-block:last-child {
+.shops-block:nth-child(2) {
     display: flex;
     justify-content: end;
 }
