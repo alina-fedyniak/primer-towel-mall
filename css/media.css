@@ -170,7 +170,7 @@
         top: 239px;
         left: 0;
     }
-    input#emailAddress {
+    input.emailAddress {
         width: 353px;
         height: 60px;
     }
@@ -199,15 +199,21 @@
          margin-right: 0;
     }
     .footer-wrap {
-        position: relative;
+        padding-bottom: 40px;
     }
     .footer-info-text {
-        margin-top: 111px;
+        margin-top: 40px;
+    }
+    .foot-back-desktop {
+        display: none;
+    }
+    .foot-back-mobile {
+        display: block;
     }
     .foot-back {
-        position: absolute;
-        right: 0;
-        top: 438px;
+        flex-direction: row;
+        justify-content: end;
+        margin-top: 26px;
     }
 
 }
@@ -452,11 +458,11 @@
         margin-bottom: 60px;
     }
     .footer-wrap {
-        padding: 60px 0 90px 0;
+        padding-top: 60px;
+        padding-bottom: 90px;
         flex-direction: column;
     }
     .footer-wrap>div {
-        margin-bottom: 60px;
         width: 100%;
     }
     .contact-block-wrap {
@@ -470,13 +476,22 @@
     .footer-logo {
         text-align: center;
     }
-    .foot-back {
-        right: 0;
-        top: 627px;
-    }
     .footer-info {
         flex-direction: row;
         justify-content: space-between;
+    }
+    .foot-back {
+        margin-top: 60px;
+    }
+    .footer-info-text {
+        margin-top: 60px;
+    }
+    .footer-wrap {
+        padding-bottom: 57px;
+        flex-direction: column;
+    }
+    .footer-wrap>div:last-child {
+        margin-top: 72px;
     }
 
 
@@ -717,21 +732,33 @@
     .followUs-block-wrap {
         margin: 0;
         flex-direction: column;
+        width: 100%;
     }
     .addToTeams-title {
         font-size: 35px;
         max-width: 306px;
     }
+    .add-to-us-big {
+        margin-top: 102px;
+    }
     .add-to-us-big img {
         left: 0;
-        top: -58px;
+        top: 0;
         max-width: 100%;
+        width: 100%;
+    }
+    .addToTeams-form-desktop {
+        display: none;
+    }
+    .addToTeams-form-mobile {
+        display: block;
+        margin-top: 40px;
     }
     .followUs-block-wrap>div form {
-        top: 835px;
+        top: 0;
         left: 0;
     }
-    input#emailAddress {
+    input.emailAddress {
         width: 100%;
         height: 40px;
         margin-bottom: 20px;
@@ -745,7 +772,7 @@
         min-width: 100%;
     }
     .followUs-block {
-        margin: 100px 0 170px 0;
+        margin: 100px 0 100px 0;
     }
     .submit {
         width: 100%;
@@ -753,5 +780,43 @@
     .bigText-wrap {
         font-size: 40px;
         margin-bottom: 40px;
+    }
+    .shop-block-wrap a {
+        font-size: 14px;
+    }
+    .contact-block {
+        font-size: 14px;
+    }
+    .page-block-wrap a {
+        font-size: 14px;
+    }
+    .footer-info-text {
+        font-size: 14px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-info {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .footer-logo {
+        margin-bottom: 40px;
+        padding-top: 40px;
+    }
+    .footer-wrap>div {
+        margin-bottom: 40px;
+    }
+    .contact-block-wrap {
+        max-width: 100%;
+        margin-bottom: 90px;
+    }
+    .shop-block-wrap {
+        margin-right: 40px;
+    }
+    .powered {
+        margin: 0 auto;
+    }
+    .foot-back {
+        margin-top: 80px;
     }
 }

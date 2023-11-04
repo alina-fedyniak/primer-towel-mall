@@ -1068,6 +1068,10 @@ section.scroll-wrapper {
     position: relative;
 }
 
+.addToTeams-form-mobile {
+    display: none;
+}
+
 .add-to-us-big img {
     position: relative;
     left: 52px;
@@ -1096,7 +1100,7 @@ section.scroll-wrapper {
     color: #242425;
 }
 
-input#horns {
+input.horn {
     width: 35px;
     height: 35px;
     margin-right: 15px;
@@ -1104,15 +1108,7 @@ input#horns {
     cursor: pointer;
 }
 
-input#horn {
-    width: 35px;
-    height: 35px;
-    margin-right: 15px;
-    accent-color: #242425;
-    cursor: pointer;
-}
-
-input#emailAddress {
+input.emailAddress {
     width: 527px;
     height: 65px;
     padding: 20px 30px;
@@ -1171,6 +1167,13 @@ input[type="submit"] {
 .footer-logo a:hover {
     cursor: pointer;
 }
+.foot-back-desktop {
+    display: block;
+}
+
+.foot-back-mobile {
+    display: none;
+}
 
 .footer-btn {
     background: #F4F4F4;
@@ -1200,7 +1203,8 @@ input[type="submit"] {
 .footer-wrap {
     display: flex;
     justify-content: space-between;
-    padding: 90px 0 90px 0;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 .footer-wrap a:first-child {
