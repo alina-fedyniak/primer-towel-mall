@@ -1151,6 +1151,10 @@ input[type="submit"] {
     position: relative;
 }
 
+.bigText-wrap div:last-child {
+    text-align: end;
+}
+
 /*footer*/
 .footer {
     flex-shrink: 0;

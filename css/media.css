@@ -181,6 +181,34 @@
     .followUs-block-wrap div form .addToTeams-checkbox {
         width: 353px;
     }
+    .bigText-wrap {
+        font-size: 140px;
+        margin-bottom: 40px;
+    }
+    .contact-block-wrap {
+        margin-right: 133px;
+    }
+    .contact-block-wrap {
+        margin-right: 133px;
+        margin-left: 168px;
+    }
+    .shop-block-wrap {
+        margin-right: 133px;
+    }
+    .page-block-wrap {
+         margin-right: 0;
+    }
+    .footer-wrap {
+        position: relative;
+    }
+    .footer-info-text {
+        margin-top: 111px;
+    }
+    .foot-back {
+        position: absolute;
+        right: 0;
+        top: 438px;
+    }
 
 }
 
@@ -245,6 +273,7 @@
         width: 180px;
         height: 45px;
         padding: 10px 20px;
+        margin: 0 auto;
     }
     .menu-content .topInfo {
         display: none;
@@ -417,6 +446,37 @@
     }
     .addToTeams-title {
         font-size: 60px;
+    }
+    .bigText-wrap {
+        font-size: 90px;
+        margin-bottom: 60px;
+    }
+    .footer-wrap {
+        padding: 60px 0 90px 0;
+        flex-direction: column;
+    }
+    .footer-wrap>div {
+        margin-bottom: 60px;
+        width: 100%;
+    }
+    .contact-block-wrap {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 200px;
+    }
+    .shop-block-wrap {
+        margin-right: 0;
+    }
+    .footer-logo {
+        text-align: center;
+    }
+    .foot-back {
+        right: 0;
+        top: 627px;
+    }
+    .footer-info {
+        flex-direction: row;
+        justify-content: space-between;
     }
 
 
@@ -689,5 +749,9 @@
     }
     .submit {
         width: 100%;
+    }
+    .bigText-wrap {
+        font-size: 40px;
+        margin-bottom: 40px;
     }
 }
