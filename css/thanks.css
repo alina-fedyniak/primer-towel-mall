@@ -1,0 +1,20 @@
+section.thanks-page {
+    height: 100vh;
+    position: relative;
+}
+
+.header-thanks-page .topInfo-wrap {
+    display: none;
+}
+
+.thanks-page_img-line {
+    position: absolute;
+}
+
+.header-thanks-page .header-list li:last-child {
+    display: none;
+}
+
+.header-thanks-page a.header-link {
+    color: #242425;
+}
