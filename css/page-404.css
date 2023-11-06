@@ -48,3 +48,7 @@ section.page-404 {
 .page-404_title div:last-child {
     margin-left: 131px;
 }
+
+.header-page-404 .header-list li:last-child {
+    display: none;
+}

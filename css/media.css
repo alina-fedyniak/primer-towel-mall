@@ -215,6 +215,9 @@
         justify-content: end;
         margin-top: 26px;
     }
+    .page-404_img {
+        margin-right: 40px;
+    }
 
 }
 
@@ -492,6 +495,12 @@
     }
     .footer-wrap>div:last-child {
         margin-top: 72px;
+    }
+    .page-404_img {
+        max-width: 400px;
+    }
+    .page-404_title div {
+        font-size: 65px;
     }
 
 
@@ -818,5 +827,21 @@
     }
     .foot-back {
         margin-top: 80px;
+    }
+    .page-404_img {
+        max-width: 100%;
+        margin-top: 80px;
+    }
+    .page-404_wrapper {
+        flex-direction: column;
+    }
+    .page-404_title div {
+        font-size: 40px;
+    }
+    .page-404_title div:nth-child(2) {
+        margin-left: 56px;
+    }
+    .page-404_title div:last-child {
+        margin-left: 57px;
     }
 }
