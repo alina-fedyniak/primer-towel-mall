@@ -1,0 +1,50 @@
+section.page-404 {
+    height: 100vh;
+    background: #242425;
+    color: #F4F4F4;
+    position: relative;
+}
+
+.header-page-404 {
+    background: #242425;
+}
+
+.header-page-404 .topInfo-wrap {
+    display: none;
+}
+
+.page-404_title div {
+    font-family: Raleway, sans-serif;
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.page-404_title {
+    padding-top: 76px;
+    z-index: 1;
+}
+
+.page-404_wrapper {
+    display: flex;
+}
+
+.page-404_img-line {
+    position: absolute;
+}
+
+.page-404_img {
+    margin-top: 213px;
+    margin-right: 238px;
+    z-index: 1;
+}
+
+.page-404_title div:nth-child(2) {
+    margin-left: 131px;
+}
+
+.page-404_title div:last-child {
+    margin-left: 131px;
+}

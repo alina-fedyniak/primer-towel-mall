@@ -1,4 +1,11 @@
 @import './contacts.css';
+@import './page-404.css';
+@import './for-business.css';
+@import './news-page.css';
+@import './news.css';
+@import './one-organization.css';
+@import './organizations.css';
+@import './map-organizations.css';
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@400;500;600;700&display=swap');
 @font-face {
     font-family: 'Raleway', sans-serif;
