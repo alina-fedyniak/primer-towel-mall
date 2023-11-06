@@ -1,0 +1,147 @@
+.header-list.header-list-black a {
+    color: #242425;
+}
+
+a.nav__button.header-link {
+    color: #F4F4F4;
+}
+
+/* breadcrumb */
+ul.breadcrumb {
+    margin: 50px 0 30px 0;
+    list-style: none;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 16px;
+    color: #686868;
+    text-transform: capitalize;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #686868;
+    content: "|";
+}
+
+ul.breadcrumb li a {
+    color: #DFBE97;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    color: #DFBE97;
+    text-decoration: underline;
+}
+
+.contacts-title {
+    font-family: Raleway, sans-serif;
+    font-size: 206px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 206px */
+    text-transform: uppercase;
+}
+
+.contacts-wrapper {
+    position: relative;
+}
+
+.contacts-container_img {
+    position: absolute;
+}
+
+.social-links-black .img-social {
+    background: #242425;
+    margin-bottom: 17px;
+    width: 50px;
+    height: 50px;
+}
+
+.social-links-black {
+    flex-direction: column;
+}
+
+.contacts-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    margin-top: 90px;
+}
+
+.contacts-wrap_item {
+    display: flex;
+    align-items: center;
+    width: 1103px;
+    justify-content: space-between;
+    border-bottom: 1px solid #C5C5C5;
+    margin-bottom: 15px;
+    padding: 5px 5px 5px 0;
+}
+
+.contacts-wrap_item div:first-child {
+    font-family: Raleway, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #242425;
+}
+
+.contacts-wrap_item div:last-child {
+    font-family: Roboto Mono, monospace;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: #686868;
+}
+
+.contacts-wrap_map {
+    margin-bottom: 199px;
+}
+
+.questions_container form {
+    align-items: baseline;
+}
+
+/*questions*/
+.questions_container {
+    display: flex;
+}
+
+.questions_title {
+    font-family: Raleway, sans-serif;
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 1;
+    top: 55px;
+    left: 86px;
+}
+
+.questions_form {
+    display: flex;
+    align-items: center;
+    margin-left: 49px;
+    margin-top: 67px;
+}
+
+.questions_wrap {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 312px;
+}
+
+.questions_small-img {
+    margin-top: 576px;
+    margin-left: 144px;
+}

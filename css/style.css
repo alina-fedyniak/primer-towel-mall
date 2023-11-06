@@ -1,3 +1,4 @@
+@import './contacts.css';
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@400;500;600;700&display=swap');
 @font-face {
     font-family: 'Raleway', sans-serif;
@@ -594,6 +595,18 @@ form {
     cursor: pointer;
 }
 
+input:not(.addToTeams-checkbox input){
+    display: flex;
+    width: 526px;
+    height: 65px;
+    padding: 20px 30px;
+    align-items: center;
+    border-radius: 70px;
+    border: 1px solid #C5C5C5;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
 .submit {
     position: relative;
 }
@@ -619,7 +632,20 @@ form {
 .pop_up_form input::placeholder{
     color: #686868;
     opacity: 0.5;
-    font-family: 'Montserrat', sans-serif;
+    font-family:  Roboto Mono, monospace;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+input[type="text"]{
+    background: #F4F4F4;
+}
+
+input::placeholder{
+    color: #686868;
+    opacity: 0.5;
+    font-family:  Roboto Mono, monospace;
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
