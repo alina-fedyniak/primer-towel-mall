@@ -603,17 +603,17 @@ form {
     cursor: pointer;
 }
 
-input:not(.addToTeams-checkbox input){
-    display: flex;
-    width: 526px;
-    height: 65px;
-    padding: 20px 30px;
-    align-items: center;
-    border-radius: 70px;
-    border: 1px solid #C5C5C5;
-    margin-bottom: 30px;
-    cursor: pointer;
-}
+/*input:not(.addToTeams-checkbox input){*/
+/*    display: flex;*/
+/*    width: 526px;*/
+/*    height: 65px;*/
+/*    padding: 20px 30px;*/
+/*    align-items: center;*/
+/*    border-radius: 70px;*/
+/*    border: 1px solid #C5C5C5;*/
+/*    margin-bottom: 30px;*/
+/*    cursor: pointer;*/
+/*}*/
 
 .submit {
     position: relative;

@@ -232,6 +232,26 @@
     .contacts-wrap_item {
         width: 747px;
     }
+    .questions_big-img img {
+        max-width: 354px;
+    }
+    /*.questions_form input:not(.addToTeams-checkbox input) {*/
+    /*    width: 353px;*/
+    /*    height: 60px;*/
+    /*}*/
+    .questions_title {
+        font-size: 70px;
+        top: 26px;
+        left: 65px;
+        width: 100%;
+    }
+    .questions_small-img img {
+        max-width: 283px;
+    }
+    .questions_small-img {
+        margin-top: 376px;
+        margin-right: 70px;
+    }
 
 }
 
@@ -546,6 +566,31 @@
     .contacts-wrap_block {
         margin-bottom: 22px;
     }
+    .questions_small-img img {
+        display: none;
+    }
+    .questions_small-img {
+        margin-right: 0;
+    }
+    .questions_big-img img {
+        max-width: 100%;
+        width: 100%;
+    }
+    .questions_title {
+        font-size: 60px;
+        top: 34px;
+        left: 408px;
+        max-width: 497px;
+    }
+    .questions_form {
+        margin-left: 19px;
+        margin-top: 60px;
+    }
+    .questions_wrap {
+        align-items: end;
+        justify-content: end;
+        margin-bottom: 170px;
+    }
 
 
 }
@@ -553,6 +598,10 @@
 @media screen and (max-width:992px){
     .header-list li:last-child {
         right: 96px;
+    }
+    .questions_title {
+        top: 34px;
+        left: 295px;
     }
 
 }
@@ -909,5 +958,35 @@
     }
     .social-links-black {
         justify-content: center;
+    }
+    /*.contacts-wrap_map img {*/
+    /*    object-fit: cover;*/
+    /*    max-width: 100%;*/
+    /*    min-height: 335px;*/
+    /*}*/
+    .questions_wrap {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+        flex-direction: column;
+    }
+    .questions_wrap>div{
+        min-width: 100%;
+    }
+    .questions_title {
+        top: -106px;
+        left: 0;
+    }
+    .questions_form {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    .questions_form input:not(.addToTeams-checkbox input){
+        width: 100%;
+        height: 40px;
+        padding: 15px 15px;
+    }
+    .questions_container form {
+        min-width: 100%;
     }
 }
