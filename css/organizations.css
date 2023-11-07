@@ -1,0 +1,188 @@
+.clothesShoes_btn-more .btn-wrap {
+    justify-content: flex-start;
+}
+
+.clothesShoes_btn-more .btn-wrap a  {
+    margin-left: 0;
+}
+
+.beautyHealth_btn-more .btn-wrap {
+    justify-content: flex-start;
+}
+
+.beautyHealth_btn-more .btn-wrap a  {
+    margin-left: 0;
+}
+
+.accordion-item {
+    margin: 5px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+}
+
+.arrow::before {
+    content: "▼";
+    margin-left: 10px;
+}
+
+.open .arrow::before {
+    content: "▲";
+    transform: rotate(180deg);
+}
+
+.accordion-btn-clear.footer-btn {
+    border-radius: 60px;
+    border: 1px solid #242425;
+}
+
+.accordion-btn-look.footer-btn {
+    background: #242425;
+}
+
+.accordion-btn-look.footer-btn span {
+    color: #F4F4F4;
+}
+
+.accordion-filter-btn {
+    display: flex;
+}
+
+.filter {
+    width: 400px;
+}
+
+.cards_item {
+    border: 1px solid #C5C5C5;
+    background: #F4F4F4;
+    max-width: 238px;
+}
+
+.cards_item-img img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 238px;
+    min-height: 238px;
+}
+
+.cards_item-img111 img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 238px;
+    min-height: 238px;
+}
+
+.cards_item-title {
+    background: #242425;
+    margin-bottom: 10px;
+}
+
+.cards_item-title a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.cards_item-title span {
+    color: #F4F4F4;
+}
+
+.cards_item-info {
+    padding: 10px;
+}
+
+.cards_item-open {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cards_item-open img {
+    margin-right: 10px;
+}
+
+.cards_item-open span {
+    font-family: Roboto Mono, monospace;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.cards_item-floor {
+    margin-bottom: 10px;
+}
+
+.cards_item-floor span{
+    font-family: Roboto Mono, monospace;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #686868;
+}
+
+.cards_item-time {
+    margin-bottom: 15px;
+}
+
+.cards_item-time span{
+    font-family: Roboto Mono, monospace;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #686868;
+}
+
+.cards_item-phone {
+    margin-bottom: 15px;
+}
+
+.cards_item-phone span{
+    font-family: Roboto Mono, monospace;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #242425;
+}
+
+.cards_item-map a span{
+    font-family: Roboto Mono, monospace;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #242425;
+}
+
+.organizations-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.organizations-btn {
+    margin-bottom: 200px;
+}
+
+

@@ -79,6 +79,19 @@ $(function() {
     }
 });
 
+//----accordion---
 $(function() {
     $("#go-top2").scrollToTop();
+});
+
+const items = document.querySelectorAll(".accordion-item");
+
+items.forEach(item => {
+    const header = item.querySelector(".accordion-header");
+    const content = item.querySelector(".accordion-content");
+
+    header.addEventListener("click", () => {
+        item.classList.toggle("open");
+        content.style.display = item.classList.contains("open") ? "block" : "none";
+    });
 });

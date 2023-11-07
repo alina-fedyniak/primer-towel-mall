@@ -252,6 +252,10 @@
         margin-top: 376px;
         margin-right: 70px;
     }
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 21px;
+    }
 
 }
 
@@ -411,6 +415,8 @@
         max-width: 100%;
         padding-right: 20px;
         padding-top: 20px;
+        height: 100%;
+        object-fit: cover;
     }
     .shop-item-1>img {
         margin-right: 0;
@@ -590,6 +596,12 @@
         align-items: end;
         justify-content: end;
         margin-bottom: 170px;
+    }
+    .organizations-wrap {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 90px;
+        margin-bottom: 50px;
     }
 
 
@@ -797,6 +809,7 @@
         width: 100%;
         border-bottom: 1px solid #C5C5C5;
         padding-bottom: 26px;
+        padding-right: 0;
     }
     .btn-wrap {
         right: 0;
@@ -959,11 +972,6 @@
     .social-links-black {
         justify-content: center;
     }
-    /*.contacts-wrap_map img {*/
-    /*    object-fit: cover;*/
-    /*    max-width: 100%;*/
-    /*    min-height: 335px;*/
-    /*}*/
     .questions_wrap {
         align-items: center;
         justify-content: center;
@@ -988,5 +996,12 @@
     }
     .questions_container form {
         min-width: 100%;
+    }
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    .cards_item {
+        max-width: 100%;
     }
 }
