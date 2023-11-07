@@ -12,15 +12,18 @@
 
 .news-shops-wraps  {
     margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
 }
 
-.news-shops-wraps .shops-block {
-    justify-content: space-between;
-}
+/*.news-shops-wraps .shops-block {*/
+/*    justify-content: space-between;*/
+/*}*/
 
-.news-shops-wraps .shops-block:nth-child(2) {
-    justify-content: space-between;
-}
+/*.news-shops-wraps .shops-block:nth-child(2) {*/
+/*    justify-content: space-between;*/
+/*}*/
 
 .news-shops-wraps .shop-item-btn {
     margin-bottom: 90px;

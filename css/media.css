@@ -256,6 +256,21 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 21px;
     }
+    .news-img-blk img {
+        max-width: 353px;
+    }
+    .news-shops-wraps p {
+        font-size: 16px;
+        max-width: 353px;
+        padding: 30px 0;
+        text-align: justify;
+    }
+    .news-shops-wraps {
+        margin-top: 40px;
+    }
+    .news-shops-wraps .shop-item-btn {
+        margin-bottom: 40px;
+    }
 
 }
 
@@ -400,7 +415,7 @@
         flex-direction: column;
     }
     .shops-nav-wrap {
-        max-width: 100%;
+        max-width: 50%;
         justify-content: end;
         flex-direction: column;
         margin-bottom: 20px;
@@ -433,6 +448,9 @@
     }
     .shop-item-btn {
         display: none;
+    }
+    .news-shops-wraps .shop-item-btn {
+        display: block;
     }
     .shop-item-btn-mobile {
         display: block;
@@ -602,6 +620,15 @@
         justify-content: center;
         margin-top: 90px;
         margin-bottom: 50px;
+    }
+    .news-shops-wraps  {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    .news-img-blk img {
+        max-width: 100%;
+        width: 100%;
     }
 
 
@@ -1003,5 +1030,31 @@
     }
     .cards_item {
         max-width: 100%;
+    }
+    .news-shops-wraps  {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        margin-bottom: 100px;
+    }
+    .news-shops-wraps  .btn-wrap {
+        position: initial;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .news-shops-wraps .shop-item-btn .btn-wrap a {
+        margin-top: 0;
+    }
+    .news-shops-wraps .shop-item-btn {
+        margin-bottom: 0;
+    }
+    .news-shops-wraps p {
+        font-size: 14px;
+        max-width: 100%;
+    }
+    .news-img-blk {
+        position: relative;
+        border-bottom: 1px solid #C5C5C5;
+        padding-bottom: 20px;
     }
 }
