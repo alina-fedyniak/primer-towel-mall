@@ -1,0 +1,98 @@
+.oneOrganization-logo {
+    min-width: 238px;
+    height: 238px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.oneOrganization_buttons .footer-btn {
+    width: 257px;
+    padding: 10px 20px;
+}
+
+.oneOrganization_buttons .accordion-btn-clear {
+    margin-right: 7px;
+}
+
+.oneOrganization_main p {
+    max-width: 815px;
+}
+
+.oneOrganization {
+    display: flex;
+    margin-top: 90px;
+}
+
+.oneOrganization_main-wrap {
+    display: flex;
+    align-items: flex-end;
+}
+
+.oneOrganization .cards_item-info {
+    margin-left: 50px;
+}
+
+.oneOrganization_main p {
+    color: #686868;
+    font-family: Roboto Mono, monospace;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 50px;
+}
+
+.oneOrganization_soc-item {
+    width: 50px;
+    height: 50px;
+    background: #242425;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.oneOrganization_social-blk {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.swiper-btn{
+    display: flex;
+    gap: 630px;
+    position: absolute;
+    z-index: 1;
+    bottom: 50px;
+    right: 47px;
+}
+.mySwiper {
+    width: 815px;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper-btn-prev {
+    width: 45px;
+    height: 45px;
+    background: #F4F4F4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.swiper-btn-next {
+    width: 45px;
+    height: 45px;
+    background: #F4F4F4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

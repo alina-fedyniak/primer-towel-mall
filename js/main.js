@@ -95,3 +95,22 @@ items.forEach(item => {
         content.style.display = item.classList.contains("open") ? "block" : "none";
     });
 });
+
+const swiper1 = new Swiper(".mySwiper", {
+    mousewheel: "true",
+    loop: "true",
+    pagination: {
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-btn-next',
+        prevEl: '.swiper-btn-prev',
+    },
+    setWrapperSize: true, // Установите параметр setWrapperSize в true
+    zoom: true, // Включите масштабирование
+});
+Fancybox.bind('[data-fancybox="gallery"]', {
+    Thumbs : {
+        type: "classic"
+    }
+});
