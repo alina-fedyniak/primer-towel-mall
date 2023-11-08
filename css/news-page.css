@@ -23,6 +23,10 @@
     max-width: 1103px;
 }
 
+.newsOne_block img {
+    max-width: 1103px;
+}
+
 .newsOne_block p {
     color: #686868;
     font-family: Roboto Mono, monospace;
@@ -35,4 +39,25 @@
 
 .newsOne_block-img {
     margin-bottom: 50px;
+}
+
+.similarNews_title h2 {
+    font-family: Raleway, sans-serif;
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.similarNews_title h2:last-child {
+    margin-left: 63px;
+}
+
+.similarNews {
+    margin-top: 200px;
+}
+
+.similarNews_blk .shop-item:last-child {
+    display: none;
 }
