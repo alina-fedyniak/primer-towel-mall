@@ -671,6 +671,9 @@
     .similarNews_title h2:last-child {
         margin-left: 38px;
     }
+    .similarNews_blk .shop-item:last-child {
+        display: none;
+    }
 
 
 }
@@ -1114,8 +1117,8 @@
     .similarNews_title h2 {
         font-size: 35px;
     }
-    .news-img-blk img {
-        max-height: 390px;
+    .similarNews_blk .news-img-blk img {
+        max-height: 146px;
         object-fit: cover;
     }
 }

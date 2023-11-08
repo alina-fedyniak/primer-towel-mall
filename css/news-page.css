@@ -57,7 +57,3 @@
 .similarNews {
     margin-top: 200px;
 }
-
-.similarNews_blk .shop-item:last-child {
-    display: none;
-}
