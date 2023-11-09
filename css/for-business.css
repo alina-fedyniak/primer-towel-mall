@@ -1,6 +1,6 @@
 .rent_wrapper {
     display: flex;
-    margin-top: 200px;
+    margin-top: 323px;
 }
 
 .rent {
@@ -44,4 +44,109 @@
     max-width: 526px;
     margin-left: 50px;
     margin-top: 168px;
+}
+
+.rent_img-small-mobile {
+    display: none;
+}
+
+.sale_wrapper .rent_img-small {
+    margin-top: -105px;
+    margin-left: 0;
+    margin-right: 149px;
+}
+
+.sale_wrapper {
+    margin-bottom: 90px;
+}
+
+.rentInfo {
+    margin-top: 95px;
+}
+
+.rentInfo-title div {
+    font-family: Raleway, sans-serif;
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.rentInfo-title div:last-child {
+    margin-left: 66px;
+}
+
+.rentInfo_list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 90px 0 90px 0;
+}
+
+.rentInfo_list-item {
+    display: flex;
+    border-bottom: 1px solid #C5C5C5;
+    padding: 5px 5px 5px 0;
+    margin-bottom: 10px;
+    align-items: center;
+    width: 50%;
+}
+
+.rentInfo_list-item img{
+    margin-right: 100px;
+}
+
+.rentInfo_list-item div {
+    color: #686868;
+    font-family: Roboto Mono, monospace;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.rentInfo-aria {
+    display: flex;
+}
+
+.rentInfo-aria-item {
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.rentInfo-aria-item div {
+    margin-bottom: 50px;
+}
+
+.rentInfo-aria-item div div:first-child {
+    color: #686868;
+    font-family: Roboto Mono, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    border-bottom: 1px solid #C5C5C5;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.rentInfo-aria-item div div:last-child {
+    color: #242425;
+    font-family: Raleway, monospace;
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.rentInfo-aria-item div span:last-child {
+    color: #242425;
+    font-family: Raleway, monospace;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
 }

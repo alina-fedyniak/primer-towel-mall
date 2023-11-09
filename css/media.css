@@ -351,6 +351,31 @@
     .rent_wrapper {
         margin-top: 180px;
     }
+    .rentInfo-title div {
+        font-size: 70px;
+    }
+    .rentInfo_list-item div {
+        font-size: 16px;
+    }
+    .rentInfo_list-item {
+        width: 60%;
+    }
+    .rentInfo_list-item img {
+        margin-right: 60px;
+    }
+    .rentInfo_list {
+        margin: 70px 0 40px 0;
+    }
+    .rentInfo-aria-item div div:first-child {
+        font-size: 16px;
+    }
+    .rentInfo-aria-item div div:last-child {
+        font-size: 70px;
+    }
+    .rentInfo-aria-item {
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
 
 }
 
@@ -763,6 +788,60 @@
         max-width: 100%;
         margin-left: 20px;
         margin-top: 93px;
+    }
+    .rent_img-small-desk {
+        display: none;
+    }
+    .rent_img-small-mobile {
+        display: block;
+    }
+    .sale_wrapper .rent_img-small {
+        margin-top: 186px;
+        margin-left: 51px;
+    }
+    .rentInfo {
+        margin-top: 60px;
+    }
+    .rentInfo-title div {
+        font-size: 60px;
+    }
+    .rentInfo_list {
+        margin: 40px 0 60px 0;
+    }
+    .rentInfo_list {
+        align-items: center;
+    }
+    .rentInfo_list-item {
+        width: 100%;
+    }
+    .rentInfo_list-item img {
+        margin-right: 160px;
+    }
+    .rentInfo-aria-item div div:last-child {
+        font-size: 60px;
+    }
+    .rentInfo-aria-item div {
+        margin-bottom: 70px;
+    }
+    .rentInfo-aria {
+        justify-content: space-between;
+    }
+    .rentInfo-aria-item {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .rentInfo-aria-item div div:first-child {
+        margin-bottom: 5px;
+    }
+    .rent_wrapper {
+        margin-top: 166px;
+    }
+    .sale .rentInfo-title div {
+        font-size: 60px;
+        max-width: 485px;
+    }
+    .sale .rentInfo-title div:last-child {
+        margin-left: 208px;
     }
 
 
@@ -1238,5 +1317,43 @@
     }
     .rent_wrapper {
         margin-bottom: 40px;
+    }
+    .sale_wrapper .rent_img-small {
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: end;
+    }
+    .rentInfo-title div {
+        font-size: 35px;
+        max-width: 305px;
+    }
+    .rentInfo_list-item img {
+        margin-right: 10px;
+    }
+    .rentInfo_list {
+        margin: 20px 0 40px 0;
+    }
+    .rentInfo_list-item {
+        padding: 15px 5px 25px 0;
+    }
+    .rentInfo-aria {
+        flex-direction: column;
+    }
+    .rentInfo-aria-item div div:first-child {
+        font-size: 14px;
+    }
+    .rentInfo-aria-item div div:last-child {
+        font-size: 35px;
+    }
+    .rentInfo-aria-item div {
+        margin-bottom: 35px;
+    }
+    .sale .rentInfo-title div {
+        font-size: 35px;
+        max-width: 310px;
+    }
+    .sale .rentInfo-title div:last-child {
+        margin-left: 48px;
     }
 }
