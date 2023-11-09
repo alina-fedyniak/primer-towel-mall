@@ -1,0 +1,47 @@
+.rent_wrapper {
+    display: flex;
+    margin-top: 200px;
+}
+
+.rent {
+    z-index: 1;
+    position: relative;
+}
+
+.rent_wrap-2 {
+    display: flex;
+}
+
+.rent_img-small {
+    display: flex;
+    flex-direction: column;
+    margin-top: 601px;
+    margin-left: 142px;
+}
+
+.rent_title {
+    font-family: Raleway, sans-serif;
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    position: absolute;
+    left: 367px;
+}
+
+.rent_wrap-1 {
+    position: relative;
+}
+
+.rent_wrap-2 p {
+    color: #686868;
+    font-family: Roboto Mono, monospace;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 526px;
+    margin-left: 50px;
+    margin-top: 168px;
+}
