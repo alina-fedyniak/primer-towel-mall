@@ -1211,4 +1211,32 @@
         max-height: 146px;
         object-fit: cover;
     }
+    .rent_wrapper {
+        margin-top: 100px;
+        flex-direction: column;
+    }
+    .rent_title {
+        font-size: 35px;
+        left: 0;
+        top: -23px;
+    }
+    .rent_img-big img {
+        max-width: 100%;
+        width: 100%;
+    }
+    .rent_wrap-2 {
+        flex-direction: column-reverse;
+    }
+    .rent_img-small {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .rent_wrap-2 p {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    .rent_wrapper {
+        margin-bottom: 40px;
+    }
 }
