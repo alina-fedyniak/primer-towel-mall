@@ -1,3 +1,23 @@
 .mapBusiness-2 {
     display: none;
 }
+
+.mapOrgs  {
+    position: relative;
+    margin-right: 52px;
+}
+
+.mapOrgs .cards_item {
+ display: flex;
+    max-width: 100%;
+    align-items: center;
+}
+
+.mapOrgs .cards_item-info {
+    padding: 0 30px;
+    width: 252px;
+}
+
+.mapOrgs-icons {
+    display: flex;
+}

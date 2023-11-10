@@ -68,6 +68,10 @@
     max-width: 238px;
 }
 
+.cards_item-img {
+    display: flex;
+}
+
 .cards_item-img img {
     width: 100%;
     object-fit: cover;

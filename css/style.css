@@ -834,7 +834,7 @@ section.scroll-wrapper {
 
 .about-img {
     position: absolute;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .about-title-1 {
