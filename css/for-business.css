@@ -264,3 +264,74 @@
     right: 15px;
     top: 15px;
 }
+
+input[type=radio] {
+    appearance: none;
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    display: inline-grid;
+    place-content: center;
+}
+
+input[type=radio]::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    transform: scale(0);
+    transform-origin: bottom left;
+    background-color: #fff;
+    clip-path: polygon(13% 50%, 34% 66%, 81% 2%, 100% 18%, 39% 100%, 0 71%);
+}
+
+input[type=radio]:checked::before {
+    transform: scale(1);
+}
+input[type=radio]:checked{
+    background-color: #242425;
+    border: 2px solid #242425;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 90px;
+    margin-top: 30px;
+}
+
+.icons-item-1 {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #242425;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.icons-item-1.active {
+    background: #DFBE97;
+}
+
+.icons-item-2 {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #F4F4F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.icons-block {
+    display: flex;
+}
+
+.icons-block:first-child {
+    margin-right: 77px;
+}

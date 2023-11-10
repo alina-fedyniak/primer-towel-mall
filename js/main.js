@@ -114,6 +114,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 dropdownBtn.classList.remove('open');
             }
         });
+        // Добавляем обработчик события для каждого чекбокса в группе
+        document.querySelectorAll('input[name="group"]').forEach(function (checkbox) {
+            checkbox.addEventListener('click', function (event) {
+                // Предотвращаем всплытие события, чтобы оно не дотянулось до document
+                event.stopPropagation();
+            });
+        });
     });
 });
 
