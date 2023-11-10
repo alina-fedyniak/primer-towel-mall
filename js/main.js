@@ -96,21 +96,24 @@ items.forEach(item => {
     });
 });
 
-const swiper1 = new Swiper(".mySwiper", {
-    mousewheel: "true",
-    loop: "true",
-    pagination: {
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-btn-next',
-        prevEl: '.swiper-btn-prev',
-    },
-    setWrapperSize: true, // Установите параметр setWrapperSize в true
-    zoom: true, // Включите масштабирование
+//dropdown
+document.addEventListener('DOMContentLoaded', function () {
+    const dropdownBtns = document.querySelectorAll('.dropdown-btn');
+
+    dropdownBtns.forEach(function (dropdownBtn) {
+        const filterMapContent = dropdownBtn.nextElementSibling;
+
+        dropdownBtn.addEventListener('click', function () {
+            dropdownBtn.classList.toggle('open');
+            filterMapContent.style.display = (filterMapContent.style.display === 'block') ? 'none' : 'block';
+        });
+
+        document.addEventListener('click', function (event) {
+            if (!dropdownBtn.contains(event.target)) {
+                filterMapContent.style.display = 'none';
+                dropdownBtn.classList.remove('open');
+            }
+        });
+    });
 });
-Fancybox.bind('[data-fancybox="gallery"]', {
-    Thumbs : {
-        type: "classic"
-    }
-});
+

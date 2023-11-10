@@ -235,10 +235,13 @@
     .questions_big-img img {
         max-width: 354px;
     }
-    /*.questions_form input:not(.addToTeams-checkbox input) {*/
-    /*    width: 353px;*/
-    /*    height: 60px;*/
-    /*}*/
+    .questions_form input:not(.addToTeams-checkbox input) {
+        width: 353px;
+        height: 60px;
+    }
+    .questions_form {
+        margin-top: 100px;
+    }
     .questions_title {
         font-size: 70px;
         top: 26px;
