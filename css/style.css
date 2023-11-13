@@ -678,6 +678,15 @@ input::placeholder{
     display: none;
 }
 
+/*parallax*/
+.parallax {
+    position: relative;
+}
+
+.parallax__layer {
+    transition: transform 0.3s linear;
+}
+
 /*content*/
 .content {
     flex: 1 0 auto;
@@ -721,11 +730,16 @@ section.scroll-wrapper {
 
 /*scroll-container*/
 .scroll-container {
+    padding-bottom: 3500px;
+    position: relative;
+}
+
+.scroll-wrap {
     margin-top: 310px;
     display: flex;
     margin-bottom: 252px;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    /*overflow-x: scroll;*/
+    /*overflow-y: hidden;*/
     white-space: nowrap;
     width: 100%;
     padding-inline: 697px;

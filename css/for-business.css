@@ -159,6 +159,11 @@
 .mapBusiness-2 {
     display: none;
 }
+
+.hidden {
+    display: none;
+}
+
 .filterMap {
     display: inline-block;
     position: relative;
@@ -229,6 +234,7 @@
 }
 
 .popupRent {
+    display: none;
     width: 527px;
     background: #F4F4F4;
     padding: 30px;
