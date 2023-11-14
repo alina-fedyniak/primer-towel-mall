@@ -39,3 +39,7 @@
     max-width: 527px;
     padding: 30px;
 }
+
+.news-shops-wraps.shops-wraps.tabSelect {
+    display: grid;
+}

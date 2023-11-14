@@ -1037,6 +1037,10 @@ section.scroll-wrapper {
     display: block;
 }
 
+.shop-tab {
+    cursor: pointer;
+}
+
 /*followUs*/
 .followUs-container {
     position: relative;
