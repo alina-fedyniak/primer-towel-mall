@@ -32,6 +32,10 @@
         width: 670px;
         height: 631px;
     }
+    .pop_up-filter {
+        width: 670px;
+        height: 631px;
+    }
     .pop_up_main p {
         font-size: 70px;
         font-style: normal;
@@ -472,6 +476,10 @@
         display: none;
     }
     .pop_up {
+        width: 574px;
+        height: 523px;
+    }
+    .pop_up-filter {
         width: 574px;
         height: 523px;
     }
@@ -1020,6 +1028,10 @@
         padding: 10px 15px;
     }
     .pop_up {
+        width: 320px;
+        height: 424px;
+    }
+    .pop_up-filter {
         width: 320px;
         height: 424px;
     }

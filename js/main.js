@@ -20,17 +20,20 @@ document.addEventListener("DOMContentLoaded", function() {
     const openButtons = Array.from(document.querySelectorAll(".open_pop"));
     const closeButton = document.getElementById("pop_close");
     const popUp = document.querySelector(".pop_up");
+    const overlay = document.getElementById("overlay");
 
     // Добавление класса "active" при нажатии на кнопку "Открыть попап"
     openButtons.forEach(function (openButton) {
         openButton.addEventListener("click", function () {
             popUp.classList.add("active");
+            overlay.style.display = "block";
         });
     });
 
     // Удаление класса "active" при нажатии на кнопку "Закрыть попап"
     closeButton.addEventListener("click", function() {
         popUp.classList.remove("active");
+        overlay.style.display = "none";
     });
 
     // Закрытие вне
@@ -38,9 +41,38 @@ document.addEventListener("DOMContentLoaded", function() {
         if (!popUp.contains(event.target) && openButtons.every((item) =>
             !item.contains(event.target))) {
             popUp.classList.remove("active");
+            overlay.style.display = "none";
         }
     });
 
+});
+
+// -------pop_up-filter------
+document.addEventListener("DOMContentLoaded", function() {
+    const openFilterPopUp = document.getElementById("open_pop-filter");
+    const closeFilterPopUp = document.getElementById("pop_closed");
+    const popUpFilterPopUp = document.querySelector(".pop_up-filter");
+    const overlay = document.querySelector(".overlay");
+
+    // Добавление класса "active" при нажатии на кнопку "Открыть попап"
+    openFilterPopUp.addEventListener("click", function() {
+        popUpFilterPopUp.classList.add("active");
+        overlay.style.display = 'block';
+    });
+
+    // Удаление класса "active" при нажатии на кнопку "Закрыть попап"
+    closeFilterPopUp.addEventListener("click", function() {
+        popUpFilterPopUp.classList.remove("active");
+        overlay.style.display = 'none';
+    });
+
+    // Закрытие вне
+    document.addEventListener("click", function (event) {
+        if (!popUpFilterPopUp.contains(event.target) && !openFilterPopUp.contains(event.target)) {
+            popUpFilterPopUp.classList.remove("active");
+            overlay.style.display = 'none';
+        }
+    });
 });
 
 // -------btn-to-top------
