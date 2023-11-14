@@ -332,3 +332,19 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
 });
+
+//open filter
+document.addEventListener('DOMContentLoaded', function () {
+    // Получите все кнопки и блоки
+    const filterMobileBtns = document.querySelectorAll('.filter-mobile-btn');
+    const toggleBlocks = document.querySelectorAll('.mapBusiness-wrap-blk');
+
+    // Добавьте обработчик событий ко всем кнопкам
+    filterMobileBtns.forEach(function (btn, index) {
+        btn.addEventListener('click', function () {
+            // Скройте/покажите соответствующий блок
+            toggleBlocks[index].classList.toggle('mapBusiness-wrap-hidden');
+        });
+    });
+});
+

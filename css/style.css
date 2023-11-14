@@ -870,16 +870,22 @@ section.scroll-wrapper {
 
 .about-img {
     position: absolute;
-    /*width: 100%;*/
+    width: 100%;
 }
 
 .about-title-1 {
     margin-left: -196px;
     margin-top: 30px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient( 90deg, #ffffff 27%, #242425 27%);
 }
 
 .about-title-2 {
     margin-left: -196px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient( 90deg, #ffffff 27%, #242425 27%);
 }
 
 .about-title-3 {
@@ -906,9 +912,6 @@ section.scroll-wrapper {
     line-height: normal;
     text-transform: uppercase;
     color: #242425;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient( 90deg, #ffffff 27%, #242425 27%);
 }
 
 .about-img-mobile {

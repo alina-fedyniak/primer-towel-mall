@@ -154,6 +154,7 @@
     .addToTeams-title {
         font-size: 70px;
         width: 703px;
+        background-image: linear-gradient( 270deg, #ffffff 44%, #242425 27%);
     }
     .add-to-us-big img {
         left: 44px;
@@ -391,6 +392,13 @@
         margin-top: 166px;
         margin-right: 0;
     }
+    .dropdown-btn {
+        width: 353px;
+        height: 60px;
+    }
+    .svg-map svg {
+        max-width: 808px;
+    }
 
 }
 
@@ -517,9 +525,11 @@
     }
     .about-title-2 {
         margin-left: -87px;
+        background-image: linear-gradient( 90deg, #ffffff 19%, #242425 19%);
     }
     .about-title-1 {
         margin-left: -105px;
+        background-image: linear-gradient( 90deg, #ffffff 22%, #242425 20%);
     }
     .about-block-second>img {
         width: 283px;
@@ -864,6 +874,50 @@
     }
     .forBusiness-questions .questions_form {
         margin-right: 30px;
+    }
+    .addToTeams-title {
+        background-image: linear-gradient( 270deg, #ffffff 43%, #242425 10%);
+    }
+    .dropdown-btn {
+        height: 45px;
+        width: 100%;
+    }
+    .filterMap {
+        width: 100%;
+    }
+    .mapBusiness-wrap-blk {
+        width: 100%;
+    }
+    .mapBusinessWrap {
+        width: 100%;
+    }
+    .filter-mobile-btn-wrap {
+        display: block;
+    }
+    .mapBusiness-wrap-hidden {
+        display: none;
+    }
+    .mapBusiness-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .svg-map svg {
+        max-width: 100%;
+        width: 100%;
+    }
+    .filter-mobile-btn {
+        margin-bottom: 20px;
+    }
+    .popupRent {
+        width: 100%;
+    }
+    .icons {
+        justify-content: flex-start;
+        padding-bottom: 40px;
+         margin-top: 0;
+    }
+    .filter.mapBusiness-wrap-blk {
+       align-items: flex-start;
     }
 
 
@@ -1390,5 +1444,15 @@
     .forBusiness-questions .questions_form {
         margin-right: 0;
         margin-top: 40px;
+    }
+    .about-title-1 {
+        background-image: linear-gradient( 360deg, #ffffff 0%, #242425 0%);
+    }
+    .about-title-2 {
+        margin-left: -87px;
+        background-image: linear-gradient( 90deg, #ffffff 0%, #242425 0%);
+    }
+    .addToTeams-title {
+        background-image: linear-gradient( 360deg, #ffffff 17%, #242425 10%);
     }
 }

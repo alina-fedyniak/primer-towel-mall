@@ -179,6 +179,15 @@
     position: relative;
 }
 
+.filter-mobile-btn-wrap {
+    display: none;
+}
+
+.filter-mobile-btn {
+    display: flex;
+    align-items: center;
+}
+
 .dropdown-btn {
     cursor: pointer;
     width: 527px;
