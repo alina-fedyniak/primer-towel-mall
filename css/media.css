@@ -930,6 +930,7 @@
     .menu-content ul {
         gap: 15px;
         margin-bottom: 40px;
+        z-index: 2;
     }
     .menu-content {
         padding-top: 90px;

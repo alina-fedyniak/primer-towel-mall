@@ -179,7 +179,7 @@ h1, h2, h3, h4 {
 /*wrapper*/
 #wrapper {
     width: 100%;
-    max-width: 1920px;
+    /*max-width: 1920px;*/
     margin: 0 auto;
     background: #F4F4F4
 }
@@ -679,13 +679,35 @@ input::placeholder{
 }
 
 /*parallax*/
-.parallax {
-    position: relative;
-}
+/*.parallax {*/
+/*    position: relative;*/
+/*}*/
 
-.parallax__layer {
-    transition: transform 0.3s linear;
-}
+/*.parallax__layer {*/
+/*    transition: transform 0.3s linear;*/
+/*}*/
+/*.parallax {*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.parallax__layer {*/
+/*    position: relative;*/
+/*    width: 100%;*/
+/*    height: 100vh;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.parallax__layer img {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    display: block;*/
+/*}*/
+
+/*.about-block-second img {*/
+/*    position: relative;*/
+/*    z-index: 1; !* Ensure that the second layer is on top of the first layer *!*/
+/*}*/
+
 
 /*content*/
 .content {
@@ -884,6 +906,9 @@ section.scroll-wrapper {
     line-height: normal;
     text-transform: uppercase;
     color: #242425;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient( 90deg, #ffffff 27%, #242425 27%);
 }
 
 .about-img-mobile {
@@ -1002,6 +1027,11 @@ section.scroll-wrapper {
 
 .shops-wraps {
     margin-bottom: 180px;
+    display: none;
+}
+
+.shops-wraps.tabSelect{
+    display: block;
 }
 
 /*followUs*/
@@ -1091,6 +1121,9 @@ section.scroll-wrapper {
     max-width: 1074px;
     position: absolute;
     z-index: 1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient( 270deg, #ffffff 46%, #242425 27%);
 }
 
 .followUs-block-wrap {
@@ -1186,6 +1219,12 @@ input[type="submit"] {
     color: #242425;
     margin-bottom: 86px;
     position: relative;
+    overflow: hidden;
+
+}
+.bigText-wrap div{
+    transform: translateY(100%);
+    transition: transform 1s ease;
 }
 
 .bigText-wrap div:last-child {

@@ -140,17 +140,18 @@ document.addEventListener('DOMContentLoaded', function () {
             } else {
                 item.style.transform = "none";
             }
-            if (scrolledY > 675 && scrolledY < 3800) {
+            if (scrolledY > 675 && scrolledY <= 3800) {
                 wrapper.style.position = "fixed";
                 wrapper.style.top = "0.01px";
             } else {
                 wrapper.style.position = "relative";
+                // wrapper.style.transform = `translateX(${3400}px)`;
             }
-            // if (scrolledY > 4000) {
-            //     wrapper.style.transform = `translateY(4000px)`;
-            // } else {
-            //     wrapper.style.transform = `translateY(0)`;
-            // }
+            if (scrolledY >= 3800) {
+                wrapper.style.transform = `translateY(3400px)`;
+            } else {
+                wrapper.style.transform = `translateY(0)`;
+            }
         })
 
     });
@@ -184,36 +185,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //parallax
 document.addEventListener('DOMContentLoaded', function () {
-    const wrapper = document.querySelector('.parallax');
-    const layers = document.querySelectorAll('.parallax__layer');
+    const parallaxLayers = document.querySelectorAll('.parallax__layer');
 
-    const handleParallax = (evt) => {
-        //размер области просмотра
-        const parallaxLeftOffset = wrapper.getBoundingClientRect().left;
-        const parallaxTopOffset = wrapper.getBoundingClientRect().top;
-
-        // координаты центра экрана
-        const coordX = evt.clientX - parallaxLeftOffset - 0.5 * wrapper.offsetWidth;
-        const coordY = evt.clientY - parallaxTopOffset - 0.5 * wrapper.offsetHeight;
-
-        layers.forEach((layer) => {
-            const layerSpeed = layer.dataset.speed;
-            const x = -(coordX * layerSpeed).toFixed(2);
-            const y = -(coordY * layerSpeed).toFixed(2);
-            layer.setAttribute('style', `transform: translate(${x}px, ${y}px);`)
-        });
-    };
-
-    const reset = () => {
-        layers.forEach((layer) => {
-            layer.removeAttribute('style');
+    function handleParallax() {
+        parallaxLayers.forEach((layer) => {
+            const speed = parseFloat(layer.dataset.speed);
+            const rect = layer.getBoundingClientRect();
+            const yPos = (rect.top - window.innerHeight) * speed;
+            layer.style.transform = `translate3d(0px, ${yPos}px, 0px)`;
         });
     }
 
-    wrapper?.addEventListener('mousemove', handleParallax);
-    wrapper?.addEventListener('mouseout', reset);
-
+    window.addEventListener('scroll', handleParallax);
+    window.addEventListener('resize', handleParallax);
 });
+
+
 
 
 //map-floor
@@ -245,7 +232,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const toggleRectBtns = document.querySelector('.toggleRectBtn');
     const mapExit = document.querySelectorAll('.map-exit');
 
-    toggleRectBtns.addEventListener('click', function () {
+    toggleRectBtns?.addEventListener('click', function () {
         toggleRectBtns.classList.add('active');
 
         mapExit.forEach(function(btn) {
@@ -273,15 +260,11 @@ document.addEventListener('DOMContentLoaded', function () {
             const remove = Object.entries(targets).filter(([key]) => key !== event.target.value);
             remove.forEach(([key, value]) => {
                 value.forEach((item) => {
-                    item.style.fill = '#C5C5C5';
-                    item.style.stroke = 'none';
+                    item.classList.remove('mapSelect');
                 })
             })
             targets[event.target.value].forEach((item) => {
-                item.style.fill = '#DFBE97';
-                item.style.stroke = '#000000';
-                item.style.strokeWidth = '1';
-
+                item.classList.add('mapSelect');
             })
         })
     });
@@ -295,18 +278,57 @@ document.addEventListener('DOMContentLoaded', function () {
         item.addEventListener('click', (event) => {
             clickable.forEach((item) => {
                 if (item !== event.target) {
-                    item.style.fill = '#C5C5C5';
-                    item.style.stroke = 'none';
+                    item.classList.remove('mapClick');
                 }
             })
             popupRent.classList.add('open');
             popupRent.style.display = 'block';
-            event.target.style.fill = 'black';
+            event.target.classList.add('mapClick');
         })
     });
 
-    closeButton.addEventListener('click', () => {
+    closeButton?.addEventListener('click', () => {
         popupRent.style.display = 'none';
     });
+
+});
+
+//tab-shops
+document.addEventListener('DOMContentLoaded', function () {
+    const tabs = document.querySelectorAll('.shop-tab');
+    const tabsContent = document.querySelectorAll('.shops-wraps');
+
+    tabs.forEach((item) => {
+        item.addEventListener('click', (event) => {
+            tabsContent.forEach((content) => {
+                if (content.dataset.tab === event.target.dataset.tab) {
+                    content.classList.add('tabSelect');
+                }else {
+                    content.classList.remove('tabSelect');
+                }
+            })
+        })
+    })
+});
+
+//text-transform
+document.addEventListener('DOMContentLoaded', function () {
+    const textTransform = document.querySelectorAll('.bigText-wrap div');
+
+    function handleIntersection(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.transform = `translateY(0)`;
+                observer.unobserve(entry.target);
+            }
+        });
+    }
+
+    // Создаем экземпляр IntersectionObserver и передаем ему функцию обратного вызова
+    const observer = new IntersectionObserver(handleIntersection);
+
+    textTransform.forEach((item) => {
+        observer.observe(item);
+    })
 
 });

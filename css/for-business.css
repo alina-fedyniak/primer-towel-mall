@@ -160,6 +160,16 @@
     display: none;
 }
 
+.mapSelect {
+    fill: #DFBE97;
+    stroke: #242425;
+    stroke-width: 1px;
+}
+
+.mapClick {
+    fill: #242425;
+}
+
 .hidden {
     display: none;
 }
@@ -232,6 +242,8 @@
 .filterMap-btn.footer-btn {
     width: 100%;
 }
+
+
 
 .popupRent {
     display: none;

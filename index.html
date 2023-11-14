@@ -12,8 +12,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/Raleway/Raleway-VariableFont_wght.ttf">
-    <link rel="stylesheet" href="fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf">
     <link rel="stylesheet" href="./css/media.css">
 </head>
     <body>
@@ -305,18 +303,18 @@
                     </div>
                 </section>
                 <!--------about---------->
-                <section class="about-wrap-desktop about-container">
+                <section class="about-wrap-desktop about-container next-block">
                     <img class="about-img" src="./images/svg/vector-line-2.svg" />
                     <div class="container about-wrap">
                         <div class="parallax">
                             <div class="about-block-first parallax__layer" id="parallaxFirst" data-speed="0.1">
                                 <img src="./images/img/about-mall-big.png"/>
                             </div>
-                            <div class="about-block-second parallax__layer" id="parallaxSecond" data-speed="0.05">
+                            <div class="about-block-second" >
                                 <div class="about-title about-title-1">Про</div>
                                 <div class="about-title about-title-2">Торгівельний</div>
                                 <div class="about-title about-title-3">Центр</div>
-                                <img src="./images/img/about-mall-small.png"/>
+                                <img class="parallax__layer" id="parallaxSecond" data-speed="0.05" src="./images/img/about-mall-small.png"/>
                             </div>
                         </div>
                         <div class="about-block-third">
@@ -336,24 +334,164 @@
                         <div class="shops-nav-wrap">
                             <div class="shops-nav">
                                 <img src="./images/svg/arrow_left_grey-top.svg"/>
-                                <div>події</div>
+                                <div class="tabSelect shop-tab" data-tab="event">події</div>
                             </div>
                             <div class="shops-nav">
                                 <img src="./images/svg/arrow_left_grey-top.svg"/>
-                                <div>акції</div>
+                                <div class="shop-tab" data-tab="sale">акції</div>
                             </div>
                             <div class="shops-nav">
                                 <img src="./images/svg/arrow_left_grey-top.svg"/>
-                                <div>новини</div>
+                                <div class="shop-tab" data-tab="news">новини</div>
                             </div>
                         </div>
-                        <div class="shops-wraps">
+                        <div class="shops-wraps tabSelect" data-tab="event">
                             <div class="shops-block">
                                 <div class="shop-item">
                                     <img src="./images/img/Rectangle%2034.png"/>
                                     <div class="shop-item-link">
                                         <a href="#">
                                             <span>Шопінг на будь-який смак</span>
+                                            <div class="shop-item-link-img">
+                                                <img src="./images/svg/arrow_left_light-top.svg"/>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="shop-item shop-item-1">
+                                    <img src="./images/img/Rectangle%2035.png"/>
+                                    <div class="shop-item-link">
+                                        <a href="#">
+                                            <span>Літні знижки</span>
+                                            <div class="shop-item-link-img">
+                                                <img src="./images/svg/arrow_left_light-top.svg"/>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="shop-item-btn">
+                                    <div class="btn-wrap">
+                                        <a href="#">
+                                            <div class="img-details">
+                                                <img src="./images/svg/arrow_left_light-top.svg"/>
+                                            </div>
+                                            <span>Детальніше</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shops-block">
+                                <div class="shop-item">
+                                    <img src="./images/img/Rectangle%2036.png"/>
+                                    <div class="shop-item-link">
+                                        <a href="#">
+                                            <span>МОДНА ОСІНЬ ВЖЕ В ТРЦ</span>
+                                            <div class="shop-item-link-img">
+                                                <img src="./images/svg/arrow_left_light-top.svg"/>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="shop-item shop-item-last">
+                                    <img src="./images/img/Rectangle%2037.png"/>
+                                    <div class="shop-item-link">
+                                        <a href="#">
+                                            <span>Українська кухня</span>
+                                            <div class="shop-item-link-img">
+                                                <img src="./images/svg/arrow_left_light-top.svg"/>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-item-btn-mobile shop-item-btn">
+                                <div class="btn-wrap">
+                                    <a href="#">
+                                        <div class="img-details">
+                                            <img src="./images/svg/arrow_left_light-top.svg"/>
+                                        </div>
+                                        <span>Детальніше</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shops-wraps" data-tab="sale">
+                            <div class="shops-block">
+                                <div class="shop-item">
+                                    <img src="./images/img/Rectangle%2035.png"/>
+                                    <div class="shop-item-link">
+                                        <a href="#">
+                                            <span>jjgjgk на будь-який смак</span>
+                                            <div class="shop-item-link-img">
+                                                <img src="./images/svg/arrow_left_light-top.svg"/>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="shop-item shop-item-1">
+                                    <img src="./images/img/Rectangle%2034.png"/>
+                                    <div class="shop-item-link">
+                                        <a href="#">
+                                            <span>Літні знижки</span>
+                                            <div class="shop-item-link-img">
+                                                <img src="./images/svg/arrow_left_light-top.svg"/>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="shop-item-btn">
+                                    <div class="btn-wrap">
+                                        <a href="#">
+                                            <div class="img-details">
+                                                <img src="./images/svg/arrow_left_light-top.svg"/>
+                                            </div>
+                                            <span>Детальніше</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shops-block">
+                                <div class="shop-item">
+                                    <img src="./images/img/Rectangle%2037.png"/>
+                                    <div class="shop-item-link">
+                                        <a href="#">
+                                            <span>МОДНА ОСІНЬ ВЖЕ В ТРЦ</span>
+                                            <div class="shop-item-link-img">
+                                                <img src="./images/svg/arrow_left_light-top.svg"/>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="shop-item shop-item-last">
+                                    <img src="./images/img/Rectangle%2036.png"/>
+                                    <div class="shop-item-link">
+                                        <a href="#">
+                                            <span>Українська кухня</span>
+                                            <div class="shop-item-link-img">
+                                                <img src="./images/svg/arrow_left_light-top.svg"/>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-item-btn-mobile shop-item-btn">
+                                <div class="btn-wrap">
+                                    <a href="#">
+                                        <div class="img-details">
+                                            <img src="./images/svg/arrow_left_light-top.svg"/>
+                                        </div>
+                                        <span>Детальніше</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shops-wraps" data-tab="news">
+                            <div class="shops-block">
+                                <div class="shop-item">
+                                    <img src="./images/img/Rectangle%2034.png"/>
+                                    <div class="shop-item-link">
+                                        <a href="#">
+                                            <span>kadkashda на будь-який смак</span>
                                             <div class="shop-item-link-img">
                                                 <img src="./images/svg/arrow_left_light-top.svg"/>
                                             </div>
@@ -527,8 +665,7 @@
                 <section class="bigText">
                     <img src="./images/svg/vector-line-5.svg" />
                     <div class="container bigText-wrap">
-                        <div>ЗАНУРЮЄМОСЬ</div>
-                        <div>У ШОПІНГ</div>
+                       <div>ЗАНУРЮЄМОСЬ </br> У ШОПІНГ</div>
                     </div>
                 </section>
             </main>
