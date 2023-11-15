@@ -48,10 +48,6 @@
     .addToTeams-checkbox {
         max-width: 410px;
     }
-    .scroll-container {
-        padding-inline: 653px;
-        padding-right: 150px;
-    }
     .header-list li:last-child {
         width: 200px;
         height: 60px;
@@ -66,16 +62,11 @@
     .all-shops-btn span {
          margin-right: 0;
     }
-    .scroll-container {
-        margin-top: 279px;
-        margin-bottom: 252px;
-        padding-inline: 652px;
-    }
     .all-shops-btn-wrap {
-        top: 220px;
+        top: 200px;
     }
     .content-scroll {
-        margin-right: 440px;
+        margin-right: 170px;
     }
     .content-scroll>img {
         width: 266px;
@@ -520,11 +511,6 @@
         width: 180px;
         height: 45px;
         padding: 10px 20px;
-    }
-    .scroll-container {
-        margin-top: 254px;
-        margin-bottom: 170px;
-        padding-inline: 438px;
     }
     .scroll-block-title {
         font-size: 60px;
@@ -1082,13 +1068,8 @@
     .content-scroll {
         margin-right: 79px;
     }
-    .scroll-container {
-        margin-top: 221px;
-        margin-bottom: 146px;
-        padding-inline: 100px;
-    }
     .content-scroll {
-        margin-right: 79px;
+        margin-right: 160px;
         flex-direction: column-reverse;
     }
     .btn-wrap {
@@ -1098,8 +1079,8 @@
         right: 169px;
     }
     .scroll-block-title {
-        font-size: 60px;
-        margin-left: -57px;
+        font-size: 35px;
+        margin-left: -55px;
     }
     .scroll-block-logo {
         top: 220px;
@@ -1494,5 +1475,8 @@
     }
     .newsWrap>.shops-wrap {
         margin-top: 0;
+    }
+    .all-shops-btn-wrap {
+        top: 150px;
     }
 }

@@ -55,13 +55,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const overlay = document.querySelector(".overlay");
 
     // Добавление класса "active" при нажатии на кнопку "Открыть попап"
-    openFilterPopUp.addEventListener("click", function() {
+    openFilterPopUp?.addEventListener("click", function() {
         popUpFilterPopUp.classList.add("active");
         overlay.style.display = 'block';
     });
 
     // Удаление класса "active" при нажатии на кнопку "Закрыть попап"
-    closeFilterPopUp.addEventListener("click", function() {
+    closeFilterPopUp?.addEventListener("click", function() {
         popUpFilterPopUp.classList.remove("active");
         overlay.style.display = 'none';
     });
@@ -163,71 +163,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const statusSpan = document.querySelector('.cards_item-open span');
 
     if (isOpen) {
-        statusSpan.classList.remove('closed');
+        statusSpan?.classList.remove('closed');
     } else {
         statusSpan.classList.add('closed');
     }
 
 });
-
-//slider-main
-document.addEventListener('DOMContentLoaded', function () {
-    const content = document.querySelector('.scroll-container');
-    const wrapper = document.querySelector('.scroll-wrap');
-    const contentScroll = document.querySelectorAll('.content-scroll');
-
-    window.addEventListener('scroll', function() {
-        const scrolledY = window.scrollY;
-        const scrolledX = window.scrollX;
-
-        contentScroll.forEach((item) => {
-            if (scrolledY > 675) {
-                item.style.transform = `translateX(${-scrolledY}px)`;
-            } else {
-                item.style.transform = "none";
-            }
-            if (scrolledY > 675 && scrolledY <= 3800) {
-                wrapper.style.position = "fixed";
-                wrapper.style.top = "0.01px";
-            } else {
-                wrapper.style.position = "relative";
-                // wrapper.style.transform = `translateX(${3400}px)`;
-            }
-            if (scrolledY >= 3800) {
-                wrapper.style.transform = `translateY(3400px)`;
-            } else {
-                wrapper.style.transform = `translateY(0)`;
-            }
-        })
-
-    });
-});
-
-
-// $(document).ready(function () {
-//     console.log(1111)
-//     var element = $('#myElement');
-//     var elementCenter = element.offset().top + element.height() / 2;
-//
-//     $(window).scroll(function () {
-//         var windowCenter = $(window).scrollTop() + $(window).height() / 2;
-//
-//         if (windowCenter >= elementCenter) {
-//             $('body').css('overflow-y', 'auto'); // Разрешаем вертикальный скролл
-//         } else {
-//             $('body').css('overflow-y', 'hidden'); // Запрещаем вертикальный скролл
-//         }
-//     });
-//
-//     // Обработка горизонтального скролла
-//     $(window).on('wheel', function (event) {
-//         if ($(window).scrollTop() >= elementCenter) {
-//             event.preventDefault();
-//             var delta = event.originalEvent.deltaY;
-//             $(window).scrollLeft($(window).scrollLeft() + delta);
-//         }
-//     });
-// });
 
 //parallax
 document.addEventListener('DOMContentLoaded', function () {
@@ -245,9 +186,6 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', handleParallax);
     window.addEventListener('resize', handleParallax);
 });
-
-
-
 
 //map-floor
 document.addEventListener('DOMContentLoaded', function () {
@@ -363,6 +301,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const entertainment4 = document.querySelectorAll('.entertainment4');
     const entertainment5 = document.querySelectorAll('.entertainment5');
     const entertainment6 = document.querySelectorAll('.entertainment6');
+    const clearButton = document.getElementById('clearButton');
 
     const targets = {'shopping1': shopping1, 'shopping2': shopping2, 'shopping3': shopping3, 'shopping4': shopping4, 'shopping5': shopping5, 'shopping6': shopping6,
         'restaurants1': restaurants1, 'restaurants2': restaurants2, 'restaurants3': restaurants3, 'restaurants4': restaurants4, 'restaurants5': restaurants5, 'restaurants6': restaurants6,
@@ -404,6 +343,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     closeButton?.addEventListener('click', () => {
         popupMapOrgs.style.display = 'none';
+    });
+
+    clearButton?.addEventListener('click', function () {
+        radioGroups.forEach((radio) => {
+            radio.checked = false;
+        });
     });
 
 });
@@ -463,3 +408,63 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+//ScrollTrigger
+document.addEventListener('DOMContentLoaded', function () {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const pageContainer = document.querySelector(".scrollSectionPin");
+    /* SMOOTH SCROLL */
+
+    const scroller = new LocomotiveScroll({
+        el: pageContainer,
+        smooth: true
+    });
+
+    scroller.on("scroll", ScrollTrigger.update);
+
+    ScrollTrigger.scrollerProxy(pageContainer, {
+        scrollTop(value) {
+            return arguments.length
+                ? scroller.scrollTo(value, 0, 0)
+                : scroller.scroll.instance.scroll.y;
+        },
+        getBoundingClientRect() {
+            return {
+                left: 0,
+                top: 0,
+                width: window.innerWidth,
+                height: window.innerHeight
+            };
+        },
+        pinType: pageContainer.style.transform ? "transform" : "fixed"
+    });
+
+    ////////////////////////////////////
+    window.addEventListener("load", function () {
+        let pinBoxes = document.querySelectorAll(".pin-wrap > *");
+        let pinWrap = document.querySelector(".pin-wrap");
+        let pinWrapWidth = pinWrap.offsetWidth;
+        let horizontalScrollLength = pinWrapWidth - window.innerWidth;
+
+        // Pinning and horizontal scrolling
+
+        gsap.to(".pin-wrap", {
+            scrollTrigger: {
+                scroller: pageContainer, //locomotive-scroll
+                scrub: true,
+                trigger: "#sectionPin",
+                pin: true,
+                // anticipatePin: 1,
+                start: "top top",
+                end: pinWrapWidth
+            },
+            x: -horizontalScrollLength,
+            ease: "none"
+        });
+
+        ScrollTrigger.addEventListener("refresh", () => scroller.update()); //locomotive-scroll
+
+        ScrollTrigger.refresh();
+    });
+
+});
