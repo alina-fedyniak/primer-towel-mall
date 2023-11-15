@@ -156,6 +156,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+//isOpen-closed-shop
+document.addEventListener('DOMContentLoaded', function () {
+    let isOpen = true;
+
+    const statusSpan = document.querySelector('.cards_item-open span');
+
+    if (isOpen) {
+        statusSpan.classList.remove('closed');
+    } else {
+        statusSpan.classList.add('closed');
+    }
+
+});
+
 //slider-main
 document.addEventListener('DOMContentLoaded', function () {
     const content = document.querySelector('.scroll-container');
@@ -261,25 +275,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //map-exit
 document.addEventListener('DOMContentLoaded', function () {
-    const toggleRectBtns = document.querySelector('.toggleRectBtn');
+    const toggleRectBtns = document.querySelectorAll('.toggleRectBtn');
     const mapExit = document.querySelectorAll('.map-exit');
 
-    toggleRectBtns?.addEventListener('click', function () {
-        toggleRectBtns.classList.add('active');
+    toggleRectBtns.forEach(function(toggleRectBtn) {
+        toggleRectBtn.addEventListener('click', function () {
+            toggleRectBtn.classList.add('active');
 
-        mapExit.forEach(function(btn) {
-            const isHidden = btn.classList.contains('hidden');
-            if (isHidden) {
-                btn.classList.remove('hidden');
-            } else {
-                btn.classList.add('hidden');
-                toggleRectBtns.classList.remove('active');
-            }
+            mapExit.forEach(function(btn) {
+                const isHidden = btn.classList.contains('hidden');
+                if (isHidden) {
+                    btn.classList.remove('hidden');
+                } else {
+                    btn.classList.add('hidden');
+                    toggleRectBtn.classList.remove('active');
+                }
+            });
         });
     });
 });
 
-//
+
+//map-business-filter
 document.addEventListener('DOMContentLoaded', function () {
     const radioGroup = document.querySelectorAll('.radio-group');
     const rent = document.querySelectorAll('.rent');
@@ -321,6 +338,72 @@ document.addEventListener('DOMContentLoaded', function () {
 
     closeButton?.addEventListener('click', () => {
         popupRent.style.display = 'none';
+    });
+
+});
+
+//map-organizations-filter
+document.addEventListener('DOMContentLoaded', function () {
+    const radioGroups = document.querySelectorAll('.radioGroup');
+    const shopping1 = document.querySelectorAll('.shopping1');
+    const shopping2 = document.querySelectorAll('.shopping2');
+    const shopping3 = document.querySelectorAll('.shopping3');
+    const shopping4 = document.querySelectorAll('.shopping4');
+    const shopping5 = document.querySelectorAll('.shopping5');
+    const shopping6 = document.querySelectorAll('.shopping6');
+    const restaurants1 = document.querySelectorAll('.restaurants1');
+    const restaurants2 = document.querySelectorAll('.restaurants2');
+    const restaurants3 = document.querySelectorAll('.restaurants3');
+    const restaurants4 = document.querySelectorAll('.restaurants4');
+    const restaurants5 = document.querySelectorAll('.restaurants5');
+    const restaurants6 = document.querySelectorAll('.restaurants6');
+    const entertainment1 = document.querySelectorAll('.entertainment1');
+    const entertainment2 = document.querySelectorAll('.entertainment2');
+    const entertainment3 = document.querySelectorAll('.entertainment3');
+    const entertainment4 = document.querySelectorAll('.entertainment4');
+    const entertainment5 = document.querySelectorAll('.entertainment5');
+    const entertainment6 = document.querySelectorAll('.entertainment6');
+
+    const targets = {'shopping1': shopping1, 'shopping2': shopping2, 'shopping3': shopping3, 'shopping4': shopping4, 'shopping5': shopping5, 'shopping6': shopping6,
+        'restaurants1': restaurants1, 'restaurants2': restaurants2, 'restaurants3': restaurants3, 'restaurants4': restaurants4, 'restaurants5': restaurants5, 'restaurants6': restaurants6,
+        'entertainment1': entertainment1, 'entertainment2': entertainment2, 'entertainment3': entertainment3, 'entertainment4': entertainment4, 'entertainment5': entertainment5, 'entertainment6': entertainment6,
+
+    };
+//переключение чекбоксов
+    radioGroups.forEach((item) => {
+        item.addEventListener('change',(event) => {
+            const remove = Object.entries(targets).filter(([key]) => key !== event.target.value);
+            remove.forEach(([key, value]) => {
+                value.forEach((item) => {
+                    item.classList.remove('mapSelect');
+                })
+            })
+            targets[event.target.value].forEach((item) => {
+                item.classList.add('mapSelect');
+            })
+        })
+    });
+
+//выбираем елемент для просмотра инфы и попап при клике
+    const clickabled = document.querySelectorAll('.clickable');
+    const popupMapOrgs = document.querySelector('.mapOrgs');
+    const closeButton = document.querySelector('.popupRent-close');
+
+    clickabled.forEach((item) => {
+        item.addEventListener('click', (event) => {
+            clickabled.forEach((item) => {
+                if (item !== event.target) {
+                    item.classList.remove('mapClick');
+                }
+            })
+            popupMapOrgs.classList.add('open');
+            popupMapOrgs.style.display = 'block';
+            event.target.classList.add('mapClick');
+        })
+    });
+
+    closeButton?.addEventListener('click', () => {
+        popupMapOrgs.style.display = 'none';
     });
 
 });

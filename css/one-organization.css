@@ -101,3 +101,7 @@
 .oneOrganization-logo-mob {
     display: none;
 }
+
+.similarNews_blk.news-shops-wraps.shops-wraps {
+    display: grid;
+}

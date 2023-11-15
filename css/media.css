@@ -250,7 +250,7 @@
     .questions_title {
         font-size: 70px;
         top: 26px;
-        left: 65px;
+        left: 55px;
         width: 100%;
     }
     .questions_small-img img {
@@ -372,7 +372,7 @@
         margin-right: 60px;
     }
     .rentInfo_list {
-        margin: 70px 0 40px 0;
+        margin: 70px 0 90px 0;
     }
     .rentInfo-aria-item div div:first-child {
         font-size: 16px;
@@ -924,6 +924,7 @@
     .svg-map svg {
         max-width: 100%;
         width: 100%;
+        max-height: 385px;
     }
     .filter-mobile-btn {
         margin-bottom: 20px;
@@ -932,7 +933,7 @@
         width: 100%;
     }
     .icons {
-        justify-content: flex-start;
+        justify-content: space-between;
         padding-bottom: 40px;
          margin-top: 0;
     }
@@ -1327,6 +1328,7 @@
         left: 0;
         font-size: 35px;
         max-width: 322px;
+        background-image: linear-gradient( 90deg, #ffffff 0%, #242425 0%);
     }
     .questions_form {
         margin-left: 0;
@@ -1401,6 +1403,7 @@
         font-size: 35px;
         left: 0;
         top: -23px;
+        background-image: linear-gradient( 90deg, #ffffff 0%, #242425 0%);
     }
     .rent_img-big img {
         max-width: 100%;
@@ -1464,6 +1467,7 @@
     }
     .forBusiness-questions .questions_title {
         top: -20px;
+        background-image: linear-gradient( 270deg, #ffffff 0%, #242425 0%);
     }
     .forBusiness-questions .questions_form {
         margin-right: 0;
@@ -1477,6 +1481,6 @@
         background-image: linear-gradient( 90deg, #ffffff 0%, #242425 0%);
     }
     .addToTeams-title {
-        background-image: linear-gradient( 360deg, #ffffff 17%, #242425 10%);
+        background-image: linear-gradient( 360deg, #ffffff 0%, #242425 0%);
     }
 }

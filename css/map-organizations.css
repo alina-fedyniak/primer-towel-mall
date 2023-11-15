@@ -3,6 +3,7 @@
 }
 
 .mapOrgs  {
+    display: none;
     position: relative;
     margin-right: 52px;
 }
