@@ -113,6 +113,10 @@ ul.breadcrumb li a:hover {
     align-items: baseline;
 }
 
+.contacts-title.bigText-wrap div {
+    text-align: start !important;
+}
+
 /*questions*/
 .questions_container {
     display: flex;

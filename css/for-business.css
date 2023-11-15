@@ -75,10 +75,15 @@
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    display: flex;
 }
 
 .rentInfo-title div:last-child {
     margin-left: 66px;
+}
+
+.rentInfo-title.bigText-wrap>div {
+    text-align: start;
 }
 
 .rentInfo_list {

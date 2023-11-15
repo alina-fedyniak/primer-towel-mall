@@ -41,7 +41,7 @@
     margin-bottom: 50px;
 }
 
-.similarNews_title h2 {
+.similarNews_title div {
     font-family: Raleway, sans-serif;
     font-size: 95px;
     font-style: normal;
@@ -50,8 +50,12 @@
     text-transform: uppercase;
 }
 
-.similarNews_title h2:last-child {
+.similarNews_title div:last-child {
     margin-left: 63px;
+}
+
+.similarNews_title.bigText-wrap div {
+    text-align: start !important;
 }
 
 .similarNews {
