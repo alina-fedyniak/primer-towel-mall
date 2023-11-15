@@ -15,15 +15,18 @@
 }
 
 .accordion-item {
-    margin: 5px;
+    margin: 0 0 15px 0;
     overflow: hidden;
 }
 
 .accordion-header {
-    padding: 10px;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
+}
+
+.accordionWrap {
+    width: 100%;
 }
 
 .accordion-content {
@@ -44,6 +47,8 @@
 .accordion-btn-clear.footer-btn {
     border-radius: 60px;
     border: 1px solid #242425;
+    width: 163px;
+    padding: 10px 20px;
 }
 
 .accordion-btn-look.footer-btn {
@@ -56,6 +61,7 @@
 
 .accordion-filter-btn {
     display: flex;
+    justify-content: space-between;
 }
 
 .filter {
@@ -201,6 +207,50 @@
 
 .filter.mapBusiness-wrap-blk.mapBusiness-wrap-hidden {
     align-items: flex-start;
+}
+
+.clothesShoes-title {
+    font-family: Roboto Mono, monospace;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+
+.clothesShoes div:not(:first-child):not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.beautyHealth div:not(:first-child):not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.beautyHealth-title {
+    font-family: Roboto Mono, monospace;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+
+.clothesShoes_btn-more {
+    margin-top: 40px;
+    border-bottom: 1px solid #C5C5C5;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.beautyHealth_btn-more {
+    margin-top: 40px;
+    border-bottom: 1px solid #C5C5C5;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.clothesShoes, .beautyHealth {
+    width: 100%;
 }
 
 

@@ -406,6 +406,17 @@
     .cards_item-open span {
         font-size: 14px;
     }
+    .filter {
+        width: 353px;
+    }
+    .clothesShoes-title {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .beautyHealth-title {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
 
 }
 
