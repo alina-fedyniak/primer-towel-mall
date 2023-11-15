@@ -403,6 +403,18 @@
     .svg-map svg {
         max-width: 808px;
     }
+    .popupRent {
+        width: 353px;
+        padding: 20px;
+    }
+    .popupRent-title {
+        font-size: 16px;
+        margin-bottom: 30px;
+        max-width: 230px;
+    }
+    .cards_item-open span {
+        font-size: 14px;
+    }
 
 }
 
