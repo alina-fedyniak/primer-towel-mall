@@ -105,3 +105,7 @@
 .similarNews_blk.news-shops-wraps.shops-wraps {
     display: grid;
 }
+
+.mobile-cardsInfo {
+    display: none;
+}

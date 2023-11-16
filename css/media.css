@@ -806,9 +806,39 @@
     .cards_item-block {
         display: flex;
         align-items: flex-end;
+        width: 100%;
+        justify-content: space-between;
     }
     .oneOrganization-logo-mob .oneOrganization-logo {
         margin-bottom: 0;
+        min-width: 150px;
+        max-width: 150px;
+        height: 150px;
+        margin-right: 20px;
+    }
+    .oneOrganization-logo-mob .oneOrganization-logo img {
+        width: 120px;
+    }
+    .oneOrganization_soc-item {
+        width: 40px;
+        height: 40px;
+        margin-right: 6px;
+    }
+    .accordion-filter-btn {
+        margin-left: 15px;
+        width: 100%;
+    }
+    .oneOrganization .cards_item-info {
+        margin-left: 0;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .oneOrganization_main p {
+        /*margin-top: -40px;*/
+        max-width: 100%;
+    }
+    .oneOrganization {
+        margin-top: 40px;
     }
     .oneOrganization_social-blk {
         margin-bottom: 0;
@@ -948,6 +978,12 @@
     .swiper-btn {
         gap: 525px;
         bottom: 144px;
+    }
+    .burger-filter {
+        display: block;
+    }
+    .burger-iconFilter {
+        display: block;
     }
 
 
@@ -1513,5 +1549,20 @@
     }
     .swiper-btn {
         gap: 196px;
+    }
+    .oneOrganization .cards_item-info {
+        margin-top: 35px;
+    }
+    .desktop-cardsInfo {
+        display: none;
+    }
+    .mobile-cardsInfo {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    .accordion-filter-btn {
+        margin-left: 0;
     }
 }

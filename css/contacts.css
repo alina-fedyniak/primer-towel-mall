@@ -50,6 +50,7 @@ ul.breadcrumb li a:hover {
 
 .contacts-container_img {
     position: absolute;
+    width: 100%;
 }
 
 .social-links-black .img-social {

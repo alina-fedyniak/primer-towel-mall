@@ -15,6 +15,23 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// -------burger-Filter-----
+document.addEventListener("DOMContentLoaded", function() {
+    const burgerIconFilter = document.querySelector(".burger-iconFilter");
+    const burgerFilter = document.querySelector(".burger-filter");
+    console.log(burgerIconFilter)
+    burgerIconFilter.addEventListener("click", function() {
+        burgerIconFilter.classList.toggle("active");
+        burgerFilter.classList.toggle("active");
+
+        if (burgerFilter.classList.contains("active")) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+    });
+});
+
 // -------pop_up------
 document.addEventListener("DOMContentLoaded", function() {
     const openButtons = Array.from(document.querySelectorAll(".open_pop"));
@@ -54,54 +71,56 @@ document.addEventListener("DOMContentLoaded", function() {
     const popUpFilterPopUp = document.querySelector(".pop_up-filter");
     const overlay = document.querySelector(".overlay");
 
-    // Добавление класса "active" при нажатии на кнопку "Открыть попап"
-    openFilterPopUp?.addEventListener("click", function() {
-        popUpFilterPopUp.classList.add("active");
-        overlay.style.display = 'block';
-    });
+    if (openFilterPopUp && closeFilterPopUp && popUpFilterPopUp && overlay) {
+        // Добавление класса "active" при нажатии на кнопку "Открыть попап"
+        openFilterPopUp.addEventListener("click", function () {
+            popUpFilterPopUp.classList.add("active");
+            overlay.style.display = 'block';
+        });
 
-    // Удаление класса "active" при нажатии на кнопку "Закрыть попап"
-    closeFilterPopUp?.addEventListener("click", function() {
-        popUpFilterPopUp.classList.remove("active");
-        overlay.style.display = 'none';
-    });
-
-    // Закрытие вне
-    document.addEventListener("click", function (event) {
-        if (!popUpFilterPopUp?.contains(event.target) && !openFilterPopUp?.contains(event.target)) {
-            popUpFilterPopUp?.classList.remove("active");
+        // Удаление класса "active" при нажатии на кнопку "Закрыть попап"
+        closeFilterPopUp.addEventListener("click", function () {
+            popUpFilterPopUp.classList.remove("active");
             overlay.style.display = 'none';
-        }
-    });
+        });
+
+        // Закрытие вне
+        document.addEventListener("click", function (event) {
+            if (!popUpFilterPopUp.contains(event.target) && !openFilterPopUp.contains(event.target)) {
+                popUpFilterPopUp.classList.remove("active");
+                overlay.style.display = 'none';
+            }
+        });
+    }
 });
 
 // -------pop_up-filter-Cards------
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const openFilterCard = document.getElementById("open-filterCard");
     const closeFilterPopUp = document.getElementById("pop_closed");
     const popUpFilterCard = document.querySelector(".pop_up-filterCard");
     const overlay = document.querySelector(".overlay");
 
-    // Добавление класса "active" при нажатии на кнопку "Открыть попап"
-    openFilterCard?.addEventListener("click", function() {
-        popUpFilterCard.classList.add("active");
-        overlay.style.display = 'block';
-    });
+    if (openFilterCard && closeFilterPopUp && popUpFilterCard && overlay) {
+        openFilterCard.addEventListener("click", function () {
+            popUpFilterCard.classList.add("active");
+            overlay.style.display = 'block';
+        });
 
-    // Удаление класса "active" при нажатии на кнопку "Закрыть попап"
-    closeFilterPopUp?.addEventListener("click", function() {
-        popUpFilterCard.classList.remove("active");
-        overlay.style.display = 'none';
-    });
-
-    // Закрытие вне
-    document.addEventListener("click", function (event) {
-        if (!popUpFilterCard?.contains(event.target) && !openFilterCard?.contains(event.target)) {
+        closeFilterPopUp.addEventListener("click", function () {
             popUpFilterCard.classList.remove("active");
             overlay.style.display = 'none';
-        }
-    });
+        });
+
+        document.addEventListener("click", function (event) {
+            if (!popUpFilterCard.contains(event.target) && !openFilterCard.contains(event.target)) {
+                popUpFilterCard.classList.remove("active");
+                overlay.style.display = 'none';
+            }
+        });
+    }
 });
+
 
 // -------btn-to-top------
 $(function() {

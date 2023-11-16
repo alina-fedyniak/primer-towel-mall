@@ -245,9 +245,10 @@ h1, h2, h3, h4 {
     display: none;
 }
 
-.burger-img-line {
+.burger-img-line {/*add*/
     position: absolute;
     top: 427px;
+    width: 100%;
 }
 
 
@@ -370,6 +371,137 @@ h1, h2, h3, h4 {
 
 .burger-menu.active {
     right: 0;
+}
+
+.booter_soc{
+    display: flex;
+    gap: 15px;
+    margin-top: 73px;
+    margin-bottom: 25px;
+}
+.booter_soc img{
+    width: 40px;
+    height: 40px;
+    padding: 8px 8px;
+    background-color: #F4F4F4;
+    border-radius: 50%;
+}
+
+/* ============burger-filter======== */
+.burger-filter {
+    display: none;
+}
+
+.burger-filter {
+    position: fixed;
+    top: 0;
+    left: -110%;
+    width: 100%;
+    height: 100%;
+    z-index: 1200;
+    transition: all 1s ease;
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #F4F4F4;
+    overflow-y: scroll;
+    z-index: 800;
+    padding-top: 125px;
+}
+.menu-content ul {
+    display: flex;
+    flex-direction: column;
+    /*gap: 15px;*/
+}
+.menu-content li{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 150%;
+    text-decoration: none;
+    transition: all 0.3s;
+    border-bottom: 1px solid #C5C5C5;
+    width: 720px;
+    text-align: start;
+}
+
+.menu-content li a {
+    font-family: Raleway, sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #242425;
+}
+
+.boot_svg{
+    width: 129px;
+    height: 135px;
+    transition: all .5s ease;
+}
+
+.boorger_btm p:hover + .boot_svg{
+    transform: scale(.9);
+    transition: all .5s ease;
+}
+
+.boot_svg:hover{
+    transform: scale(.9);
+    transition: all .5s ease;
+}
+
+.boorger_btm button{
+    display: flex;
+    align-items: center;
+}
+
+.burger-iconFilter {
+    display: none;
+    z-index: 1250;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+
+}
+
+/* Animation of the burger icon*/
+.burger-iconFilter.active {
+    border: 1px solid white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 7px;
+    position: relative;
+    bottom: 510px;
+}
+
+.burger-iconFilter.active .bar1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.burger-iconFilter.active .bar2 {
+    transform: rotate(45deg) translate(-2px, -1px);
+}
+.burger-iconFilter.active .bar3 {
+    display: none;
+}
+
+.burger-filter.active {
+    left: 0;
 }
 
 .booter_soc{
