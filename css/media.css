@@ -34,7 +34,6 @@
     }
     .pop_up-filter {
         width: 670px;
-        height: 631px;
     }
     .pop_up_main p {
         font-size: 70px;
@@ -495,7 +494,6 @@
     }
     .pop_up-filter {
         width: 574px;
-        height: 523px;
     }
     .pop_up_main p {
         font-size: 60px;
@@ -932,10 +930,24 @@
     .icons {
         justify-content: space-between;
         padding-bottom: 40px;
-         margin-top: 0;
+        margin-top: 0;
     }
     .filter.mapBusiness-wrap-blk {
        align-items: flex-start;
+       display: none;
+    }
+    .mySwiper {
+        width: 100%;
+    }
+    .oneOrganization_main {
+        width: 100%;
+    }
+    .swiper-slide.swiper-slide-active img {
+        width: 100%;
+    }
+    .swiper-btn {
+        gap: 525px;
+        bottom: 144px;
     }
 
 
@@ -1043,7 +1055,6 @@
     }
     .pop_up-filter {
         width: 320px;
-        height: 424px;
     }
     .pop_up_main p {
         font-size: 35px;
@@ -1489,5 +1500,18 @@
     }
     .all-shops-btn-wrap {
         top: 150px;
+    }
+    .swiper-slide.swiper-slide-active img {
+        width: initial;
+    }
+    .cards_item-block {
+        align-items: center;
+        flex-direction: column;
+    }
+    .oneOrganization_main-wrap {
+        display: block;
+    }
+    .swiper-btn {
+        gap: 196px;
     }
 }

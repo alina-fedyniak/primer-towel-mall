@@ -68,8 +68,36 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Закрытие вне
     document.addEventListener("click", function (event) {
-        if (!popUpFilterPopUp.contains(event.target) && !openFilterPopUp.contains(event.target)) {
-            popUpFilterPopUp.classList.remove("active");
+        if (!popUpFilterPopUp?.contains(event.target) && !openFilterPopUp?.contains(event.target)) {
+            popUpFilterPopUp?.classList.remove("active");
+            overlay.style.display = 'none';
+        }
+    });
+});
+
+// -------pop_up-filter-Cards------
+document.addEventListener("DOMContentLoaded", function() {
+    const openFilterCard = document.getElementById("open-filterCard");
+    const closeFilterPopUp = document.getElementById("pop_closed");
+    const popUpFilterCard = document.querySelector(".pop_up-filterCard");
+    const overlay = document.querySelector(".overlay");
+
+    // Добавление класса "active" при нажатии на кнопку "Открыть попап"
+    openFilterCard?.addEventListener("click", function() {
+        popUpFilterCard.classList.add("active");
+        overlay.style.display = 'block';
+    });
+
+    // Удаление класса "active" при нажатии на кнопку "Закрыть попап"
+    closeFilterPopUp?.addEventListener("click", function() {
+        popUpFilterCard.classList.remove("active");
+        overlay.style.display = 'none';
+    });
+
+    // Закрытие вне
+    document.addEventListener("click", function (event) {
+        if (!popUpFilterCard?.contains(event.target) && !openFilterCard?.contains(event.target)) {
+            popUpFilterCard.classList.remove("active");
             overlay.style.display = 'none';
         }
     });
