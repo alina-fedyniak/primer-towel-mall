@@ -213,7 +213,18 @@ h1, h2, h3, h4 {
     margin-right: 10px;
 }
 
-.img-back {
+.img-back-mobile {/*add*/
+    display: none;
+    background: url("../images/img/main-img-mobile.jpg") center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-height: 926px;
+    height: 100vh;
+    position: relative;
+}
+
+.img-back {/*add*/
+    display: block;
     background: url("../images/img/main-img.jpg") center center no-repeat;
     background-size: cover;
     width: 100%;
@@ -222,14 +233,6 @@ h1, h2, h3, h4 {
     position: relative;
 }
 
-.img-back-mobile {
-    background: url("../images/img/main-img-mobile.jpg") center center no-repeat;
-    background-size: cover;
-    width: 100%;
-    max-height: 926px;
-    height: 100vh;
-    position: relative;
-}
 
 .menu-container {
     display: flex;
@@ -402,25 +405,25 @@ h1, h2, h3, h4 {
     transition: all 1s ease;
 }
 
-.menu-content {
+.burger-filter .menu-content {/*add*/
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: #F4F4F4;
     overflow-y: scroll;
     z-index: 800;
-    padding-top: 125px;
+    padding: 90px 40px 40px 40px;
 }
-.menu-content ul {
+.burger-filter .menu-content ul {/*add*/
     display: flex;
     flex-direction: column;
     /*gap: 15px;*/
 }
-.menu-content li{
+.burger-filter .menu-content li{/*add*/
     font-size: 25px;
     font-weight: 600;
     line-height: 150%;
@@ -431,7 +434,7 @@ h1, h2, h3, h4 {
     text-align: start;
 }
 
-.menu-content li a {
+.burger-filter .menu-content li a {/*add*/
     font-family: Raleway, sans-serif;
     font-size: 60px;
     font-style: normal;
@@ -479,25 +482,10 @@ h1, h2, h3, h4 {
 }
 
 /* Animation of the burger icon*/
-.burger-iconFilter.active {
-    border: 1px solid white;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    padding: 7px;
-    position: relative;
-    bottom: 510px;
-}
-
-.burger-iconFilter.active .bar1 {
-    transform: rotate(-45deg) translate(-5px, 5px);
-}
-
-.burger-iconFilter.active .bar2 {
-    transform: rotate(45deg) translate(-2px, -1px);
-}
-.burger-iconFilter.active .bar3 {
+.burger-iconFilter.active {/*add*/
     display: none;
+    /*position: relative;*/
+    /*bottom: 457px;*/
 }
 
 .burger-filter.active {
@@ -903,6 +891,7 @@ section.scroll-wrapper {
     justify-content: flex-end;
     position: relative;
     top: 119px;
+    z-index: 1;/*add*/
 }
 
 .all-shops-btn {

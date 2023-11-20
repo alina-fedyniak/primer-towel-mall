@@ -188,43 +188,55 @@
                         </div>
                         <div class="organizations-wrap">
                             <div class="filter-mobile-btn-wrap" id="open-filterCard">
-                                <div class="filter-mobile-btn">ФІЛЬТРИ
+                                <div class="filter-mobile-btn burger-iconFilter">ФІЛЬТРИ<!------------add-------------->
                                     <img src="images/svg/arrow-left-grey.svg" alt="arrow">
                                 </div>
                             </div>
-                            <div class="burger-iconFilter">
-                                <div class="bar bar1"></div>
-                                <div class="bar bar2"></div>
-                                <div class="bar bar3"></div>
-                            </div>
+<!--                            <div class="burger-iconFilter-bar">&lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;add&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+<!--                                <div class="bar bar1"></div>-->
+<!--                                <div class="bar bar2"></div>-->
+<!--                                <div class="bar bar3"></div>-->
+<!--                            </div>-->
                             <div class="burger-filter">
                                 <div class="menu-content">
+                                    <div class="popupRent-close filterClose"><!------------add-------------->
+                                        <img src="./images/svg/close_round_light.svg"/>
+                                    </div>
+                                    <div class="filter-mobile-btn-wrap">
+                                        <div class="filter-mobile-btn burger-iconFilter">ФІЛЬТРИ<!------------add-------------->
+                                            <img src="images/svg/arrow-left-grey.svg" alt="arrow">
+                                        </div>
+                                    </div>
                                     <div class="filter">
-                                        <div class="clothesShoes">
-                                            <div class="clothesShoes-title">ОДЯГ ТА ВЗУТТЯ</div>
-                                            <div>
-                                                <input type="checkbox" name="underwear" value="underwear">
-                                                <label for="underwear">Білизна</label>
+                                        <div class="clothesShoes filterDrop"><!------------add-------------->
+                                            <div class="clothesShoes-title">ОДЯГ ТА ВЗУТТЯ
+                                                <div class="arrow-icon"></div><!------------add-------------->
                                             </div>
-                                            <div>
-                                                <input type="checkbox" name="allClothes" value="allClothes">
-                                                <label for="allClothes">Чоловічий та жіночий одяг</label>
-                                            </div>
-                                            <div>
-                                                <input type="checkbox" name="womanClothes" value="womanClothes">
-                                                <label for="womanClothes">Жіночий одяг</label>
-                                            </div>
-                                            <div>
-                                                <input type="checkbox" name="manClothes" value="manClothes">
-                                                <label for="manClothes">Чоловічий одяг</label>
-                                            </div>
-                                            <div>
-                                                <input type="checkbox" name="shoes" value="shoes">
-                                                <label for="shoes">Взуття</label>
-                                            </div>
-                                            <div>
-                                                <input type="checkbox" name="sportClothes" value="sportClothes">
-                                                <label for="sportClothes">Спортивний одяг та взуття</label>
+                                            <div class="accordion-content"><!------------add-------------->
+                                                <div>
+                                                    <input type="checkbox" name="underwear" value="underwear">
+                                                    <label for="underwear">Білизна</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" name="allClothes" value="allClothes">
+                                                    <label for="allClothes">Чоловічий та жіночий одяг</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" name="womanClothes" value="womanClothes">
+                                                    <label for="womanClothes">Жіночий одяг</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" name="manClothes" value="manClothes">
+                                                    <label for="manClothes">Чоловічий одяг</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" name="shoes" value="shoes">
+                                                    <label for="shoes">Взуття</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" name="sportClothes" value="sportClothes">
+                                                    <label for="sportClothes">Спортивний одяг та взуття</label>
+                                                </div>
                                             </div>
                                             <div class="clothesShoes_btn-more">
                                                 <div class="btn-wrap">
@@ -232,24 +244,28 @@
                                                         <div class="img-details">
                                                             <img src="./images/svg/arrow_left_light-top.svg"/>
                                                         </div>
-                                                        <span>Детальніше</span>
+                                                        <span>Переглянути все</span><!------------add-------------->
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="beautyHealth">
-                                            <div class="beautyHealth-title">КРАСА І ЗДОРОВ'Я</div>
-                                            <div>
-                                                <input type="checkbox" name="pharmacy" value="pharmacy">
-                                                <label for="pharmacy">Аптека</label>
+                                        <div class="beautyHealth filterDrop"><!------------add-------------->
+                                            <div class="beautyHealth-title">КРАСА І ЗДОРОВ'Я
+                                                <div class="arrow-icon"></div><!------------add-------------->
                                             </div>
-                                            <div>
-                                                <input type="checkbox" name="optics" value="optics">
-                                                <label for="optics">Оптика</label>
-                                            </div>
-                                            <div>
-                                                <input type="checkbox" name="cosmetics" value="cosmetics">
-                                                <label for="cosmetics">Парфумерія і косметика</label>
+                                            <div class="accordion-content"><!------------add-------------->
+                                                <div>
+                                                    <input type="checkbox" name="pharmacy" value="pharmacy">
+                                                    <label for="pharmacy">Аптека</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" name="optics" value="optics">
+                                                    <label for="optics">Оптика</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" name="cosmetics" value="cosmetics">
+                                                    <label for="cosmetics">Парфумерія і косметика</label>
+                                                </div>
                                             </div>
                                             <div class="beautyHealth_btn-more">
                                                 <div class="btn-wrap">
@@ -257,65 +273,83 @@
                                                         <div class="img-details">
                                                             <img src="./images/svg/arrow_left_light-top.svg"/>
                                                         </div>
-                                                        <span>Детальніше</span>
+                                                        <span>Переглянути все</span><!------------add-------------->
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="accordionWrap">
                                             <div class="accordion">
-                                                <div class="accordion-item">
+                                                <div class="accordion-item filterDrop"><!------------add-------------->
                                                     <div class="accordion-header">
                                                         ІНТЕР'ЄР ТА ДЕКОР
-                                                        <div class="arrow"></div>
+                                                        <div class="arrow-icon"></div><!------------add-------------->
                                                     </div>
                                                     <div class="accordion-content">
-                                                        Content 1
+                                                        <div><!------------add-------------->
+                                                            <input type="checkbox" name="content1" value="content1">
+                                                            <label for="cosmetics">Content 1</label>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="accordion-item">
+                                                <div class="accordion-item filterDrop"><!------------add-------------->
                                                     <div class="accordion-header">
                                                         ЕЛЕКТРОНІКА
-                                                        <div class="arrow"></div>
+                                                        <div class="arrow-icon"></div><!------------add-------------->
                                                     </div>
                                                     <div class="accordion-content">
-                                                        Content 2
+                                                        <div><!------------add-------------->
+                                                            <input type="checkbox" name="content2" value="content2">
+                                                            <label for="cosmetics">Content 2</label>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="accordion-item">
+                                                <div class="accordion-item filterDrop"><!------------add-------------->
                                                     <div class="accordion-header">
                                                         КНИГИ ТА КАНЦТОВАРИ
-                                                        <div class="arrow"></div>
+                                                        <div class="arrow-icon"></div><!------------add-------------->
                                                     </div>
                                                     <div class="accordion-content">
-                                                        Content 2
+                                                        <div><!------------add-------------->
+                                                            <input type="checkbox" name="content3" value="content3">
+                                                            <label for="cosmetics">Content 3</label>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="accordion-item">
+                                                <div class="accordion-item filterDrop"><!------------add-------------->
                                                     <div class="accordion-header">
                                                         ПРОДУКТИ
-                                                        <div class="arrow"></div>
+                                                        <div class="arrow-icon"></div><!------------add-------------->
                                                     </div>
                                                     <div class="accordion-content">
-                                                        Content 2
+                                                        <div><!------------add-------------->
+                                                            <input type="checkbox" name="content4" value="content4">
+                                                            <label for="cosmetics">Content 4</label>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="accordion-item">
+                                                <div class="accordion-item filterDrop"><!------------add-------------->
                                                     <div class="accordion-header">
                                                         ДЛЯ ТВАРИН
-                                                        <div class="arrow"></div>
+                                                        <div class="arrow-icon"></div><!------------add-------------->
                                                     </div>
                                                     <div class="accordion-content">
-                                                        Content 2
+                                                        <div><!------------add-------------->
+                                                            <input type="checkbox" name="content5" value="content5">
+                                                            <label for="cosmetics">Content 5</label>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="accordion-item">
+                                                <div class="accordion-item filterDrop"><!------------add-------------->
                                                     <div class="accordion-header">
                                                         АКСЕСУАРИ
-                                                        <div class="arrow"></div>
+                                                        <div class="arrow-icon"></div><!------------add-------------->
                                                     </div>
                                                     <div class="accordion-content">
-                                                        Content 2
+                                                        <div><!------------add-------------->
+                                                            <input type="checkbox" name="content6" value="content6">
+                                                            <label for="cosmetics">Content 6</label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="accordion-filter-btn">
@@ -352,31 +386,35 @@
                                 </div>
                             </div>
                             <div class="filter mapBusiness-wrap-blk">
-                                <div class="clothesShoes">
-                                    <div class="clothesShoes-title">ОДЯГ ТА ВЗУТТЯ</div>
-                                    <div>
-                                        <input type="checkbox" id="underwear" name="underwear" value="underwear">
-                                        <label for="underwear">Білизна</label>
+                                <div class="clothesShoes filterDrop"><!------------add-------------->
+                                    <div class="clothesShoes-title">ОДЯГ ТА ВЗУТТЯ
+                                        <div class="arrow-icon"></div><!------------add-------------->
                                     </div>
-                                    <div>
-                                        <input type="checkbox" id="allClothes" name="allClothes" value="allClothes">
-                                        <label for="allClothes">Чоловічий та жіночий одяг</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="womanClothes" name="womanClothes" value="womanClothes">
-                                        <label for="womanClothes">Жіночий одяг</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="manClothes" name="manClothes" value="manClothes">
-                                        <label for="manClothes">Чоловічий одяг</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="shoes" name="shoes" value="shoes">
-                                        <label for="shoes">Взуття</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="sportClothes" name="sportClothes" value="sportClothes">
-                                        <label for="sportClothes">Спортивний одяг та взуття</label>
+                                    <div class="accordion-content"><!------------add-------------->
+                                        <div>
+                                            <input type="checkbox" id="underwear" name="underwear" value="underwear">
+                                            <label for="underwear">Білизна</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="allClothes" name="allClothes" value="allClothes">
+                                            <label for="allClothes">Чоловічий та жіночий одяг</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="womanClothes" name="womanClothes" value="womanClothes">
+                                            <label for="womanClothes">Жіночий одяг</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="manClothes" name="manClothes" value="manClothes">
+                                            <label for="manClothes">Чоловічий одяг</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="shoes" name="shoes" value="shoes">
+                                            <label for="shoes">Взуття</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="sportClothes" name="sportClothes" value="sportClothes">
+                                            <label for="sportClothes">Спортивний одяг та взуття</label>
+                                        </div>
                                     </div>
                                     <div class="clothesShoes_btn-more">
                                         <div class="btn-wrap">
@@ -384,24 +422,28 @@
                                                 <div class="img-details">
                                                     <img src="./images/svg/arrow_left_light-top.svg"/>
                                                 </div>
-                                                <span>Детальніше</span>
+                                                <span>Переглянути все</span><!------------add-------------->
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="beautyHealth">
-                                    <div class="beautyHealth-title">КРАСА І ЗДОРОВ'Я</div>
-                                    <div>
-                                        <input type="checkbox" id="pharmacy" name="pharmacy" value="pharmacy">
-                                        <label for="pharmacy">Аптека</label>
+                                <div class="beautyHealth filterDrop"><!------------add-------------->
+                                    <div class="beautyHealth-title">КРАСА І ЗДОРОВ'Я
+                                        <div class="arrow-icon"></div><!------------add-------------->
                                     </div>
-                                    <div>
-                                        <input type="checkbox" id="optics" name="optics" value="optics">
-                                        <label for="optics">Оптика</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="cosmetics" name="cosmetics" value="cosmetics">
-                                        <label for="cosmetics">Парфумерія і косметика</label>
+                                    <div class="accordion-content"><!------------add-------------->
+                                        <div>
+                                            <input type="checkbox" id="pharmacy" name="pharmacy" value="pharmacy">
+                                            <label for="pharmacy">Аптека</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="optics" name="optics" value="optics">
+                                            <label for="optics">Оптика</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="cosmetics" name="cosmetics" value="cosmetics">
+                                            <label for="cosmetics">Парфумерія і косметика</label>
+                                        </div>
                                     </div>
                                     <div class="beautyHealth_btn-more">
                                         <div class="btn-wrap">
@@ -409,65 +451,83 @@
                                                 <div class="img-details">
                                                     <img src="./images/svg/arrow_left_light-top.svg"/>
                                                 </div>
-                                                <span>Детальніше</span>
+                                                <span>Переглянути все</span><!------------add-------------->
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordionWrap">
                                     <div class="accordion">
-                                        <div class="accordion-item">
+                                        <div class="accordion-item filterDrop"><!------------add-------------->
                                             <div class="accordion-header">
                                                 ІНТЕР'ЄР ТА ДЕКОР
-                                                <div class="arrow"></div>
+                                                <div class="arrow-icon"></div><!------------add-------------->
                                             </div>
                                             <div class="accordion-content">
-                                                Content 1
+                                                <div><!------------add-------------->
+                                                    <input type="checkbox" name="content1" value="content1">
+                                                    <label for="cosmetics">Content 1</label>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="accordion-item">
+                                        <div class="accordion-item filterDrop"><!------------add-------------->
                                             <div class="accordion-header">
                                                 ЕЛЕКТРОНІКА
-                                                <div class="arrow"></div>
+                                                <div class="arrow-icon"></div><!------------add-------------->
                                             </div>
                                             <div class="accordion-content">
-                                                Content 2
+                                                <div><!------------add-------------->
+                                                    <input type="checkbox" name="content2" value="content2">
+                                                    <label for="cosmetics">Content 2</label>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="accordion-item">
+                                        <div class="accordion-item filterDrop"><!------------add-------------->
                                             <div class="accordion-header">
                                                 КНИГИ ТА КАНЦТОВАРИ
-                                                <div class="arrow"></div>
+                                                <div class="arrow-icon"></div><!------------add-------------->
                                             </div>
                                             <div class="accordion-content">
-                                                Content 2
+                                                <div><!------------add-------------->
+                                                    <input type="checkbox" name="content3" value="content3">
+                                                    <label for="cosmetics">Content 3</label>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="accordion-item">
+                                        <div class="accordion-item filterDrop"><!------------add-------------->
                                             <div class="accordion-header">
                                                 ПРОДУКТИ
-                                                <div class="arrow"></div>
+                                                <div class="arrow-icon"></div><!------------add-------------->
                                             </div>
                                             <div class="accordion-content">
-                                                Content 2
+                                                <div><!------------add-------------->
+                                                    <input type="checkbox" name="content4" value="content4">
+                                                    <label for="cosmetics">Content 4</label>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="accordion-item">
+                                        <div class="accordion-item filterDrop"><!------------add-------------->
                                             <div class="accordion-header">
                                                 ДЛЯ ТВАРИН
-                                                <div class="arrow"></div>
+                                                <div class="arrow-icon"></div><!------------add-------------->
                                             </div>
                                             <div class="accordion-content">
-                                                Content 2
+                                                <div><!------------add-------------->
+                                                    <input type="checkbox" name="content5" value="content5">
+                                                    <label for="cosmetics">Content 5</label>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="accordion-item">
+                                        <div class="accordion-item filterDrop"><!------------add-------------->
                                             <div class="accordion-header">
                                                 АКСЕСУАРИ
-                                                <div class="arrow"></div>
+                                                <div class="arrow-icon"></div><!------------add-------------->
                                             </div>
                                             <div class="accordion-content">
-                                                Content 2
+                                                <div><!------------add-------------->
+                                                    <input type="checkbox" name="content6" value="content6">
+                                                    <label for="cosmetics">Content 6</label>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="accordion-filter-btn">

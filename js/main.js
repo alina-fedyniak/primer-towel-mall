@@ -16,11 +16,20 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // -------burger-Filter-----
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {//add fix
     const burgerIconFilter = document.querySelector(".burger-iconFilter");
     const burgerFilter = document.querySelector(".burger-filter");
-    console.log(burgerIconFilter)
-    burgerIconFilter.addEventListener("click", function() {
+    const closeButton = document.querySelector('.filterClose');
+
+    burgerIconFilter?.addEventListener("click", function() {
+        toggleMenu();
+    });
+
+    closeButton?.addEventListener("click", function() {
+        toggleMenu();
+    });
+
+    function toggleMenu() {
         burgerIconFilter.classList.toggle("active");
         burgerFilter.classList.toggle("active");
 
@@ -29,8 +38,30 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             document.body.style.overflow = "";
         }
+    }
+});
+
+//drop-filter-organizations
+document.addEventListener('DOMContentLoaded', function () {
+    const beautyHealthAccordions = document.querySelectorAll('.filterDrop');
+
+    beautyHealthAccordions.forEach(function (accordion) {
+        accordion.addEventListener('click', function () {
+            accordion.classList.toggle('active');
+        });
+
+        // Предотвращение всплытия события для чекбоксов в каждом аккордеоне
+        const checkboxes = accordion.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(function (checkbox) {
+            checkbox.addEventListener('click', function (event) {
+                event.stopPropagation();
+            });
+        });
     });
 });
+
+
+
 
 // -------pop_up------
 document.addEventListener("DOMContentLoaded", function() {
@@ -95,31 +126,31 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // -------pop_up-filter-Cards------
-document.addEventListener("DOMContentLoaded", function () {
-    const openFilterCard = document.getElementById("open-filterCard");
-    const closeFilterPopUp = document.getElementById("pop_closed");
-    const popUpFilterCard = document.querySelector(".pop_up-filterCard");
-    const overlay = document.querySelector(".overlay");
-
-    if (openFilterCard && closeFilterPopUp && popUpFilterCard && overlay) {
-        openFilterCard.addEventListener("click", function () {
-            popUpFilterCard.classList.add("active");
-            overlay.style.display = 'block';
-        });
-
-        closeFilterPopUp.addEventListener("click", function () {
-            popUpFilterCard.classList.remove("active");
-            overlay.style.display = 'none';
-        });
-
-        document.addEventListener("click", function (event) {
-            if (!popUpFilterCard.contains(event.target) && !openFilterCard.contains(event.target)) {
-                popUpFilterCard.classList.remove("active");
-                overlay.style.display = 'none';
-            }
-        });
-    }
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//     const openFilterCard = document.getElementById("open-filterCard");
+//     const closeFilterPopUp = document.getElementById("pop_closed");
+//     const popUpFilterCard = document.querySelector(".pop_up-filterCard");
+//     const overlay = document.querySelector(".overlay");
+//
+//     if (openFilterCard && closeFilterPopUp && popUpFilterCard && overlay) {
+//         openFilterCard.addEventListener("click", function () {
+//             popUpFilterCard.classList.add("active");
+//             overlay.style.display = 'block';
+//         });
+//
+//         closeFilterPopUp.addEventListener("click", function () {
+//             popUpFilterCard.classList.remove("active");
+//             overlay.style.display = 'none';
+//         });
+//
+//         document.addEventListener("click", function (event) {
+//             if (!popUpFilterCard.contains(event.target) && !openFilterCard.contains(event.target)) {
+//                 popUpFilterCard.classList.remove("active");
+//                 overlay.style.display = 'none';
+//             }
+//         });
+//     }
+// });
 
 
 // -------btn-to-top------
@@ -457,6 +488,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //ScrollTrigger
 document.addEventListener('DOMContentLoaded', function () {
+
     gsap.registerPlugin(ScrollTrigger);
 
     const pageContainer = document.querySelector(".scrollSectionPin");

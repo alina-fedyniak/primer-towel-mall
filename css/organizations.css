@@ -14,9 +14,8 @@
     margin-left: 0;
 }
 
-.accordion-item {
+.accordion-item {/*add*/
     margin: 0 0 15px 0;
-    overflow: hidden;
 }
 
 .accordion-header {
@@ -34,15 +33,15 @@
     padding: 10px;
 }
 
-.arrow::before {
-    content: "▼";
-    margin-left: 10px;
-}
+/*.arrow::before {*//*add*/
+/*    content: "▼";*/
+/*    margin-left: 10px;*/
+/*}*/
 
-.open .arrow::before {
-    content: "▲";
-    transform: rotate(180deg);
-}
+/*.open .arrow::before {*//*add*/
+/*    content: "▲";*/
+/*    transform: rotate(180deg);*/
+/*}*/
 
 .accordion-btn-clear.footer-btn {
     border-radius: 60px;
@@ -218,11 +217,11 @@
     margin-bottom: 20px;
 }
 
-.clothesShoes div:not(:first-child):not(:last-child) {
+.clothesShoes div:not(:last-child) {/*add*/
     margin-bottom: 10px;
 }
 
-.beautyHealth div:not(:first-child):not(:last-child) {
+.beautyHealth div:not(:last-child) {/*add*/
     margin-bottom: 10px;
 }
 
@@ -235,14 +234,7 @@
     margin-bottom: 20px;
 }
 
-.clothesShoes_btn-more {
-    margin-top: 40px;
-    border-bottom: 1px solid #C5C5C5;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-}
-
-.beautyHealth_btn-more {
+.clothesShoes_btn-more, .beautyHealth_btn-more {
     margin-top: 40px;
     border-bottom: 1px solid #C5C5C5;
     padding-bottom: 15px;
@@ -253,4 +245,41 @@
     width: 100%;
 }
 
+.burger-iconFilter-bar {/*add*/
+    display: none;
+}
 
+.filter .beautyHealth-title, .filter .clothesShoes-title {/*add*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.filterDrop .accordion-content {/*add*/
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.filterDrop.active .accordion-content {/*add*/
+    display: block;
+    max-height: 1000px;
+    transition: max-height 0.5s ease-in;
+}
+
+.filterDrop .arrow-icon {/*add*/
+    width: 12px;
+    height: 12px;
+    border-top: 1px solid #242425;
+    border-left: 1px solid #242425;
+    transform: rotate(225deg);
+    display: inline-block;
+    margin-left: 10px;
+    transition: transform 0.3s ease-out;
+}
+
+.filterDrop.active .arrow-icon {/*add*/
+    border-top: 1px solid #C5C5C5;
+    border-left: none;
+    transform: rotate(180deg);
+}

@@ -983,8 +983,32 @@
         display: block;
     }
     .burger-iconFilter {
-        display: block;
+        /*display: block;*//*add*/
+        display: flex;
     }
+    .filter {/*add*/
+        width: 100%;
+    }
+    .burger-filter .popupRent-close img {/*add*/
+        right: 30px;
+        top: 30px;
+    }
+    .burger-filter .filter-mobile-btn-wrap {/*add*/
+        position: absolute;
+        top: 40px;
+    }
+    .burger-filter .accordion-filter-btn {/*add*/
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 0;
+    }
+    .burger-filter .accordion-btn-clear.footer-btn {/*add*/
+        margin-right: 15px;
+    }
+    .clothesShoes_btn-more, .beautyHealth_btn-more {/*add*/
+        margin-top: 30px;
+    }
+
 
 
 }
@@ -1565,4 +1589,33 @@
     .accordion-filter-btn {
         margin-left: 0;
     }
+    .burger-filter .clothesShoes-title {/*add*/
+        font-size: 14px;
+    }
+    .burger-filter .beautyHealth-title {/*add*/
+        font-size: 14px;
+    }
+    .burger-filter label{/*add*/
+        font-size: 14px;
+    }
+    .burger-filter .accordion-item {/*add*/
+        font-size: 14px;
+    }
+    .burger-filter .btn-wrap {/*add*/
+        position: initial;
+    }
+    .burger-filter .accordion-filter-btn {/*add*/
+        flex-direction: column;
+    }
+    .burger-filter .accordion-btn-clear.footer-btn {/*add*/
+        margin-right: 0;
+    }
+    .burger-filter .popupRent-close img {/*add*/
+        width: 40px;
+        height: 40px;
+    }
+    .burger-filter .footer-btn a {/*add*/
+        font-size: 14px;
+    }
+
 }
