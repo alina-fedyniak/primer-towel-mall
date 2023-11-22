@@ -390,8 +390,9 @@
         width: 353px;
         height: 60px;
     }
-    .svg-map svg {
+    .svg-map svg {/*add*/
         max-width: 808px;
+        padding-left: 15px;
     }
     .popupRent {
         width: 353px;
@@ -416,6 +417,57 @@
         font-size: 16px;
         margin-bottom: 15px;
     }
+    .icons-item-2:not(:last-child) {/*add*/
+        margin-right: 0;
+        margin-top: 15px;
+    }
+    .forBusinessIcons .icons-block:last-child {/*add*/
+        flex-direction: column-reverse;
+    }
+    .forBusinessIcons .icons-block:first-child {/*add*/
+        margin-right: 375px;
+    }
+    .forBusinessIcons .icons {/*add*/
+        margin-top: -75px;
+    }
+    .mapOrgs-icons .icons-block:first-child {/*add*/
+        margin-right: 0;
+    }
+    .mapOrgs-icons {/*add*/
+        flex-direction: column;
+        align-items: end;
+    }
+    .mapOrgs-icons .icons-block:last-child {/*add*/
+        margin-top: 50px;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+    .mapOrgs .cards_item-img img {/*add*/
+        width: 354px;
+        max-height: 95px;
+        min-height: 95px;
+    }
+    .mapOrgs .cards_item {/*add*/
+        align-items: baseline;
+        flex-direction: column;
+    }
+    .mapOrgs .cards_item-info {/*add*/
+        padding: 20px;
+        width: 100%;
+        position: relative;
+    }
+    .mapOrgs .cards_item-floor {
+        position: absolute;
+        top: 17px;
+        right: 53px;
+    }
+    .icons {/*add*/
+        margin-top: -47px;
+    }
+    .mapBusiness .accordion-btn-clear.footer-btn {
+        height: 60px;
+    }
+
 
 }
 
@@ -710,6 +762,7 @@
     }
     .contacts-title {
         font-size: 90px;
+        max-width: 579px;/*add*/
     }
     .contacts-wrap {
         margin-bottom: 56px;
@@ -1007,6 +1060,32 @@
     }
     .clothesShoes_btn-more, .beautyHealth_btn-more {/*add*/
         margin-top: 30px;
+    }
+    .mapOrgs-icons {/*add*/
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .mapOrgs-icons .icons-block:last-child {/*add*/
+        margin-top: 0;
+        flex-direction: row;
+    }
+    .icons {/*add*/
+        margin-top: 0;
+        display: block;
+    }
+    .icons.forBusinessIcons {/*add*/
+        margin-top: 0;
+        display: flex;
+    }
+    .icons-item-2:not(:last-child) {/*add*/
+        margin-right: 15px;
+        margin-top: 0;
+    }
+    .forBusinessIcons .icons-block:last-child {/*add*/
+        flex-direction: row;
+    }
+    .forBusinessIcons .icons-block:first-child {/*add*/
+        margin-right: 0;
     }
 
 
@@ -1616,6 +1695,23 @@
     }
     .burger-filter .footer-btn a {/*add*/
         font-size: 14px;
+    }
+    .mapOrgs-icons .icons-block:last-child {/*add*/
+        position: absolute;
+        bottom: 496px;
+        right: 0;
+    }
+    .forBusinessIcons .icons-block:last-child {/*add*/
+        position: absolute;
+        bottom: 496px;
+        right: 0;
+    }
+    .icons.forBusinessIcons {/*add*/
+        display: flex;
+        position: relative;
+    }
+    .icons {/*add*/
+        position: relative;
     }
 
 }

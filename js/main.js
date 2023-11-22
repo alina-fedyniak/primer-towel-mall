@@ -218,21 +218,23 @@ document.addEventListener('DOMContentLoaded', function () {
             filterMapContent.style.display = (filterMapContent.style.display === 'block') ? 'none' : 'block';
         });
 
-        document.addEventListener('click', function (event) {
-            if (!dropdownBtn.contains(event.target)) {
-                filterMapContent.style.display = 'none';
-                dropdownBtn.classList.remove('open');
-            }
-        });
         // Добавляем обработчик события для каждого чекбокса в группе
-        document.querySelectorAll('input[name="group"]').forEach(function (checkbox) {
+        const checkboxes = filterMapContent.querySelectorAll('input[name="group"]');
+        checkboxes.forEach(function (checkbox) {
             checkbox.addEventListener('click', function (event) {
-                // Предотвращаем всплытие события, чтобы оно не дотянулось до document
+                // Отменяем всплытие события, чтобы оно не дотянулось до dropdownBtn
                 event.stopPropagation();
+
+                // Открываем следующий блок, если чекбокс выбран
+                if (checkbox.checked) {
+                    const nextFilterMapContent = dropdownBtn.nextElementSibling.nextElementSibling;
+                    nextFilterMapContent.style.display = 'block';
+                }
             });
         });
     });
 });
+
 
 //isOpen-closed-shop
 document.addEventListener('DOMContentLoaded', function () {
@@ -430,6 +432,90 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+
+//
+// Zoom
+$(".zoom_btn").click(function (e) {
+    e.preventDefault();
+    const _this = $(this);
+    const floor = _this.data('zoom');
+    const step = 0.5;
+    let res;
+    const mapFloor = $('.svg-map');
+    let mapFloorZoom = mapFloor.data('scale');
+
+    _this.addClass('active').siblings().removeClass('active');
+
+    if (mapFloorZoom === undefined) {
+        mapFloor.attr('data-scale', 1);
+        mapFloorZoom = 1;
+    }
+
+    if (floor === 'out') {
+        res = mapFloorZoom - step;
+        res = res < 0.5 ? 0.5 : res;
+        mapFloor.css('transform', 'scale(' + res + ')');
+    } else {
+        res = mapFloorZoom + step;
+        mapFloor.css('transform', 'scale(' + res + ')');
+    }
+    mapFloor.data('scale', res);
+});
+
+
+$('.map_box_wrapper').each(function () {
+    const _this = $(this), map = _this.find('.svg-map');
+    let mapLeft, mapTop;
+
+    _this[0].onmousedown = function (e) {
+        const shiftX = e.pageX;
+        const shiftY = e.pageY;
+
+        moveAt(e);
+
+         mapLeft = parseInt(map.css('left').replace('px', ''));
+         mapTop = parseInt(map.css('top').replace('px', ''));
+
+        function moveAt(y) {
+            map[0].style.left = y.pageX - shiftX + mapLeft + 'px';
+            map[0].style.top = y.pageY - shiftY + mapTop + 'px';
+        }
+
+        _this[0].onmousemove = function moveMap(e) {
+            moveAt(e);
+        };
+        _this[0].onmouseup = function () {
+            _this[0].onmousemove = null;
+        };
+        _this[0].onmouseleave = function () {
+            _this[0].onmousemove = null;
+        };
+    };
+// touch events
+    const mapTooltip = $('.svg-map');
+    const startPoint = {};
+
+    _this[0].addEventListener('touchstart', function (e) {
+        startPoint.x = e.changedTouches[0].pageX;
+        startPoint.y = e.changedTouches[0].pageY;
+
+        mapLeft = parseInt(map.css('left').replace('px', ''));
+        mapTop = parseInt(map.css('top').replace('px', ''));
+    }, false);
+
+    _this[0].addEventListener('touchmove', function (e) {
+        if (mapTooltip.length) mapTooltip.removeClass('active');
+        e.preventDefault();
+        e.stopPropagation();
+        const otk = {};
+        const nowPoint = e.changedTouches[0];
+        otk.x = nowPoint.pageX - startPoint.x;
+        otk.y = nowPoint.pageY - startPoint.y;
+        map[0].style.left = otk.x + mapLeft + 'px';
+        map[0].style.top = otk.y + mapTop + 'px';
+    }, false);
+});
+
 
 //tab-shops
 document.addEventListener('DOMContentLoaded', function () {

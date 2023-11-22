@@ -22,3 +22,8 @@
 .mapOrgs-icons {
     display: flex;
 }
+
+.mapBusiness .accordion-btn-clear.footer-btn {/*add*/
+    margin-bottom: 20px;
+    width: 163px;
+}

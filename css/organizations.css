@@ -48,6 +48,7 @@
     border: 1px solid #242425;
     width: 163px;
     padding: 10px 20px;
+    background: #DBDBDB;/*add*/
 }
 
 .accordion-btn-look.footer-btn {

@@ -278,9 +278,10 @@ h1, h2, h3, h4 {
     z-index: 800;
     padding-top: 125px;
 }
-.menu-content ul {
+.menu-content ul {/*add*/
     display: flex;
     flex-direction: column;
+    z-index: 1;/*add*/
     /*gap: 15px;*/
 }
 .menu-content li{
