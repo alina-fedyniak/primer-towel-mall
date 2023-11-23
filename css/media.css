@@ -467,6 +467,9 @@
     .mapBusiness .accordion-btn-clear.footer-btn {
         height: 60px;
     }
+    .mapBusiness-wrap-blk {/*add*/
+        width: 353px;
+    }
 
 
 }
@@ -560,8 +563,8 @@
         padding: 15px 20px;
         margin-bottom: 20px;
     }
-    .submit img {
-        top: 11px;
+    .submit img {/*add*/
+        top: 19px;
         right: 20px;
     }
     .addToTeams-checkbox {
@@ -1086,6 +1089,9 @@
     }
     .forBusinessIcons .icons-block:first-child {/*add*/
         margin-right: 0;
+    }
+    .filterMap-btn.accordion-btn-look.footer-btn.open_pop-filter {/*add*/
+        /*display: none;*/
     }
 
 
@@ -1712,6 +1718,13 @@
     }
     .icons {/*add*/
         position: relative;
+    }
+    .svg-map svg {/*add*/
+        max-width: 800px;
+        width: 800px;
+    }
+    .mapBusiness-wrap {/*add*/
+        overflow: hidden;
     }
 
 }

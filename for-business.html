@@ -190,51 +190,44 @@
                         <div class="container">
                             <div class="mapBusiness-wrap">
                                 <div class="filter-mobile-btn-wrap">
-                                    <div class="filter-mobile-btn">ФІЛЬТРИ
+                                    <div class="filter-mobile-btn burger-iconFilter">ФІЛЬТРИ<!------------add-------------->
                                         <img src="images/svg/arrow-left-grey.svg" alt="arrow">
                                     </div>
                                 </div>
-                                <div class="mapBusiness-wrap-blk mapBusiness-wrap-hidden">
-                                    <div class="mapBusinessWrap forBusinessBlock"><!------------add-------------->
-                                        <div class="filterMap">
-                                            <button class="dropdown-btn">ПРОДАЖ/ОРЕНДА
-                                                <img class="arrow" src="images/svg/down_light.svg" alt="logo">
-                                            </button>
-                                            <div class="filterMap-content">
-                                                <label><input class="radio-group" type="radio" name="group" value="rent">Приміщення доступнi для оренди</label>
-                                                <label><input class="radio-group" type="radio" name="group" value="buy">Приміщення доступнi для купiвлi</label>
-                                                <label><input class="radio-group" type="radio" name="group" value="rentBuy">Приміщення доступнi для оренди та купiвлi</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="popupRent">
-                                        <div class="popupRent-close">
+                                <div class="mapBusiness-wrap-blk burger-filter"><!------------add-------------->
+                                    <div class="menu-content"><!------------add-------------->
+                                        <div class="popupRent-close filterClose"><!------------add-------------->
                                             <img src="./images/svg/close_round_light.svg"/>
                                         </div>
-                                        <div class="popupRent-title">Приміщення доступне для оренди</div>
-                                        <div class="popupRent-item cards_item-floor">
-                                            <span>1</span>
-                                            <span>ПОВЕРХ</span>
-                                        </div>
-                                        <div class="popupRent-item cards_item-open">
-                                            <img src="./images/svg/aria-img.svg"/>
-                                            <span>115.5 м²</span>
-                                        </div>
-                                        <div class="popupRent-item cards_item-phone">
-                                            <a href="#">
-                                                <img src="./images/svg/phone-grey.svg"/>
-                                                <span>+38 067 130 8176</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="overlay"></div>
-                                    <div class="pop_up-filter">
-                                        <div class="pop_up_main">
-                                            <div class="pop_close" id="pop_closed">
-                                                <img src="./images/svg/close_round_light.svg"/>
+                                        <div class="filter-mobile-btn-wrap">
+                                            <div class="filter-mobile-btn burger-iconFilter">ФІЛЬТРИ
+                                                <!------------add-------------->
+                                                <img src="images/svg/arrow-left-grey.svg" alt="arrow">
                                             </div>
-                                            <p>КОНСУЛЬТАЦІЯ</p>
-                                            <div class="pop_up-filter-info">
+                                        </div>
+                                        <div class="mapBusinessWrap forBusinessBlock"><!------------add-------------->
+                                            <div class="filterMap">
+                                                <button class="dropdown-btn">ПРОДАЖ/ОРЕНДА
+                                                    <img class="arrow" src="images/svg/down_light.svg" alt="logo">
+                                                </button>
+                                                <div class="filterMap-content">
+                                                    <label><input class="radio-group" type="radio" name="group"
+                                                                  value="rent">Приміщення доступнi для оренди</label>
+                                                    <label><input class="radio-group" type="radio" name="group"
+                                                                  value="buy">Приміщення доступнi для купiвлi</label>
+                                                    <label><input class="radio-group" type="radio" name="group"
+                                                                  value="rentBuy">Приміщення доступнi для оренди та
+                                                        купiвлi</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <div class="pop_up-filter">
+                                            <div class="pop_up_main">
+                                                <div class="popupRent-close pop_closed">
+                                                    <img src="./images/svg/close_round_light.svg"/>
+                                                </div>
+                                                <div class="popupRent-title">Приміщення доступне для оренди</div>
                                                 <div class="popupRent-item cards_item-floor">
                                                     <span>1</span>
                                                     <span>ПОВЕРХ</span>
@@ -243,38 +236,194 @@
                                                     <img src="./images/svg/aria-img.svg"/>
                                                     <span>115.5 м²</span>
                                                 </div>
+                                                <div class="popupRent-item cards_item-phone">
+                                                    <a href="#">
+                                                        <img src="./images/svg/phone-grey.svg"/>
+                                                        <span>+38 067 130 8176</span>
+                                                    </a>
+                                                </div>
+                                                <div class="filterMap-btn accordion-btn-look footer-btn open_pop-filter">
+                                                    <a class="header-link">
+                                                       <span class="header-link-text">
+                                                            КОНСУЛЬТАЦІЯ
+                                                            <img src="./images/svg/arrow_left_light.svg"/>
+                                                       </span>
+                                                        <span class="header-link-text-hover">
+                                                            КОНСУЛЬТАЦІЯ
+                                                            <img src="./images/svg/arrow_left_light.svg"/>
+                                                        </span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                            <form>
-                                                <input type="text" class="name" name="fname" placeholder="Ім’я">
-                                                <input type="text" class="phone" name="phone" placeholder="Телефон">
-                                                <div class="submit">
-                                                    <input type="submit" value="ВІДПРАВИТИ" placeholder="ВІДПРАВИТИ">
-                                                    <img src="./images/svg/arrow_left_light-top.svg"/>
-                                                    </input>
-                                                </div>
-                                                <div class="addToTeams-checkbox">
-                                                    <input type="checkbox" class="horn" name="horn" />
-                                                    <div>
-                                                        <label>Я даю згоду на обробку персональних  даних відповідно до
-                                                            <span>Політики конфіденційності</span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </form>
                                         </div>
-                                    </div>
-                                    <div class="filterMap-btn accordion-btn-look footer-btn open_pop-filter" id="open_pop-filter">
-                                        <a class="header-link">
+                                        <div class="popupRent">
+                                            <div class="popupRent-close">
+                                                <img src="./images/svg/close_round_light.svg"/>
+                                            </div>
+                                            <div class="popupRent-title">Приміщення доступне для оренди</div>
+                                            <div class="popupRent-item cards_item-floor">
+                                                <span>1</span>
+                                                <span>ПОВЕРХ</span>
+                                            </div>
+                                            <div class="popupRent-item cards_item-open">
+                                                <img src="./images/svg/aria-img.svg"/>
+                                                <span>115.5 м²</span>
+                                            </div>
+                                            <div class="popupRent-item cards_item-phone">
+                                                <a href="#">
+                                                    <img src="./images/svg/phone-grey.svg"/>
+                                                    <span>+38 067 130 8176</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+
+                                        <!------------pop_up-720-mobile------------>
+                                        <div class="overlay"></div>
+                                        <div class="pop_up-filter">
+                                            <div class="pop_up_main">
+                                                <div class="">
+                                                    <div class="pop_close pop_closed">
+                                                        <img src="./images/svg/close_round_light.svg"/>
+                                                    </div>
+                                                    <p>КОНСУЛЬТАЦІЯ</p>
+                                                    <div class="pop_up-filter-info">
+                                                        <div class="popupRent-item cards_item-floor">
+                                                            <span>1</span>
+                                                            <span>ПОВЕРХ</span>
+                                                        </div>
+                                                        <div class="popupRent-item cards_item-open">
+                                                            <img src="./images/svg/aria-img.svg"/>
+                                                            <span>115.5 м²</span>
+                                                        </div>
+                                                    </div>
+                                                    <form>
+                                                        <input type="text" class="name" name="fname" placeholder="Ім’я">
+                                                        <input type="text" class="phone" name="phone"
+                                                               placeholder="Телефон">
+                                                        <div class="submit">
+                                                            <input type="submit" value="ВІДПРАВИТИ"
+                                                                   placeholder="ВІДПРАВИТИ">
+                                                            <img src="./images/svg/arrow_left_light-top.svg"/>
+                                                            </input>
+                                                        </div>
+                                                        <div class="addToTeams-checkbox">
+                                                            <input type="checkbox" class="horn" name="horn"/>
+                                                            <div>
+                                                                <label>Я даю згоду на обробку персональних даних
+                                                                    відповідно
+                                                                    до
+                                                                    <span>Політики конфіденційності</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="filterMap-btn accordion-btn-look footer-btn open_pop-filter">
+                                            <a class="header-link">
                                            <span class="header-link-text">
                                                 КОНСУЛЬТАЦІЯ
                                                 <img src="./images/svg/arrow_left_light.svg"/>
                                            </span>
-                                            <span class="header-link-text-hover">
+                                                <span class="header-link-text-hover">
                                                 КОНСУЛЬТАЦІЯ
                                                 <img src="./images/svg/arrow_left_light.svg"/>
                                             </span>
-                                        </a>
+                                            </a>
+                                        </div>
                                     </div>
+                                </div>
+                                <div class="mapBusiness-wrap-blk mapBusiness-wrap-hidden"><!------------add-------------->
+                                        <div class="mapBusinessWrap forBusinessBlock">
+                                            <div class="filterMap">
+                                                <button class="dropdown-btn">ПРОДАЖ/ОРЕНДА
+                                                    <img class="arrow" src="images/svg/down_light.svg" alt="logo">
+                                                </button>
+                                                <div class="filterMap-content">
+                                                    <label><input class="radio-group" type="radio" name="group"
+                                                                  value="rent">Приміщення доступнi для оренди</label>
+                                                    <label><input class="radio-group" type="radio" name="group"
+                                                                  value="buy">Приміщення доступнi для купiвлi</label>
+                                                    <label><input class="radio-group" type="radio" name="group"
+                                                                  value="rentBuy">Приміщення доступнi для оренди та
+                                                        купiвлi</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="popupRent">
+                                            <div class="popupRent-close">
+                                                <img src="./images/svg/close_round_light.svg"/>
+                                            </div>
+                                            <div class="popupRent-title">Приміщення доступне для оренди</div>
+                                            <div class="popupRent-item cards_item-floor">
+                                                <span>1</span>
+                                                <span>ПОВЕРХ</span>
+                                            </div>
+                                            <div class="popupRent-item cards_item-open">
+                                                <img src="./images/svg/aria-img.svg"/>
+                                                <span>115.5 м²</span>
+                                            </div>
+                                            <div class="popupRent-item cards_item-phone">
+                                                <a href="#">
+                                                    <img src="./images/svg/phone-grey.svg"/>
+                                                    <span>+38 067 130 8176</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <div class="pop_up-filter">
+                                            <div class="pop_up_main">
+                                                <div class="pop_close pop_closed">
+                                                    <img src="./images/svg/close_round_light.svg"/>
+                                                </div>
+                                                <p>КОНСУЛЬТАЦІЯ</p>
+                                                <div class="pop_up-filter-info">
+                                                    <div class="popupRent-item cards_item-floor">
+                                                        <span>1</span>
+                                                        <span>ПОВЕРХ</span>
+                                                    </div>
+                                                    <div class="popupRent-item cards_item-open">
+                                                        <img src="./images/svg/aria-img.svg"/>
+                                                        <span>115.5 м²</span>
+                                                    </div>
+                                                </div>
+                                                <form>
+                                                    <input type="text" class="name" name="fname" placeholder="Ім’я">
+                                                    <input type="text" class="phone" name="phone" placeholder="Телефон">
+                                                    <div class="submit">
+                                                        <input type="submit" value="ВІДПРАВИТИ"
+                                                               placeholder="ВІДПРАВИТИ">
+                                                        <img src="./images/svg/arrow_left_light-top.svg"/>
+                                                        </input>
+                                                    </div>
+                                                    <div class="addToTeams-checkbox">
+                                                        <input type="checkbox" class="horn" name="horn"/>
+                                                        <div>
+                                                            <label>Я даю згоду на обробку персональних даних відповідно
+                                                                до
+                                                                <span>Політики конфіденційності</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="filterMap-btn accordion-btn-look footer-btn open_pop-filter">
+                                            <a class="header-link">
+                                           <span class="header-link-text">
+                                                КОНСУЛЬТАЦІЯ
+                                                <img src="./images/svg/arrow_left_light.svg"/>
+                                           </span>
+                                                <span class="header-link-text-hover">
+                                                КОНСУЛЬТАЦІЯ
+                                                <img src="./images/svg/arrow_left_light.svg"/>
+                                            </span>
+                                            </a>
+                                        </div>
                                 </div>
                                 <!--------svg-1---------->
                                 <div class="map_box_wrapper"><!------------add-------------->
