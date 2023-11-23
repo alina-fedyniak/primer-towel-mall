@@ -995,8 +995,14 @@
     .filter-mobile-btn-wrap {
         display: block;
     }
-    .mapBusiness-wrap-hidden {
+    .mapBusinessWrap-desktop {
         display: none;
+    }
+    .mapBusiness-wrap-mobile {
+        display: block;
+    }
+    .mapBusiness-wrap-hidden {
+        /*display: none;*/
     }
     .mapBusiness-wrap {
         flex-direction: column;
