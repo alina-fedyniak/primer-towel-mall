@@ -283,7 +283,9 @@
     width: 100%;
 }
 
-
+.popupRent-item.cards_item-open div {/*add*/
+    margin-left: 5px;
+}
 
 .popupRent {
     display: none;
@@ -444,4 +446,5 @@ input[type=radio]:checked{
 .mapBusiness .burger-filter .menu-content {/*add*/
     flex-direction: column;
     align-items: flex-start;
+    height: 100vh;
 }

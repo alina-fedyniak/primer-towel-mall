@@ -995,13 +995,13 @@
     .filter-mobile-btn-wrap {
         display: block;
     }
-    .mapBusinessWrap-desktop {
+    .mapBusinessWrap-desktop {/*add*/
         display: none;
     }
-    .mapBusiness-wrap-mobile {
+    .mapBusiness-wrap-mobile {/*add*/
         display: block;
     }
-    .mapBusiness-wrap-hidden {
+    .mapBusiness-wrap-hidden {/*add*/
         /*display: none;*/
     }
     .mapBusiness-wrap {
@@ -1098,6 +1098,14 @@
     }
     .filterMap-btn.accordion-btn-look.footer-btn.open_pop-filter {/*add*/
         /*display: none;*/
+    }
+    .mapBusiness .popupRent.open {/*add*/
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 100;
+        transform: translate(-50%, -50%);
+        max-width: 353px;
     }
 
 
