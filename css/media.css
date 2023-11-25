@@ -390,7 +390,7 @@
         width: 353px;
         height: 60px;
     }
-    .svg-map svg {/*add*/
+    .svg-map svg {
         max-width: 808px;
         padding-left: 15px;
     }
@@ -417,41 +417,41 @@
         font-size: 16px;
         margin-bottom: 15px;
     }
-    .icons-item-2:not(:last-child) {/*add*/
+    .icons-item-2:not(:last-child) {
         margin-right: 0;
         margin-top: 15px;
     }
-    .forBusinessIcons .icons-block:last-child {/*add*/
+    .forBusinessIcons .icons-block:last-child {
         flex-direction: column-reverse;
     }
-    .forBusinessIcons .icons-block:first-child {/*add*/
+    .forBusinessIcons .icons-block:first-child {
         margin-right: 375px;
     }
-    .forBusinessIcons .icons {/*add*/
+    .forBusinessIcons .icons {
         margin-top: -75px;
     }
-    .mapOrgs-icons .icons-block:first-child {/*add*/
+    .mapOrgs-icons .icons-block:first-child {
         margin-right: 0;
     }
-    .mapOrgs-icons {/*add*/
+    .mapOrgs-icons {
         flex-direction: column;
         align-items: end;
     }
-    .mapOrgs-icons .icons-block:last-child {/*add*/
+    .mapOrgs-icons .icons-block:last-child {
         margin-top: 50px;
         flex-direction: column-reverse;
         align-items: flex-end;
     }
-    .mapOrgs .cards_item-img img {/*add*/
+    .mapOrgs .cards_item-img img {
         width: 354px;
         max-height: 95px;
         min-height: 95px;
     }
-    .mapOrgs .cards_item {/*add*/
+    .mapOrgs .cards_item {
         align-items: baseline;
         flex-direction: column;
     }
-    .mapOrgs .cards_item-info {/*add*/
+    .mapOrgs .cards_item-info {
         padding: 20px;
         width: 100%;
         position: relative;
@@ -461,13 +461,13 @@
         top: 17px;
         right: 53px;
     }
-    .icons {/*add*/
+    .icons {
         margin-top: -47px;
     }
     .mapBusiness .accordion-btn-clear.footer-btn {
         height: 60px;
     }
-    .mapBusiness-wrap-blk {/*add*/
+    .mapBusiness-wrap-blk {
         width: 353px;
     }
 
@@ -563,7 +563,7 @@
         padding: 15px 20px;
         margin-bottom: 20px;
     }
-    .submit img {/*add*/
+    .submit img {
         top: 19px;
         right: 20px;
     }
@@ -765,7 +765,7 @@
     }
     .contacts-title {
         font-size: 90px;
-        max-width: 579px;/*add*/
+        max-width: 579px;
     }
     .contacts-wrap {
         margin-bottom: 56px;
@@ -988,6 +988,7 @@
     }
     .mapBusiness-wrap-blk {
         width: 100%;
+        /*display: none;*/
     }
     .mapBusinessWrap {
         width: 100%;
@@ -995,13 +996,13 @@
     .filter-mobile-btn-wrap {
         display: block;
     }
-    .mapBusinessWrap-desktop {/*add*/
+    .mapBusinessWrap-desktop {
         display: none;
     }
-    .mapBusiness-wrap-mobile {/*add*/
+    .mapBusiness-wrap-mobile {
         display: block;
     }
-    .mapBusiness-wrap-hidden {/*add*/
+    .mapBusiness-wrap-hidden {
         /*display: none;*/
     }
     .mapBusiness-wrap {
@@ -1018,6 +1019,7 @@
     }
     .popupRent {
         width: 100%;
+        padding: 40px;
     }
     .icons {
         justify-content: space-between;
@@ -1045,67 +1047,90 @@
         display: block;
     }
     .burger-iconFilter {
-        /*display: block;*//*add*/
+        /*display: block;*/
         display: flex;
     }
-    .filter {/*add*/
+    .filter {
         width: 100%;
     }
-    .burger-filter .popupRent-close img {/*add*/
+    .burger-filter .popupRent-close img {
         right: 30px;
         top: 30px;
     }
-    .burger-filter .filter-mobile-btn-wrap {/*add*/
+    .burger-filter .filter-mobile-btn-wrap {
         position: absolute;
         top: 40px;
     }
-    .burger-filter .accordion-filter-btn {/*add*/
+    .burger-filter .accordion-filter-btn {
         flex-direction: row;
         justify-content: space-between;
         margin-left: 0;
     }
-    .burger-filter .accordion-btn-clear.footer-btn {/*add*/
+    .burger-filter .accordion-btn-clear.footer-btn {
         margin-right: 15px;
     }
-    .clothesShoes_btn-more, .beautyHealth_btn-more {/*add*/
+    .clothesShoes_btn-more, .beautyHealth_btn-more {
         margin-top: 30px;
     }
-    .mapOrgs-icons {/*add*/
+    .mapOrgs-icons {
         flex-direction: row;
         justify-content: space-between;
     }
-    .mapOrgs-icons .icons-block:last-child {/*add*/
+    .mapOrgs-icons .icons-block:last-child {
         margin-top: 0;
         flex-direction: row;
     }
-    .icons {/*add*/
+    .icons {
         margin-top: 0;
         display: block;
     }
-    .icons.forBusinessIcons {/*add*/
+    .icons.forBusinessIcons {
         margin-top: 0;
         display: flex;
     }
-    .icons-item-2:not(:last-child) {/*add*/
+    .icons-item-2:not(:last-child) {
         margin-right: 15px;
         margin-top: 0;
     }
-    .forBusinessIcons .icons-block:last-child {/*add*/
+    .forBusinessIcons .icons-block:last-child {
         flex-direction: row;
     }
-    .forBusinessIcons .icons-block:first-child {/*add*/
+    .forBusinessIcons .icons-block:first-child {
         margin-right: 0;
     }
-    .filterMap-btn.accordion-btn-look.footer-btn.open_pop-filter {/*add*/
+    .filterMap-btn.accordion-btn-look.footer-btn.open_pop-filter {
         /*display: none;*/
     }
-    .mapBusiness .popupRent.open {/*add*/
+    .mapBusiness .popupRent.open {
         position: fixed;
         top: 50%;
         left: 50%;
         z-index: 100;
         transform: translate(-50%, -50%);
         max-width: 353px;
+        box-shadow: 0 -148px 50px 100vh rgba(0, 0, 0, 0.5);
+    }
+    .mapOrgs {
+        margin-right: 52px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 100;
+        transform: translate(-50%, -50%);
+        max-width: 353px;
+        box-shadow: 0 -148px 50px 100vh rgba(0, 0, 0, 0.5);
+    }
+    .cards_item-img {
+        display: flex;
+        width: 100%;
+    }
+    .popupRent-title {
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+    .filterMap-btn.accordion-btn-look.footer-btn.open_pop-filter {
+        margin-top: 40px;
     }
 
 
@@ -1688,57 +1713,81 @@
     .accordion-filter-btn {
         margin-left: 0;
     }
-    .burger-filter .clothesShoes-title {/*add*/
+    .burger-filter .clothesShoes-title {
         font-size: 14px;
     }
-    .burger-filter .beautyHealth-title {/*add*/
+    .burger-filter .beautyHealth-title {
         font-size: 14px;
     }
-    .burger-filter label{/*add*/
+    .burger-filter label{
         font-size: 14px;
     }
-    .burger-filter .accordion-item {/*add*/
+    .burger-filter .accordion-item {
         font-size: 14px;
     }
-    .burger-filter .btn-wrap {/*add*/
+    .burger-filter .btn-wrap {
         position: initial;
     }
-    .burger-filter .accordion-filter-btn {/*add*/
+    .burger-filter .accordion-filter-btn {
         flex-direction: column;
     }
-    .burger-filter .accordion-btn-clear.footer-btn {/*add*/
+    .burger-filter .accordion-btn-clear.footer-btn {
         margin-right: 0;
     }
-    .burger-filter .popupRent-close img {/*add*/
+    .burger-filter .popupRent-close img {
         width: 40px;
         height: 40px;
     }
-    .burger-filter .footer-btn a {/*add*/
+    .burger-filter .footer-btn a {
         font-size: 14px;
     }
-    .mapOrgs-icons .icons-block:last-child {/*add*/
+    .mapOrgs-icons .icons-block:last-child {
         position: absolute;
         bottom: 496px;
         right: 0;
     }
-    .forBusinessIcons .icons-block:last-child {/*add*/
+    .forBusinessIcons .icons-block:last-child {
         position: absolute;
-        bottom: 496px;
+        bottom: 432px;
         right: 0;
     }
-    .icons.forBusinessIcons {/*add*/
+    .icons.forBusinessIcons {
         display: flex;
         position: relative;
     }
-    .icons {/*add*/
+    .icons {
         position: relative;
     }
-    .svg-map svg {/*add*/
+    .svg-map svg {
         max-width: 800px;
         width: 800px;
     }
-    .mapBusiness-wrap {/*add*/
+    .mapBusiness-wrap {
         overflow: hidden;
+    }
+    .icons-block-desktop {
+        display: none;
+    }
+    .icons-block-mobile {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 40px;
+        margin-top: -25px;
+    }
+    .burger-iconFilter {
+        font-size: 14px;
+    }
+    .mapOrgs .cards_item-floor {
+        position: initial;
+    }
+    .mapBusiness .popupRent.open {
+        max-width: 300px;
+    }
+    .mapOrgs {
+        max-width: 235px;
+    }
+    .popupRent {
+        padding: 40px 20px 30px 20px;
     }
 
 }

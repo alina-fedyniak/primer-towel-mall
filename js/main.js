@@ -60,9 +60,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-
-
 // -------pop_up------
 document.addEventListener("DOMContentLoaded", function() {
     const openButtons = Array.from(document.querySelectorAll(".open_pop"));
@@ -134,35 +131,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
-
-
-// -------pop_up-filter-Cards------
-// document.addEventListener("DOMContentLoaded", function () {
-//     const openFilterCard = document.getElementById("open-filterCard");
-//     const closeFilterPopUp = document.getElementById("pop_closed");
-//     const popUpFilterCard = document.querySelector(".pop_up-filterCard");
-//     const overlay = document.querySelector(".overlay");
-//
-//     if (openFilterCard && closeFilterPopUp && popUpFilterCard && overlay) {
-//         openFilterCard.addEventListener("click", function () {
-//             popUpFilterCard.classList.add("active");
-//             overlay.style.display = 'block';
-//         });
-//
-//         closeFilterPopUp.addEventListener("click", function () {
-//             popUpFilterCard.classList.remove("active");
-//             overlay.style.display = 'none';
-//         });
-//
-//         document.addEventListener("click", function (event) {
-//             if (!popUpFilterCard.contains(event.target) && !openFilterCard.contains(event.target)) {
-//                 popUpFilterCard.classList.remove("active");
-//                 overlay.style.display = 'none';
-//             }
-//         });
-//     }
-// });
-
 
 // -------btn-to-top------
 $(function() {
