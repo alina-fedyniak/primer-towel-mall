@@ -356,6 +356,20 @@ h1, h2, h3, h4 {
     padding: 7px;
 }
 
+.burger-icon.active .bar {
+    background-color: #fff;
+}
+.burger-icon .bar {
+    background-color: #242425;
+}
+.burger-icon.burger-icon-white-main .bar {
+    background-color: #fff;
+}
+
+.burger-icon.burger-icon-white .bar {
+    background-color: #fff;
+}
+
 .burger-icon.active .bar1 {
     transform: rotate(-45deg) translate(-5px, 5px);
 }
@@ -1144,12 +1158,12 @@ section.scroll-wrapper {
     left: 30px;
 }
 
-.shop-item>img {
+.shop-item>a>img {
     margin-right: 50px;
     margin-top: 50px;
 }
 
-.shop-item-last img{
+.shop-item-last a img{
     margin-right: 0 !important;
 }
 .shop-item-btn-mobile {
@@ -1570,4 +1584,9 @@ input[type="submit"] {
     justify-content: flex-start;
     align-items: center;
     padding: 50px 30vw;
+}
+
+.current-menu-item span {
+    color: #DFBE97;
+    border-bottom: 1px solid #DFBE97;
 }

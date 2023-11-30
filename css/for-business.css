@@ -180,12 +180,23 @@
     stroke-width: 1px;
 }
 
-.mapClick {
-    /*fill: #242425;*/
-    fill: #DFBE97;
-    stroke: #242425;
+/*.mapClick {*/
+/*    !*fill: #242425;*!*/
+/*    fill: #DFBE97;*/
+/*    stroke: #242425;*/
+/*    stroke-width: 1px;*/
+/*}*/
+.mapClick:hover, .mapClick.infilter {
     stroke-width: 1px;
 }
+
+.mapClick {
+    fill: #DFBE97;
+    stroke: #242425;
+    stroke-width: 0;
+    cursor: pointer;
+}
+
 
 .hidden {
     display: none;

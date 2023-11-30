@@ -52,3 +52,20 @@ section.page-404 {
 .header-page-404 .header-list li:last-child {
     display: none;
 }
+
+.page-404 .all-shops-btn {/**/
+    background: #f4f4f4;
+}
+
+.page-404 .all-shops-btn span {
+    color: #242425;
+}
+
+.page-404 .header-link-text img {
+    margin-left: 34px;
+}
+
+.page-404 .all-shops-btn-wrap {
+    right: 448px;
+    top: 0;
+}

@@ -373,7 +373,7 @@
                                                 <path data-square="square" data-tell="+380000" data-floor="floor" data-title="test-title" class="area" d="M258.912 216.533H220.093C217.89 216.533 216.104 218.319 216.104 220.523V238.948C216.104 241.152 217.89 242.938 220.093 242.938H258.912C261.115 242.938 262.902 241.152 262.902 238.948V220.523C262.902 218.319 261.116 216.533 258.912 216.533Z" fill="#C5C5C5"/>
                                                 <path data-square="square" data-tell="+380000" data-floor="floor" data-title="test-title" class="area" d="M306.729 216.533H268.927C266.724 216.533 264.938 218.319 264.938 220.523V238.948C264.938 241.152 266.724 242.938 268.927 242.938H306.729C308.932 242.938 310.718 241.152 310.718 238.948V220.523C310.718 218.319 308.932 216.533 306.729 216.533Z" fill="#C5C5C5"/>
                                                 <path data-square="square" data-tell="+380000" data-floor="floor" data-title="test-title" class="area" d="M287.84 133.182C287.84 131.266 289.394 129.712 291.31 129.712H371.84C373.757 129.712 375.31 131.266 375.31 133.182V207.392V213.486V231.254C375.31 232.372 374.404 233.277 373.287 233.277C371.595 233.277 370.223 234.649 370.223 236.341V238.948C370.223 240.864 368.67 242.418 366.753 242.418H316.744C314.828 242.418 313.274 240.864 313.274 238.948V217.476C313.274 214.985 311.255 212.966 308.764 212.966H291.31C289.394 212.966 287.84 211.412 287.84 209.496V133.182Z" fill="#C5C5C5" stroke="#C5C5C5" stroke-width="1.04035"/>
-                                                <path data-square="square" data-tell="+380000" data-floor="floor" data-title="test-title" class="rent clickable area" d="M438.396 217.548C436.429 217.548 434.835 215.954 434.835 213.987V133.182C434.835 130.978 433.049 129.192 430.845 129.192H381.853C379.65 129.192 377.863 130.978 377.863 133.182V238.948C377.863 241.152 379.65 242.938 381.853 242.938H431.783H434.835H437.967C440.17 242.938 441.957 241.152 441.957 238.948V221.109C441.957 219.142 440.362 217.548 438.396 217.548Z" fill="#C5C5C5"/>
+                                                <path data-square="square" data-tell="+380000" data-floor="floor" data-title="test-title" class="buy clickable area" d="M438.396 217.548C436.429 217.548 434.835 215.954 434.835 213.987V133.182C434.835 130.978 433.049 129.192 430.845 129.192H381.853C379.65 129.192 377.863 130.978 377.863 133.182V238.948C377.863 241.152 379.65 242.938 381.853 242.938H431.783H434.835H437.967C440.17 242.938 441.957 241.152 441.957 238.948V221.109C441.957 219.142 440.362 217.548 438.396 217.548Z" fill="#C5C5C5"/>
                                                 <path data-square="square" data-tell="+380000" data-floor="floor" data-title="test-title" class="buy clickable area" id="buy-1" d="M490.853 115.21H442.879C440.675 115.21 438.889 116.996 438.889 119.2V209.732C438.889 211.936 440.675 213.722 442.879 213.722H490.853C493.057 213.722 494.843 211.936 494.843 209.732V119.2C494.843 116.996 493.057 115.21 490.853 115.21Z" fill="#C5C5C5"/>
                                                 <path data-square="square" data-tell="+380000" data-floor="floor" data-title="test-title" class="area" d="M551.604 261.84H536.642C534.439 261.84 532.652 263.627 532.652 265.83V285.78C532.652 287.983 534.439 289.77 536.642 289.77H551.604C553.808 289.77 555.594 287.983 555.594 285.78V265.83C555.594 263.627 553.808 261.84 551.604 261.84Z" fill="#C5C5C5"/>
                                                 <path data-square="square" data-tell="+380000" data-floor="floor" data-title="test-title" class="area" d="M551 214.01L551 197.99C551 195.786 549.214 194 547.01 194L532.99 194C530.786 194 529 195.786 529 197.99L529 214.01C529 216.214 530.786 218 532.99 218L547.01 218C549.214 218 551 216.214 551 214.01Z" fill="#C5C5C5"/>
@@ -968,6 +968,19 @@
                 $('.popupRent-item.cards_item-open span').text(square);
                 $('.popupRent-item.cards_item-floor span:first-child').text(floor);
                 $('.popupRent-title').text(title);
+            });
+
+            $('.filterMap-content input[name=group]').on('change',function(e){
+                setColors();
+            });
+            function setColors() {
+                var status = $('.filterMap-content input[name=group]:checked').val();
+                $('.clickable.area').removeClass('mapClick infilter');
+                $('.clickable.area[data-title="'+status+'"]').addClass('mapClick infilter');
+            }
+            $('.clickable.area').on('click',function(e){
+                setColors();
+                $(this).removeClass('infilter');
             });
         </script>
     </body>

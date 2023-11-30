@@ -624,3 +624,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+
+//menu-active
+$(document).ready(function() {
+    var currentPage = window.location.pathname.split('/').pop(); // Получаем текущую страницу из URL
+
+    $('.header-menu a').each(function() {
+        var linkPage = $(this).attr('href').split('/').pop(); // Получаем страницу из ссылки
+        if (linkPage === currentPage) {
+            $(this).addClass('current-menu-item');
+        }
+    });
+});
+
+

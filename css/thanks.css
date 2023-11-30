@@ -9,6 +9,7 @@ section.thanks-page {
 
 .thanks-page_img-line {
     position: absolute;
+    width: 100%;/*add*/
 }
 
 .header-thanks-page .header-list li:last-child {
@@ -17,4 +18,50 @@ section.thanks-page {
 
 .header-thanks-page a.header-link {
     color: #242425;
+}
+
+.thanks-page_wrapper .rent_wrapper {/*add*/
+    margin-top: 92px;
+}
+
+.thanks-page_wrapper .rent_img-small {
+    margin-top: 560px;
+    margin-left: 200px;
+}
+
+.thanks-page_wrapper .rent_img-small img {
+    padding-bottom: 100px;
+}
+
+.thanks-page_wrapper .rent_title {
+    width: 700px;
+    left: 235px;
+     -webkit-background-clip: initial;
+     -webkit-text-fill-color: #242425;
+     background-image: none;
+}
+
+.thanks-page_wrapper .rent_title span:nth-child(2) {
+    margin-left: 200px;
+}
+
+.thanks-page_wrapper .rent_title span:last-child {
+    margin-left: 473px;
+}
+
+.thanks-page_wrapper .all-shops-btn-wrap {
+    /*top: 453px;*/
+    margin-top: 368px;
+}
+
+.thanks-page_wrapper .header-link-text img {
+    margin-left: 49px;
+}
+
+.thanks-page_wrapper .all-shops-btn {
+    padding: 10px 20px;
+}
+
+.thanks-page_wrapper .all-shops-btn span {
+    margin-right: 0;
 }
