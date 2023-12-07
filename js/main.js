@@ -294,6 +294,28 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+//map-wc
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleRectBtns = document.querySelectorAll('.toggleRectBtnWc');
+    const mapWc = document.querySelectorAll('.wc');
+
+    toggleRectBtns.forEach(function(toggleRectBtn) {
+        toggleRectBtn.addEventListener('click', function () {
+            toggleRectBtn.classList.add('active');
+
+            mapWc.forEach(function(btn) {
+                const isHidden = btn.classList.contains('hidden');
+                if (isHidden) {
+                    btn.classList.remove('hidden');
+                } else {
+                    btn.classList.add('hidden');
+                    toggleRectBtn.classList.remove('active');
+                }
+            });
+        });
+    });
+});
+
 
 //map-business-filter
 document.addEventListener('DOMContentLoaded', function () {
@@ -452,6 +474,41 @@ $(".zoom_btn").click(function (e) {
     }
     mapFloor.data('scale', res);
 });
+
+// //Hammer.js
+// const hammer = new Hammer($('.map_box_wrapper')[0]);
+//
+// // Обработчик события масштабирования (увеличение и уменьшение)
+// hammer.get('pinch').set({ enable: true });
+//
+// let mapLeft, mapTop, initialScale = 1;
+//
+// hammer.on('pinchstart', function (e) {
+//     const _this = $('.map_box_wrapper');
+//     const map = _this.find('.svg-map');
+//
+//     mapLeft = parseInt(map.css('left').replace('px', ''));
+//     mapTop = parseInt(map.css('top').replace('px', ''));
+//     initialScale = mapFloorZoom || 1;
+// });
+//
+// hammer.on('pinchmove', function (e) {
+//     const _this = $('.map_box_wrapper');
+//     const map = _this.find('.svg-map');
+//
+//     const scale = Math.max(0.5, Math.min(initialScale * e.scale, 3));
+//     mapFloorZoom = scale;
+//     map.css('transform', 'scale(' + scale + ')');
+// });
+//
+// hammer.on('pinchend', function (e) {
+//     const _this = $('.map_box_wrapper');
+//     const map = _this.find('.svg-map');
+//
+//     // Сохранение координат карты после окончания масштабирования
+//     mapLeft = parseInt(map.css('left').replace('px', ''));
+//     mapTop = parseInt(map.css('top').replace('px', ''));
+// });
 
 
 $('.map_box_wrapper').each(function () {
@@ -637,4 +694,51 @@ $(document).ready(function() {
     });
 });
 
+//menu-filer-slider
+const container = document.getElementById('scrollContainer');
+const scrollStep = 150;
+
+const scrollLeftButton = document.getElementById('scrollLeftButton');
+const scrollRightButton = document.getElementById('scrollRightButton');
+
+scrollLeftButton.addEventListener('click', () => scrollContainer('left'));
+scrollRightButton.addEventListener('click', () => scrollContainer('right'));
+
+function scrollContainer(direction) {
+    const currentScroll = container.scrollLeft;
+
+    if (direction === 'left') {
+        container.scrollTo({
+            left: currentScroll - scrollStep,
+            behavior: 'smooth'
+        });
+    } else if (direction === 'right') {
+        container.scrollTo({
+            left: currentScroll + scrollStep,
+            behavior: 'smooth'
+        });
+    }
+}
+const filters = document.querySelectorAll('.item-filter');
+filters.forEach(filter => {
+    filter.addEventListener('click', () => {
+
+        filters.forEach(f => f.classList.remove('active'));
+
+        filter.classList.add('active');
+
+        filterCards(filter.dataset.filter);
+    });
+});
+
+// function-filter-cards
+function filterCards(category) {
+    const cards = document.querySelectorAll('.cards_item');
+    cards.forEach(card => {
+        card.style.display = 'none';
+        if (category === 'all' || card.classList.contains(category)) {
+            card.style.display = 'block';
+        }
+    });
+}
 
