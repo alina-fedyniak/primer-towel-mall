@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const burgerMenu = document.querySelector(".burger-menu");
 
     burgerIcon.addEventListener("click", function() {
-        burgerIcon.classList.toggle("active"); // Анимация иконки бургера
-        burgerMenu.classList.toggle("active"); // Открытие/закрытие меню
+        burgerIcon.classList.toggle("active");
+        burgerMenu.classList.toggle("active");
 
         if (burgerMenu.classList.contains("active")) {
-            document.body.style.overflow = "hidden"; // Запрет прокрутки страницы при открытом меню
+            document.body.style.overflow = "hidden";
         } else {
-            document.body.style.overflow = ""; // Разрешение прокрутки страницы при закрытом меню
+            document.body.style.overflow = "";
         }
     });
 });
@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function () {
             accordion.classList.toggle('active');
         });
 
-        // Предотвращение всплытия события для чекбоксов в каждом аккордеоне
         const checkboxes = accordion.querySelectorAll('input[type="checkbox"]');
         checkboxes.forEach(function (checkbox) {
             checkbox.addEventListener('click', function (event) {
@@ -67,7 +66,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const popUp = document.querySelector(".pop_up");
     const overlay = document.getElementById("overlay");
 
-    // Добавление класса "active" при нажатии на кнопку "Открыть попап"
     openButtons.forEach(function (openButton) {
         openButton.addEventListener("click", function () {
             popUp.classList.add("active");
@@ -75,13 +73,11 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Удаление класса "active" при нажатии на кнопку "Закрыть попап"
     closeButton.addEventListener("click", function() {
         popUp.classList.remove("active");
         overlay.style.display = "none";
     });
 
-    // Закрытие вне
     document.addEventListener("click", function (event) {
         if (!popUp.contains(event.target) && openButtons.every((item) =>
             !item.contains(event.target))) {
@@ -197,14 +193,11 @@ document.addEventListener('DOMContentLoaded', function () {
             filterMapContent.style.display = (filterMapContent.style.display === 'block') ? 'none' : 'block';
         });
 
-        // Добавляем обработчик события для каждого чекбокса в группе
         const checkboxes = filterMapContent.querySelectorAll('input[name="group"]');
         checkboxes.forEach(function (checkbox) {
             checkbox.addEventListener('click', function (event) {
-                // Отменяем всплытие события, чтобы оно не дотянулось до dropdownBtn
                 event.stopPropagation();
 
-                // Открываем следующий блок, если чекбокс выбран
                 if (checkbox.checked) {
                     const nextFilterMapContent = dropdownBtn.nextElementSibling.nextElementSibling;
                     if (nextFilterMapContent) {
@@ -255,15 +248,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     mapBtns.forEach(function (btn, index) {
         btn.addEventListener('click', function () {
-            // Удаляем класс active у всех кнопок
             mapBtns.forEach(function (otherBtn) {
                 otherBtn.classList.remove('active');
             });
 
-            // Добавляем класс active текущей кнопке
             btn.classList.add('active');
 
-            // Показываем соответствующую карту
             maps.forEach(function (map) {
                 map.style.display = 'none';
             });
@@ -324,7 +314,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const buy = document.querySelectorAll('.buy');
     const rentBuy = document.querySelectorAll('.rentBuy');
     const targets = {'rent': rent, 'buy': buy, 'rentBuy': rentBuy };
-//переключение чекбоксов
     radioGroup.forEach((item) => {
         item.addEventListener('change',(event) => {
             const remove = Object.entries(targets).filter(([key]) => key !== event.target.value);
@@ -339,7 +328,6 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     });
 
-//выбираем елемент для просмотра инфы и попап при клике
     const clickable = document.querySelectorAll('.clickable');
     const popupRent = document.querySelector('.popupRent');
     const closeButtons = document.querySelectorAll('.popupRent-close');
@@ -393,7 +381,6 @@ document.addEventListener('DOMContentLoaded', function () {
         'entertainment1': entertainment1, 'entertainment2': entertainment2, 'entertainment3': entertainment3, 'entertainment4': entertainment4, 'entertainment5': entertainment5, 'entertainment6': entertainment6,
 
     };
-//переключение чекбоксов
     radioGroups.forEach((item) => {
         item.addEventListener('change',(event) => {
             const remove = Object.entries(targets).filter(([key]) => key !== event.target.value);
@@ -408,7 +395,6 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     });
 
-//выбираем елемент для просмотра инфы и попап при клике
     const clickabled = document.querySelectorAll('.clickable');
     const popupMapOrgs = document.querySelector('.mapOrgs');
     const closeButtons = document.querySelectorAll('.popupRent-close');
@@ -512,57 +498,97 @@ $(".zoom_btn").click(function (e) {
 
 
 $('.map_box_wrapper').each(function () {
-    const _this = $(this), map = _this.find('.svg-map');
-    let mapLeft, mapTop;
+    const _this = $(this);
+    const map = _this.find('.svg-map');
+    let mapLeft, mapTop, startPoint;
 
-    _this[0].onmousedown = function (e) {
-        const shiftX = e.pageX;
-        const shiftY = e.pageY;
+    _this.on('mousedown touchstart', function (e) {
+        startPoint = {
+            x: e.type === 'mousedown' ? e.pageX : e.originalEvent.touches[0].pageX,
+            y: e.type === 'mousedown' ? e.pageY : e.originalEvent.touches[0].pageY
+        };
 
-        moveAt(e);
+        mapLeft = parseInt(map.css('left').replace('px', '')) || 0;
+        mapTop = parseInt(map.css('top').replace('px', '')) || 0;
 
-         mapLeft = parseInt(map.css('left').replace('px', ''));
-         mapTop = parseInt(map.css('top').replace('px', ''));
+        _this.on('mousemove touchmove', moveMap);
+        _this.on('mouseup touchend', function () {
+            _this.off('mousemove touchmove', moveMap);
+        });
+    });
 
-        function moveAt(y) {
-            map[0].style.left = y.pageX - shiftX + mapLeft + 'px';
-            map[0].style.top = y.pageY - shiftY + mapTop + 'px';
+    function moveMap(e) {
+        if (e.type === 'touchmove') {
+            e.preventDefault();
+            e.stopPropagation();
         }
 
-        _this[0].onmousemove = function moveMap(e) {
-            moveAt(e);
+        const nowPoint = e.type === 'mousemove' ? e : e.originalEvent.touches[0];
+        const otk = {
+            x: nowPoint.pageX - startPoint.x,
+            y: nowPoint.pageY - startPoint.y
         };
-        _this[0].onmouseup = function () {
-            _this[0].onmousemove = null;
-        };
-        _this[0].onmouseleave = function () {
-            _this[0].onmousemove = null;
-        };
-    };
-// touch events
-    const mapTooltip = $('.svg-map');
-    const startPoint = {};
 
-    _this[0].addEventListener('touchstart', function (e) {
-        startPoint.x = e.changedTouches[0].pageX;
-        startPoint.y = e.changedTouches[0].pageY;
-
-        mapLeft = parseInt(map.css('left').replace('px', ''));
-        mapTop = parseInt(map.css('top').replace('px', ''));
-    }, false);
-
-    _this[0].addEventListener('touchmove', function (e) {
-        if (mapTooltip.length) mapTooltip.removeClass('active');
-        e.preventDefault();
-        e.stopPropagation();
-        const otk = {};
-        const nowPoint = e.changedTouches[0];
-        otk.x = nowPoint.pageX - startPoint.x;
-        otk.y = nowPoint.pageY - startPoint.y;
-        map[0].style.left = otk.x + mapLeft + 'px';
-        map[0].style.top = otk.y + mapTop + 'px';
-    }, false);
+        map.css({
+            left: otk.x + mapLeft + 'px',
+            top: otk.y + mapTop + 'px'
+        });
+    }
 });
+
+// //
+// $('.map_box_wrapper').each(function () {
+//     const _this = $(this), map = _this.find('.svg-map');
+//     let mapLeft, mapTop;
+//
+//     _this[0].onmousedown = function (e) {
+//         const shiftX = e.pageX;
+//         const shiftY = e.pageY;
+//
+//         moveAt(e);
+//
+//         mapLeft = parseInt(map.css('left').replace('px', ''));
+//         mapTop = parseInt(map.css('top').replace('px', ''));
+//
+//         function moveAt(y) {
+//             map[0].style.left = y.pageX - shiftX + mapLeft + 'px';
+//             map[0].style.top = y.pageY - shiftY + mapTop + 'px';
+//         }
+//
+//         _this[0].onmousemove = function moveMap(e) {
+//             moveAt(e);
+//         };
+//         _this[0].onmouseup = function () {
+//             _this[0].onmousemove = null;
+//         };
+//         _this[0].onmouseleave = function () {
+//             _this[0].onmousemove = null;
+//         };
+//     };
+// // touch events
+//     const mapTooltip = $('.svg-map');
+//     const startPoint = {};
+//
+//     _this[0].addEventListener('touchstart', function (e) {
+//         startPoint.x = e.changedTouches[0].pageX;
+//         startPoint.y = e.changedTouches[0].pageY;
+//
+//         mapLeft = parseInt(map.css('left').replace('px', ''));
+//         mapTop = parseInt(map.css('top').replace('px', ''));
+//     }, false);
+//
+//     _this[0].addEventListener('touchmove', function (e) {
+//         if (mapTooltip.length) mapTooltip.removeClass('active');
+//         e.preventDefault();
+//         e.stopPropagation();
+//         const otk = {};
+//         const nowPoint = e.changedTouches[0];
+//         otk.x = nowPoint.pageX - startPoint.x;
+//         otk.y = nowPoint.pageY - startPoint.y;
+//         map[0].style.left = otk.x + mapLeft + 'px';
+//         map[0].style.top = otk.y + mapTop + 'px';
+//     }, false);
+// });
 
 
 //tab-shops
@@ -607,14 +633,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //open filter
 // document.addEventListener('DOMContentLoaded', function () {
-//     // Получите все кнопки и блоки
+//
 //     const filterMobileBtns = document.querySelectorAll('.filter-mobile-btn');
 //     const toggleBlocks = document.querySelectorAll('.mapBusiness-wrap-blk');
 //
-//     // Добавьте обработчик событий ко всем кнопкам
 //     filterMobileBtns.forEach(function (btn, index) {
 //         btn.addEventListener('click', function () {
-//             // Скройте/покажите соответствующий блок
+//
 //             toggleBlocks[index].classList.toggle('mapBusiness-wrap-hidden');
 //         });
 //     });
@@ -684,10 +709,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //menu-active
 $(document).ready(function() {
-    var currentPage = window.location.pathname.split('/').pop(); // Получаем текущую страницу из URL
+    const currentPage = window.location.pathname.split('/').pop(); // Получаем текущую страницу из URL
 
     $('.header-menu a').each(function() {
-        var linkPage = $(this).attr('href').split('/').pop(); // Получаем страницу из ссылки
+        let linkPage = $(this).attr('href').split('/').pop(); // Получаем страницу из ссылки
         if (linkPage === currentPage) {
             $(this).addClass('current-menu-item');
         }

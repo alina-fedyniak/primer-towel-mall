@@ -1172,6 +1172,8 @@ section.scroll-wrapper {
 
 .shops-block {
     display: flex;
+    gap: 50px;
+    margin-top: 50px;
 }
 
 .shops-block:nth-child(2) {

@@ -125,6 +125,15 @@
         margin-top: 40px;
         max-width: 354px;
     }
+    .shop-item>img {
+        margin-right: 40px;
+        margin-top: 40px;
+        max-width: 354px;
+    }
+    .shops-block {
+         gap: 0;
+         margin-top: 0;
+    }
     .shop-item-link span {
         max-width: 240px;
     }
@@ -1886,6 +1895,9 @@
     }
     .page-404 .header-link-text img {/**/
         margin-left: 20px;
+    }
+    .shop-item>img{
+        max-width: 100%;
     }
 
 }
